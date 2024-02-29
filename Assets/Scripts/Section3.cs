@@ -160,17 +160,30 @@ public class Section3 : SectionBase
     }
 
     private IEnumerator Start8() {
-
+        yield return new WaitForSeconds(0.5f);
         Main.Instance.PlayAudio(audioClips[5], () => {
+            // coTimer = Ended();
+            // StartCoroutine(coTimer);
+            animator.Play("Xray_door_close_outline_on");
+            door.GetComponent<Clickable>().onMouseClick += ClickDoor2;
+        });
+    }
+
+    private void ClickDoor2 ( GameObject target, Vector3 mousePos ) 
+    {
+        door.GetComponent<Clickable>().onMouseClick -= ClickDoor2;
+        animator.Play("Xray_door_close");
+        coTimer = Start9();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start9() {
+        yield return new WaitForSeconds(2f);
+        Main.Instance.PlayAudio(audioClips[6], () => {
             coTimer = Ended();
             StartCoroutine(coTimer);
         });
-
-        yield return new WaitForSeconds(3f);
-
-        animator.Play("Xray_door_close");
     }
-
     
 
     private IEnumerator Ended() {
