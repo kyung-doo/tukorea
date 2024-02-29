@@ -91,7 +91,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 3.65
-        value: {x: -12.672, y: -123.519, z: -72.702}
+        value: {x: -18.515, y: 67.381, z: 82.989}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -373,15 +373,15 @@ AnimationClip:
       - serializedVersion: 3
         time: 2.5
         value: {x: -0.9201, y: 0.9771, z: 1.9009}
-        inSlope: {x: 0, y: 0.054360006, z: 0}
-        outSlope: {x: 0, y: 0.054360006, z: 0}
+        inSlope: {x: 0, y: 0.054420017, z: 0}
+        outSlope: {x: 0, y: 0.054420017, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 3.65
-        value: {x: -1.0082558, y: 1.0224, z: 2.1101613}
+        value: {x: -0.8607, y: 1.0225, z: 2.1926}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -1684,7 +1684,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 3.65
-        value: -1.0082558
+        value: -0.8607
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1767,15 +1767,15 @@ AnimationClip:
       - serializedVersion: 3
         time: 2.5
         value: 0.9771
-        inSlope: 0.054360006
-        outSlope: 0.054360006
+        inSlope: 0.054420017
+        outSlope: 0.054420017
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 3.65
-        value: 1.0224
+        value: 1.0225
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1866,7 +1866,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 3.65
-        value: 2.1101613
+        value: 2.1926
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1957,7 +1957,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 3.65
-        value: -12.672
+        value: -18.515
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -2048,7 +2048,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 3.65
-        value: -123.519
+        value: 67.381
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -2139,7 +2139,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 3.65
-        value: -72.702
+        value: 82.989
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -3446,7 +3446,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Tongs
+    path: Tongs/Tongs/Panel (1)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -3456,17 +3456,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Tongs
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Tongs
+    path: Tongs/Tongs/Panel (1)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -3485,8 +3475,18 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Tongs
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Tongs/Tongs/Panel (1)
+    path: Tongs
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -3496,7 +3496,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Tongs/Tongs/Panel (1)
+    path: Tongs
     classID: 4
     script: {fileID: 0}
   m_HasGenericRootTransform: 0
