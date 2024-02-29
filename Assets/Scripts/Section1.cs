@@ -52,7 +52,7 @@ public class Section1 : SectionBase
         target2.SetActive(true);
         coTimer = Start1();
         StartCoroutine(coTimer);
-        base.StartSection();
+        base.StartSection(isFirst);
     }
 
     private IEnumerator Start1() {

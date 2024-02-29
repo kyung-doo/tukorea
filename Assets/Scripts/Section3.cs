@@ -37,7 +37,7 @@ public class Section3 : SectionBase
         Debug.Log("startSection3");
         coTimer = Start1();
         StartCoroutine(coTimer);
-        base.StartSection();
+        base.StartSection(isFirst);
     }
 
     private IEnumerator Start1() {
