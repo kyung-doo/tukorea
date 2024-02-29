@@ -162,8 +162,6 @@ public class Section3 : SectionBase
     private IEnumerator Start8() {
         yield return new WaitForSeconds(0.5f);
         Main.Instance.PlayAudio(audioClips[5], () => {
-            // coTimer = Ended();
-            // StartCoroutine(coTimer);
             animator.Play("Xray_door_close_outline_on");
             door.GetComponent<Clickable>().onMouseClick += ClickDoor2;
         });
