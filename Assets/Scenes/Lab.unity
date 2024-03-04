@@ -2319,7 +2319,7 @@ PrefabInstance:
     - target: {fileID: 4081304939357072342, guid: 2ab1c99a83837204890f3d315a945a2a,
         type: 3}
       propertyPath: m_Materials.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4081304939357072342, guid: 2ab1c99a83837204890f3d315a945a2a,
         type: 3}
@@ -3878,7 +3878,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 0
   outlineColor: {r: 0, g: 0.98039216, b: 1, a: 1}
-  outlineWidth: 0
+  outlineWidth: 7
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -9872,7 +9872,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 0
   outlineColor: {r: 0, g: 0.98039216, b: 1, a: 1}
-  outlineWidth: 0
+  outlineWidth: 7
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -12305,8 +12305,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: cade01f8ad18a1344af6f19d1343de7f, type: 2}
-  - {fileID: 2100000, guid: 931fa1a4476340441b0fe33312eee187, type: 2}
-  - {fileID: 2100000, guid: 106f3ff43a17d4967a2b64c7a92e49ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12350,7 +12348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 0
   outlineColor: {r: 0, g: 0.98039216, b: 1, a: 1}
-  outlineWidth: 0
+  outlineWidth: 7
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -13508,7 +13506,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: d63564dd09b1f674a8c08efc61ed2663,
         type: 3}
       propertyPath: m_Materials.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: d63564dd09b1f674a8c08efc61ed2663,
         type: 3}
@@ -13519,12 +13517,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 311313efa011949e98b6761d652ad13c, type: 2}
+      objectReference: {fileID: 2100000, guid: 320c691558e79c94c8bcfd20c0b5d707, type: 2}
     - target: {fileID: -7511558181221131132, guid: d63564dd09b1f674a8c08efc61ed2663,
         type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: 106f3ff43a17d4967a2b64c7a92e49ec, type: 2}
+      objectReference: {fileID: 2100000, guid: f4ae6c02e3a96d84d89a094ae5fa8ddb, type: 2}
     - target: {fileID: 919132149155446097, guid: d63564dd09b1f674a8c08efc61ed2663,
         type: 3}
       propertyPath: m_Name
@@ -21575,7 +21573,7 @@ PrefabInstance:
     - target: {fileID: 4081304939357072342, guid: 2ab1c99a83837204890f3d315a945a2a,
         type: 3}
       propertyPath: m_Materials.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4081304939357072342, guid: 2ab1c99a83837204890f3d315a945a2a,
         type: 3}
@@ -21651,7 +21649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 0
   outlineColor: {r: 0, g: 0.98039216, b: 1, a: 1}
-  outlineWidth: 0
+  outlineWidth: 7
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -23120,6 +23118,7 @@ GameObject:
   - component: {fileID: 1742718820}
   - component: {fileID: 1742718819}
   - component: {fileID: 1742718818}
+  - component: {fileID: 1742718821}
   m_Layer: 0
   m_Name: Panel (1)
   m_TagString: Untagged
@@ -23176,8 +23175,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 68b3530e2eea8734fbc2078576227cb4, type: 2}
-  - {fileID: 2100000, guid: 357152d65df8bdc43a2de233a0984d4f, type: 2}
-  - {fileID: 2100000, guid: f4ae6c02e3a96d84d89a094ae5fa8ddb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23207,6 +23204,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1742718816}
   m_Mesh: {fileID: 6464809856111060268, guid: 984511a63973ebc4f9b67db1175bd701, type: 3}
+--- !u!114 &1742718821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742718816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 0.98039216, b: 1, a: 1}
+  outlineWidth: 7
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1745679649
 GameObject:
   m_ObjectHideFlags: 0
@@ -25975,7 +25990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 0
   outlineColor: {r: 0, g: 0.98039216, b: 1, a: 1}
-  outlineWidth: 0
+  outlineWidth: 7
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -26056,7 +26071,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 231604204}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1996653605
+--- !u!114 &1996653607
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -26070,7 +26085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 0
   outlineColor: {r: 0, g: 0.98039216, b: 1, a: 1}
-  outlineWidth: 0
+  outlineWidth: 7
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -28979,8 +28994,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: cade01f8ad18a1344af6f19d1343de7f, type: 2}
-  - {fileID: 2100000, guid: 931fa1a4476340441b0fe33312eee187, type: 2}
-  - {fileID: 2100000, guid: 106f3ff43a17d4967a2b64c7a92e49ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29353,8 +29366,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 9a0695f338d2c8a4b839e795c135b991, type: 2}
-  - {fileID: 2100000, guid: a1cb7779cfa724d4583a705ba034da28, type: 2}
-  - {fileID: 2100000, guid: 106f3ff43a17d4967a2b64c7a92e49ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29397,8 +29408,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 9ba26cf645e4bfa49afeb5bc341e08b4, type: 2}
-  - {fileID: 2100000, guid: 106f3ff43a17d4967a2b64c7a92e49ec, type: 2}
-  - {fileID: 2100000, guid: 931fa1a4476340441b0fe33312eee187, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29648,8 +29657,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: cade01f8ad18a1344af6f19d1343de7f, type: 2}
-  - {fileID: 2100000, guid: f7217433475385d4ba74e54cf0a06b1b, type: 2}
-  - {fileID: 2100000, guid: 106f3ff43a17d4967a2b64c7a92e49ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29734,7 +29741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 0
   outlineColor: {r: 0, g: 0.98039216, b: 1, a: 1}
-  outlineWidth: 0
+  outlineWidth: 6
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -29952,7 +29959,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 0
   outlineColor: {r: 0, g: 0.98039216, b: 1, a: 1}
-  outlineWidth: 0
+  outlineWidth: 7
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -30194,8 +30201,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 68b3530e2eea8734fbc2078576227cb4, type: 2}
-  - {fileID: 2100000, guid: 357152d65df8bdc43a2de233a0984d4f, type: 2}
-  - {fileID: 2100000, guid: f4ae6c02e3a96d84d89a094ae5fa8ddb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30244,7 +30249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 0
   outlineColor: {r: 0, g: 0.98039216, b: 1, a: 1}
-  outlineWidth: 0
+  outlineWidth: 7
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -30615,8 +30620,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 9ba26cf645e4bfa49afeb5bc341e08b4, type: 2}
-  - {fileID: 2100000, guid: 176cbfeca08dd384ba11bab140928caa, type: 2}
-  - {fileID: 2100000, guid: 106f3ff43a17d4967a2b64c7a92e49ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30714,7 +30717,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 0
   outlineColor: {r: 0, g: 0.98039216, b: 1, a: 1}
-  outlineWidth: 0
+  outlineWidth: 7
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -30940,7 +30943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 0
   outlineColor: {r: 0, g: 0.98039216, b: 1, a: 1}
-  outlineWidth: 0
+  outlineWidth: 7
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -30983,8 +30986,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: cade01f8ad18a1344af6f19d1343de7f, type: 2}
-  - {fileID: 2100000, guid: 931fa1a4476340441b0fe33312eee187, type: 2}
-  - {fileID: 2100000, guid: 106f3ff43a17d4967a2b64c7a92e49ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
