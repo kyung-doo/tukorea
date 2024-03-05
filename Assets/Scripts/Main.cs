@@ -29,6 +29,9 @@ public class Main : SingletonBase<Main>
     [SerializeField]
     private GameObject helpScreen;
 
+    [SerializeField]
+    private GameObject optionScreen;
+
 
     [SerializeField]
     private Button startBtn;
@@ -59,6 +62,12 @@ public class Main : SingletonBase<Main>
 
     [SerializeField]
     private Texture2D linkCursorTexture;
+
+    [SerializeField]
+    private AudioClip introAudio;
+
+    [SerializeField]
+    private AudioClip infoAudio;
 
 
     private float audioLength = 0;
@@ -154,6 +163,7 @@ public class Main : SingletonBase<Main>
     private IEnumerator ShowStartScreen () 
     {
         yield return new WaitForSeconds( 0.5f );
+        PlayAudio(introAudio);
         startScreen.SetActive(true);
         CanvasGroup startScreenCG = startScreen.GetComponent<CanvasGroup>();
         startScreenCG.alpha = 0;
@@ -167,6 +177,7 @@ public class Main : SingletonBase<Main>
 
     private void OnStartClick()
     {
+        StopAudio();
         startBtn.onClick.RemoveListener(OnStartClick);
         startScreen.SetActive(false);
         player.GetComponent<Player>().isActive = true;
@@ -285,6 +296,9 @@ public class Main : SingletonBase<Main>
 
         rect.localPosition = new Vector3(0, helpPosY - 30f, 0);
         rect.DOLocalMoveY(helpPosY, 0.6f).SetEase(Ease.OutCubic);
+        if(isFirst) {
+            PlayAudio(infoAudio);
+        }
     }
 
     public void HideHelp () {
@@ -295,9 +309,18 @@ public class Main : SingletonBase<Main>
             rect.localPosition = new Vector3(0, helpPosY, 0);
         });
         if(isFirst) {
+            StopAudio();
             StartCoroutine(StartContent());
             isFirst = false;
         }
+    }
+
+    public void ShowOption () {
+        optionScreen.SetActive(true);
+    }
+
+    public void HideOption () {
+        
     }
 
     

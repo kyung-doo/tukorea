@@ -39,7 +39,7 @@ public class TitleBar : MonoBehaviour
 
     private void ClickConfig () 
     {
-        
+        Main.Instance.ShowOption();
     }
 
     private void ClickQuit () 
