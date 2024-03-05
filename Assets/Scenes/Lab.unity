@@ -22988,6 +22988,7 @@ MonoBehaviour:
   startScreen: {fileID: 1262638908}
   finishScreen: {fileID: 1983626789}
   helpScreen: {fileID: 1186445341}
+  optionScreen: {fileID: 1082170265}
   startBtn: {fileID: 1135957860}
   reStartBtn: {fileID: 1962353239}
   enterhelpBtn: {fileID: 328049472}
@@ -23001,6 +23002,8 @@ MonoBehaviour:
   clickAudio: {fileID: 826441071}
   moveCursorTexture: {fileID: 2800000, guid: c21fde21a66dc3442a8c390fff274ff4, type: 3}
   linkCursorTexture: {fileID: 2800000, guid: 2d00ccc2ad0b5784295aaa2c0dc7ec19, type: 3}
+  introAudio: {fileID: 8300000, guid: af00b4dfce6f21849bed70527a3fe024, type: 3}
+  infoAudio: {fileID: 8300000, guid: e19f8ebb271ce6c468d20b64dad773dc, type: 3}
 --- !u!4 &1716591702
 Transform:
   m_ObjectHideFlags: 0
