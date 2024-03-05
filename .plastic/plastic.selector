@@ -1,4 +1,0 @@
-repository "metaversity@sangroks@cloud"
-  path "/"
-    br "/main"
-    co "/main"

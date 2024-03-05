@@ -50,9 +50,14 @@ public class Section1 : SectionBase
         Debug.Log("startSection1");
         target1.SetActive(true);
         target2.SetActive(true);
+        glove.GetComponent<BoxCollider>().enabled = false;
+        swiper.GetComponent<BoxCollider>().enabled = false;
+        holder.GetComponent<BoxCollider>().enabled = false;
+        powder.GetComponent<BoxCollider>().enabled = false;
+        glass.GetComponent<BoxCollider>().enabled = false;
         coTimer = Start1();
         StartCoroutine(coTimer);
-        base.StartSection();
+        base.StartSection(isFirst);
     }
 
     private IEnumerator Start1() {
@@ -60,6 +65,7 @@ public class Section1 : SectionBase
         Main.Instance.PlayAudio(audioClips[0], () => {
             Main.Instance.PlayAudio(audioClips[1], () => {
                 animator1.Play("glove_outline_on");
+                glove.GetComponent<BoxCollider>().enabled = true;
                 glove.GetComponent<Clickable>().onMouseClick += ClickGlove;
             });
         });
@@ -69,6 +75,7 @@ public class Section1 : SectionBase
     
     private void ClickGlove ( GameObject target, Vector3 mousePos ) 
     {
+        glove.GetComponent<BoxCollider>().enabled = false;
         glove.GetComponent<Clickable>().onMouseClick -= ClickGlove;
         animator1.Play("glove_disappear");
         coTimer = Start2();
@@ -80,12 +87,14 @@ public class Section1 : SectionBase
         gloveUi.SetActive(true);
         Main.Instance.PlayAudio(audioClips[2], () => {
             animator2.Play("swiper_outline_on");
+            swiper.GetComponent<BoxCollider>().enabled = true;
             swiper.GetComponent<Clickable>().onMouseClick += ClickSwiper;
         });
     }
 
     private void ClickSwiper ( GameObject target, Vector3 mousePos ) 
     {
+        swiper.GetComponent<BoxCollider>().enabled = false;
         swiper.GetComponent<Clickable>().onMouseClick -= ClickSwiper;
         animator2.Play("swiper_move");
         coTimer = Start3();
@@ -96,12 +105,14 @@ public class Section1 : SectionBase
         yield return new WaitForSeconds(1f);
         Main.Instance.PlayAudio(audioClips[3], () => {
             animator2.Play("holder_outline_on");
+            holder.GetComponent<BoxCollider>().enabled = true;
             holder.GetComponent<Clickable>().onMouseClick += ClickHolder;
         });
     }
 
     private void ClickHolder ( GameObject target, Vector3 mousePos ) 
     {
+        holder.GetComponent<BoxCollider>().enabled = false;
         holder.GetComponent<Clickable>().onMouseClick -= ClickHolder;
         animator2.Play("holder_move");
         coTimer = Start4();
@@ -111,12 +122,14 @@ public class Section1 : SectionBase
     private IEnumerator Start4() {
         yield return new WaitForSeconds(1f);
         animator2.Play("powder_outline_on");
+        powder.GetComponent<BoxCollider>().enabled = true;
         powder.GetComponent<Clickable>().onMouseClick += ClickPowder;
     }
 
 
     private void ClickPowder ( GameObject target, Vector3 mousePos ) 
     {
+        powder.GetComponent<BoxCollider>().enabled = false;
         powder.GetComponent<Clickable>().onMouseClick -= ClickPowder;
         animator2.Play("powder_move");
         coTimer = OpenPowder();
@@ -134,12 +147,14 @@ public class Section1 : SectionBase
         yield return new WaitForSeconds(2f);
         Main.Instance.PlayAudio(audioClips[4], () => {
             animator2.Play("glass_outline_on");
+            glass.GetComponent<BoxCollider>().enabled = true;
             glass.GetComponent<Clickable>().onMouseClick += ClickGlass;
         });
     }
 
     private void ClickGlass ( GameObject target, Vector3 mousePos ) 
     {
+        glass.GetComponent<BoxCollider>().enabled = false;
         glass.GetComponent<Clickable>().onMouseClick -= ClickGlass;
         animator2.Play("glass_move");
         coTimer = Start6();
@@ -161,12 +176,14 @@ public class Section1 : SectionBase
         goodBadUi.SetActive(false);
         Main.Instance.PlayAudio(audioClips[6], () => {
             animator2.Play("glass_move_outline_on");
+            glass.GetComponent<BoxCollider>().enabled = true;
             glass.GetComponent<Clickable>().onMouseClick += ClickGlass2;
         });
     }
 
     private void ClickGlass2 ( GameObject target, Vector3 mousePos ) 
     {
+        glass.GetComponent<BoxCollider>().enabled = false;
         glass.GetComponent<Clickable>().onMouseClick -= ClickGlass2;
         animator2.Play("glass_move2");
         coTimer = Ended();

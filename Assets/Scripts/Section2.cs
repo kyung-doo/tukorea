@@ -17,9 +17,6 @@ public class Section2 : SectionBase
     public GameObject tongs;
 
     [SerializeField]
-    public GameObject glass;
-
-    [SerializeField]
     public GameObject vernierCalipers;
 
     [SerializeField]
@@ -34,9 +31,11 @@ public class Section2 : SectionBase
     public override void StartSection ( bool isFirst = false ) {
         Debug.Log("startSection2");
         target.SetActive(true);
+        tongs.GetComponent<BoxCollider>().enabled = false;
+        vernierCalipers.GetComponent<BoxCollider>().enabled = false;
         coTimer = Start1();
         StartCoroutine(coTimer);
-        base.StartSection();
+        base.StartSection(isFirst);
     }
 
     private IEnumerator Start1() {
@@ -44,6 +43,7 @@ public class Section2 : SectionBase
         Main.Instance.PlayAudio(audioClips[0], () => {
             Main.Instance.PlayAudio(audioClips[1], () => {
                 animator.Play("Tongs_outline_on");
+                tongs.GetComponent<BoxCollider>().enabled = true;
                 tongs.GetComponent<Clickable>().onMouseClick += ClickTongs;
             });
         });
@@ -52,6 +52,7 @@ public class Section2 : SectionBase
 
     private void ClickTongs ( GameObject target, Vector3 mousePos ) 
     {
+        tongs.GetComponent<BoxCollider>().enabled = false;
         tongs.GetComponent<Clickable>().onMouseClick -= ClickTongs;
         animator.Play("Tongs_move");
         coTimer = Start2();
@@ -62,12 +63,14 @@ public class Section2 : SectionBase
         yield return new WaitForSeconds(4f);
         Main.Instance.PlayAudio(audioClips[2], () => {
             animator.Play("Vernier_Calipers_outline_on");
+            vernierCalipers.GetComponent<BoxCollider>().enabled = true;
             vernierCalipers.GetComponent<Clickable>().onMouseClick += ClickVernierCalipers;
         });
     }
 
     private void ClickVernierCalipers ( GameObject target, Vector3 mousePos ) 
     {
+        vernierCalipers.GetComponent<BoxCollider>().enabled = false;
         vernierCalipers.GetComponent<Clickable>().onMouseClick -= ClickVernierCalipers;
         animator.Play("Vernier_Calipers_move");
         coTimer = Start3();

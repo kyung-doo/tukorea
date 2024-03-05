@@ -35,15 +35,20 @@ public class Section3 : SectionBase
 
     public override void StartSection ( bool isFirst = false ) {
         Debug.Log("startSection3");
+        door.GetComponent<BoxCollider>().enabled = false;
+        prop.GetComponent<BoxCollider>().enabled = false;
+        propBtn.GetComponent<BoxCollider>().enabled = false;
+        tongs.GetComponent<BoxCollider>().enabled = false;
         coTimer = Start1();
         StartCoroutine(coTimer);
-        base.StartSection();
+        base.StartSection(isFirst);
     }
 
     private IEnumerator Start1() {
         yield return new WaitForSeconds( 3.5f );
         Main.Instance.PlayAudio(audioClips[0], () => {
             animator.Play("Xray_outline_on");
+            door.GetComponent<BoxCollider>().enabled = true;
             door.GetComponent<Clickable>().onMouseClick += ClickDoor;
         });
         player.GetComponent<Player>().isActive = true;
@@ -52,6 +57,7 @@ public class Section3 : SectionBase
 
     private void ClickDoor ( GameObject target, Vector3 mousePos ) 
     {
+        door.GetComponent<BoxCollider>().enabled = false;
         door.GetComponent<Clickable>().onMouseClick -= ClickDoor;
         animator.Play("Xray_door_open");
         coTimer = Start2();
@@ -70,6 +76,7 @@ public class Section3 : SectionBase
             player.GetComponent<Player>().isActive = true;
             Main.Instance.PlayAudio(audioClips[1], () => {
                 animator.Play("Pan01_outline_on");
+                prop.GetComponent<BoxCollider>().enabled = true;
                 prop.GetComponent<Clickable>().onMouseClick += Clickprop1;
             });
         });
@@ -77,6 +84,7 @@ public class Section3 : SectionBase
 
     private void Clickprop1 ( GameObject target, Vector3 mousePos ) 
     {
+        prop.GetComponent<BoxCollider>().enabled = false;
         prop.GetComponent<Clickable>().onMouseClick -= Clickprop1;
         animator.Play("Pan01_disappear");
         coTimer = Start3();
@@ -85,11 +93,13 @@ public class Section3 : SectionBase
 
     private IEnumerator Start3() {
         yield return new WaitForSeconds(2f);
+        prop.GetComponent<BoxCollider>().enabled = true;
         prop.GetComponent<Clickable>().onMouseClick += Clickprop2;
     }
 
     private void Clickprop2 ( GameObject target, Vector3 mousePos ) 
     {
+        prop.GetComponent<BoxCollider>().enabled = false;
         prop.GetComponent<Clickable>().onMouseClick -= Clickprop2;
         animator.Play("60_disappear");
         coTimer = Start4();
@@ -100,12 +110,14 @@ public class Section3 : SectionBase
         yield return new WaitForSeconds(4f);
         Main.Instance.PlayAudio(audioClips[2], () => {
             animator.Play("03_outline_on");
+            propBtn.GetComponent<BoxCollider>().enabled = true;
             propBtn.GetComponent<Clickable>().onMouseClick += ClickpropBtn;
         });
     }
 
     private void ClickpropBtn ( GameObject target, Vector3 mousePos ) 
     {
+        propBtn.GetComponent<BoxCollider>().enabled = false;
         propBtn.GetComponent<Clickable>().onMouseClick -= ClickpropBtn;
         animator.Play("03_move");    
         coTimer = Start5();
@@ -116,12 +128,14 @@ public class Section3 : SectionBase
         yield return new WaitForSeconds(2f);
         Main.Instance.PlayAudio(audioClips[3], () => {
             animator.Play("Pan01_appear");
+            prop.GetComponent<BoxCollider>().enabled = true;
             prop.GetComponent<Clickable>().onMouseClick += Clickprop3;
         });
     }
 
     private void Clickprop3 ( GameObject target, Vector3 mousePos ) 
     {
+        prop.GetComponent<BoxCollider>().enabled = false;
         prop.GetComponent<Clickable>().onMouseClick -= Clickprop3;
         animator.Play("Pan01_move");
         coTimer = Start6();
@@ -132,12 +146,14 @@ public class Section3 : SectionBase
         yield return new WaitForSeconds(3f);
         Main.Instance.PlayAudio(audioClips[4], () => {
             animator.Play("Tongs_outline_on");
+            tongs.GetComponent<BoxCollider>().enabled = true;
             tongs.GetComponent<Clickable>().onMouseClick += ClickTongs;
         });
     }
 
     private void ClickTongs ( GameObject target, Vector3 mousePos ) 
     {
+        tongs.GetComponent<BoxCollider>().enabled = false;
         tongs.GetComponent<Clickable>().onMouseClick -= ClickTongs;
         animator.Play("Tongs_move");
         coTimer = Start7();
@@ -160,17 +176,30 @@ public class Section3 : SectionBase
     }
 
     private IEnumerator Start8() {
-
+        yield return new WaitForSeconds(0.5f);
         Main.Instance.PlayAudio(audioClips[5], () => {
+            animator.Play("Xray_door_close_outline_on");
+            door.GetComponent<BoxCollider>().enabled = true;
+            door.GetComponent<Clickable>().onMouseClick += ClickDoor2;
+        });
+    }
+
+    private void ClickDoor2 ( GameObject target, Vector3 mousePos ) 
+    {
+        door.GetComponent<BoxCollider>().enabled = false;
+        door.GetComponent<Clickable>().onMouseClick -= ClickDoor2;
+        animator.Play("Xray_door_close");
+        coTimer = Start9();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start9() {
+        yield return new WaitForSeconds(2f);
+        Main.Instance.PlayAudio(audioClips[6], () => {
             coTimer = Ended();
             StartCoroutine(coTimer);
         });
-
-        yield return new WaitForSeconds(3f);
-
-        animator.Play("Xray_door_close");
     }
-
     
 
     private IEnumerator Ended() {
