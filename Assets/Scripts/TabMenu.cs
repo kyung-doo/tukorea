@@ -71,7 +71,8 @@ public class TabMenu : MonoBehaviour
         if(onTabChange != null) onTabChange(currentIndex);
     }
 
-    private void setBtns () {
+    private void setBtns () 
+    {
         int i = 0;
         foreach(GameObject btn in btns) 
         {

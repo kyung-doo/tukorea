@@ -28,7 +28,8 @@ public class Section2 : SectionBase
 
 
 
-    public override void StartSection ( bool isFirst = false ) {
+    public override void StartSection ( bool isFirst = false ) 
+    {
         Debug.Log("startSection2");
         target.SetActive(true);
         tongs.GetComponent<BoxCollider>().enabled = false;
@@ -38,7 +39,8 @@ public class Section2 : SectionBase
         base.StartSection(isFirst);
     }
 
-    private IEnumerator Start1() {
+    private IEnumerator Start1() 
+    {
         yield return new WaitForSeconds( 3.5f );
         Main.Instance.PlayAudio(audioClips[0], () => {
             Main.Instance.PlayAudio(audioClips[1], () => {
@@ -59,7 +61,8 @@ public class Section2 : SectionBase
         StartCoroutine(coTimer);
     }
 
-    private IEnumerator Start2() {
+    private IEnumerator Start2() 
+    {
         yield return new WaitForSeconds(4f);
         Main.Instance.PlayAudio(audioClips[2], () => {
             animator.Play("Vernier_Calipers_outline_on");
@@ -77,8 +80,8 @@ public class Section2 : SectionBase
         StartCoroutine(coTimer);
     }
 
-    private IEnumerator Start3() {
-        
+    private IEnumerator Start3() 
+    {
         yield return new WaitForSeconds(2f);
         measureUi.SetActive(true);
         Main.Instance.PlayAudio(audioClips[3], () => {
@@ -88,12 +91,14 @@ public class Section2 : SectionBase
     }
 
 
-    private IEnumerator Ended() {
+    private IEnumerator Ended() 
+    {
         yield return new WaitForSeconds( 3.0f );
         this.EndSection();
     }
 
-    public override void ResetSection () {
+    public override void ResetSection () 
+    {
         Main.Instance.StopAudio();
         animator.Rebind();
         animator.Update(0f);
@@ -104,7 +109,8 @@ public class Section2 : SectionBase
         if(coTimer != null) StopCoroutine(coTimer);
     }
 
-    public override void EndSection () {
+    public override void EndSection () 
+    {
         base.EndSection();
     }
 

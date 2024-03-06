@@ -40,14 +40,18 @@ public class Clickable : MonoBehaviour
         {
             if(hit.collider.name == this.name) 
             {
-                if(!hovered) {
+                if(!hovered) 
+                {
                     if(onMouseClick == null) return;
                     Main.Instance.SetCursor(true);
                     if(onMouseOver != null)  onMouseOver(this.gameObject, mousePos);
                     hovered = true;
                 } 
-            } else {
-                if(hovered) {
+            } 
+            else 
+            {
+                if(hovered) 
+                {
                     Main.Instance.SetCursor(false);
                     if(onMouseOut != null) onMouseOut(this.gameObject, mousePos);
                     hovered = false;
@@ -57,8 +61,10 @@ public class Clickable : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit) && clicked)
 		{
-            if(hit.collider.name == this.name) {
-                if(hovered) {
+            if(hit.collider.name == this.name) 
+            {
+                if(hovered) 
+                {
                     Main.Instance.SetCursor(false);
                     
                     if(onMouseClick != null)

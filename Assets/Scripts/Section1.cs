@@ -46,7 +46,8 @@ public class Section1 : SectionBase
 
 
 
-    public override void StartSection ( bool isFirst = false ) {
+    public override void StartSection ( bool isFirst = false ) 
+    {
         Debug.Log("startSection1");
         target1.SetActive(true);
         target2.SetActive(true);
@@ -60,7 +61,8 @@ public class Section1 : SectionBase
         base.StartSection(isFirst);
     }
 
-    private IEnumerator Start1() {
+    private IEnumerator Start1() 
+    {
         yield return new WaitForSeconds( 3.5f );
         Main.Instance.PlayAudio(audioClips[0], () => {
             Main.Instance.PlayAudio(audioClips[1], () => {
@@ -82,7 +84,8 @@ public class Section1 : SectionBase
         StartCoroutine(coTimer);
     }
 
-    private IEnumerator Start2() {
+    private IEnumerator Start2() 
+    {
         yield return new WaitForSeconds(0.5f );
         gloveUi.SetActive(true);
         Main.Instance.PlayAudio(audioClips[2], () => {
@@ -101,7 +104,8 @@ public class Section1 : SectionBase
         StartCoroutine(coTimer);
     }
 
-    private IEnumerator Start3() {
+    private IEnumerator Start3() 
+    {
         yield return new WaitForSeconds(1f);
         Main.Instance.PlayAudio(audioClips[3], () => {
             animator2.Play("holder_outline_on");
@@ -136,14 +140,16 @@ public class Section1 : SectionBase
         StartCoroutine(coTimer);
     }
 
-    private IEnumerator OpenPowder() {
+    private IEnumerator OpenPowder() 
+    {
         yield return new WaitForSeconds(1f);
         animator2.Play("powder_opener_move");
         coTimer = Start5();
         StartCoroutine(coTimer);
     }
 
-    private IEnumerator Start5() {
+    private IEnumerator Start5() 
+    {
         yield return new WaitForSeconds(2f);
         Main.Instance.PlayAudio(audioClips[4], () => {
             animator2.Play("glass_outline_on");
@@ -161,7 +167,8 @@ public class Section1 : SectionBase
         StartCoroutine(coTimer);
     }
 
-    private IEnumerator Start6() {
+    private IEnumerator Start6() 
+    {
         yield return new WaitForSeconds(4f);
         Main.Instance.PlayAudio(audioClips[5], () => {
             coTimer = Start7();
@@ -171,7 +178,8 @@ public class Section1 : SectionBase
     }
 
 
-    private IEnumerator Start7() {
+    private IEnumerator Start7() 
+    {
         yield return new WaitForSeconds(3f);
         goodBadUi.SetActive(false);
         Main.Instance.PlayAudio(audioClips[6], () => {
@@ -192,13 +200,15 @@ public class Section1 : SectionBase
 
 
 
-    private IEnumerator Ended() {
+    private IEnumerator Ended() 
+    {
         yield return new WaitForSeconds( 7.0f );
         this.EndSection();
     }
 
 
-    public override void ResetSection () {
+    public override void ResetSection () 
+    {
         Main.Instance.StopAudio();
         gloveUi.SetActive(false);
         goodBadUi.SetActive(false);
@@ -218,7 +228,8 @@ public class Section1 : SectionBase
     }
 
 
-    public override void EndSection () {
+    public override void EndSection () 
+    {
         base.EndSection();
     }
 

@@ -43,6 +43,9 @@ public class Main : SingletonBase<Main>
     private Button enterhelpBtn;
 
     [SerializeField]
+    private Button enterOptionBtn;
+
+    [SerializeField]
     private GameObject titleBar;
 
     [SerializeField]
@@ -93,15 +96,17 @@ public class Main : SingletonBase<Main>
 
     void Awake()
     {
-        Debug.Log(QualitySettings.names);
+        // Debug.Log(QualitySettings.names);
         SetCursor(false);
 
         Screen.SetResolution(Screen.currentResolution.width, Screen.currentResolution.height, true);
-        foreach(SectionBase section in sections) {
-            section.onSectionEnd += sectionEnd;
+        foreach(SectionBase section in sections) 
+        {
+            section.onSectionEnd += SectionEnd;
         }
     
         enterhelpBtn.onClick.AddListener(HideHelp);
+        enterOptionBtn.onClick.AddListener(HideOption);
         
         StartCoroutine(StartMain());
         // StartCoroutine(StartContent());
@@ -110,20 +115,26 @@ public class Main : SingletonBase<Main>
 
     private void Update() 
     {
-        if(Input.GetKey("f11")){
+        if(Input.GetKey("f11"))
+        {
             if(keyPressed) return;
-            if(!isFullscreen) {
+            if(!isFullscreen) 
+            {
                 Screen.fullScreen = true;
                 isFullscreen = true;
                 Screen.SetResolution(Screen.currentResolution.width, Screen.currentResolution.height, true);
-            } else {
+            } 
+            else 
+            {
                 Screen.fullScreen = false;
                 isFullscreen = false;
                 Screen.SetResolution(Screen.currentResolution.width, Screen.currentResolution.height, false);
             }
             
             keyPressed = true;
-        } else {
+        } 
+        else 
+        {
             keyPressed = false;
         }
     }
@@ -191,11 +202,11 @@ public class Main : SingletonBase<Main>
         titleBar.SetActive(true);
         tabIndex.SetActive(true);
         tabIndex.GetComponent<TabMenu>().currentIndex = sectionIndex;
-        tabIndex.GetComponent<TabMenu>().onTabChange += onChangeTabmenu;
+        tabIndex.GetComponent<TabMenu>().onTabChange += OnChangeTabmenu;
         sections[sectionIndex].StartSection(true);
     }
 
-    private void onChangeTabmenu( int idx )
+    private void OnChangeTabmenu( int idx )
     {
         foreach(SectionBase section in sections) {
             section.ResetSection();
@@ -206,7 +217,7 @@ public class Main : SingletonBase<Main>
     }
 
 
-    private void sectionEnd () 
+    private void SectionEnd () 
     {
         player.GetComponent<Player>().isActive = false;
         foreach(SectionBase section in sections) {
@@ -254,7 +265,7 @@ public class Main : SingletonBase<Main>
         coAudio = AduioFinish();
         StartCoroutine(coAudio);
     }
-     public void StopAudio ()
+    public void StopAudio ()
     {
         if(coAudio != null) StopCoroutine(coAudio);
         audioPlayer.Stop();
@@ -266,9 +277,16 @@ public class Main : SingletonBase<Main>
         if(onAudioFinish != null) onAudioFinish();
     }
     
-    public void SkipAudio () {
+    public void SkipAudio () 
+    {
         Debug.Log("audioLength : " + audioLength);
         audioPlayer.time = audioLength - 1f;
+    }
+
+    public void SetAudioVolume( float volume ) 
+    {
+        audioPlayer.volume = volume;
+        clickAudio.volume = volume;
     }
 
     public void PlayClickAudio ()
@@ -289,38 +307,52 @@ public class Main : SingletonBase<Main>
         }
     }
 
-    public void ShowHelp () {
+    public void ShowHelp () 
+    {
         helpScreen.SetActive(true);
         RectTransform rect = helpScreen.GetComponent<RectTransform>() as RectTransform;
         helpPosY = rect.localPosition.y;
 
         rect.localPosition = new Vector3(0, helpPosY - 30f, 0);
         rect.DOLocalMoveY(helpPosY, 0.6f).SetEase(Ease.OutCubic);
-        if(isFirst) {
+        if(isFirst) 
+        {
             PlayAudio(infoAudio);
         }
     }
 
-    public void HideHelp () {
+    public void HideHelp () 
+    {
         RectTransform rect = helpScreen.GetComponent<RectTransform>() as RectTransform;
         helpPosY = rect.localPosition.y;
         rect.DOLocalMoveY(helpPosY - 30f, 0.6f).SetEase(Ease.OutCubic).OnComplete(() => {
             helpScreen.SetActive(false);
             rect.localPosition = new Vector3(0, helpPosY, 0);
         });
-        if(isFirst) {
+        if(isFirst) 
+        {
             StopAudio();
             StartCoroutine(StartContent());
             isFirst = false;
         }
     }
 
-    public void ShowOption () {
-        optionScreen.SetActive(true);
+    public void ShowOption () 
+    {
+        CanvasGroup cg = optionScreen.GetComponent<CanvasGroup>();
+        cg.alpha = 1;
+        cg.interactable = cg.blocksRaycasts = true;
+        RectTransform rect = optionScreen.GetComponent<RectTransform>() as RectTransform;
+        rect.DOScale(0, 0);
+        rect.DOScale(1, 0.6f).SetEase(Ease.OutBack);
     }
 
-    public void HideOption () {
-        
+    public void HideOption () 
+    {
+        CanvasGroup cg = optionScreen.GetComponent<CanvasGroup>();
+        cg.alpha = 0;
+        cg.interactable = cg.blocksRaycasts = false;
+        Debug.Log("volume : " + PlayerPrefs.GetInt("volume"));
     }
 
     

@@ -33,7 +33,8 @@ public class Section3 : SectionBase
     private IEnumerator coTimer = null;
 
 
-    public override void StartSection ( bool isFirst = false ) {
+    public override void StartSection ( bool isFirst = false ) 
+    {
         Debug.Log("startSection3");
         door.GetComponent<BoxCollider>().enabled = false;
         prop.GetComponent<BoxCollider>().enabled = false;
@@ -44,7 +45,8 @@ public class Section3 : SectionBase
         base.StartSection(isFirst);
     }
 
-    private IEnumerator Start1() {
+    private IEnumerator Start1() 
+    {
         yield return new WaitForSeconds( 3.5f );
         Main.Instance.PlayAudio(audioClips[0], () => {
             animator.Play("Xray_outline_on");
@@ -64,7 +66,8 @@ public class Section3 : SectionBase
         StartCoroutine(coTimer);
     }
 
-    private IEnumerator Start2() {
+    private IEnumerator Start2() 
+    {
         yield return new WaitForSeconds(1f);
         player.GetComponent<Player>().isActive = false;
         player.transform.DOLocalMove(zoomPlayerPos, 1f).SetEase(Ease.OutCubic);
@@ -91,7 +94,8 @@ public class Section3 : SectionBase
         StartCoroutine(coTimer);
     }
 
-    private IEnumerator Start3() {
+    private IEnumerator Start3() 
+    {
         yield return new WaitForSeconds(2f);
         prop.GetComponent<BoxCollider>().enabled = true;
         prop.GetComponent<Clickable>().onMouseClick += Clickprop2;
@@ -106,7 +110,8 @@ public class Section3 : SectionBase
         StartCoroutine(coTimer);
     }
 
-    private IEnumerator Start4() {
+    private IEnumerator Start4() 
+    {
         yield return new WaitForSeconds(4f);
         Main.Instance.PlayAudio(audioClips[2], () => {
             animator.Play("03_outline_on");
@@ -124,7 +129,8 @@ public class Section3 : SectionBase
         StartCoroutine(coTimer);
     }
 
-    private IEnumerator Start5() {
+    private IEnumerator Start5() 
+    {
         yield return new WaitForSeconds(2f);
         Main.Instance.PlayAudio(audioClips[3], () => {
             animator.Play("Pan01_appear");
@@ -142,7 +148,8 @@ public class Section3 : SectionBase
         StartCoroutine(coTimer);
     }
 
-    private IEnumerator Start6() {
+    private IEnumerator Start6() 
+    {
         yield return new WaitForSeconds(3f);
         Main.Instance.PlayAudio(audioClips[4], () => {
             animator.Play("Tongs_outline_on");
@@ -160,7 +167,8 @@ public class Section3 : SectionBase
         StartCoroutine(coTimer);
     }
 
-    private IEnumerator Start7() {
+    private IEnumerator Start7() 
+    {
         yield return new WaitForSeconds(8f);
         player.GetComponent<Player>().isActive = false;
         player.transform.DOLocalMove(startPlayerPos, 1f).SetEase(Ease.OutCubic);
@@ -175,7 +183,8 @@ public class Section3 : SectionBase
         });
     }
 
-    private IEnumerator Start8() {
+    private IEnumerator Start8() 
+    {
         yield return new WaitForSeconds(0.5f);
         Main.Instance.PlayAudio(audioClips[5], () => {
             animator.Play("Xray_door_close_outline_on");
@@ -193,7 +202,8 @@ public class Section3 : SectionBase
         StartCoroutine(coTimer);
     }
 
-    private IEnumerator Start9() {
+    private IEnumerator Start9() 
+    {
         yield return new WaitForSeconds(2f);
         Main.Instance.PlayAudio(audioClips[6], () => {
             coTimer = Ended();
@@ -202,12 +212,14 @@ public class Section3 : SectionBase
     }
     
 
-    private IEnumerator Ended() {
+    private IEnumerator Ended() 
+    {
         yield return new WaitForSeconds( 1.0f );
         this.EndSection();
     }
 
-    public override void ResetSection () {
+    public override void ResetSection () 
+    {
         Main.Instance.StopAudio();
         animator.Rebind();
         animator.Update(0f);

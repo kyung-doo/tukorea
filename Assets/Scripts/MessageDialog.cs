@@ -29,8 +29,9 @@ public class MessageDialog : SingletonBase<MessageDialog>
 
 
     private bool _visible = true;
-    public bool visible {
-        get{
+    public bool visible 
+    {
+        get {
             return _visible;
         }
         set{

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -22,6 +23,9 @@ public class Player : MonoBehaviour
     public Transform cam;
 
     [SerializeField]
+    public GameObject optionView;
+
+    [SerializeField]
     public bool isActive = false;
 
     private bool looking = false;
@@ -34,10 +38,12 @@ public class Player : MonoBehaviour
     
     
     
+    
 
     private void Update()
     {
         if(!isActive) return;
+        if(optionView.GetComponent<CanvasGroup>().interactable) return;
         
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
@@ -61,14 +67,32 @@ public class Player : MonoBehaviour
 
         if(Input.GetAxis("Mouse ScrollWheel") > 0f) 
         {
+            float speed = movementSpeed * 5f;
+            if(PlayerPrefs.GetInt("quality") == 1) 
+            {
+                speed = movementSpeed * 6f;
+            } 
+            else if(PlayerPrefs.GetInt("quality") == 0)
+            {
+                speed = movementSpeed * 100f;
+            }
             zooming = true;
-            this.transform.position = this.transform.position + (cam.transform.forward * movementSpeed * 5f * Time.deltaTime);
+            this.transform.position = this.transform.position + (cam.transform.forward * speed * Time.deltaTime);
         } 
 
         if(Input.GetAxis("Mouse ScrollWheel") < 0f)
         {
+            float speed = movementSpeed * 5f;
+            if(PlayerPrefs.GetInt("quality") == 1) 
+            {
+                speed = movementSpeed * 6f;
+            } 
+            else if(PlayerPrefs.GetInt("quality") == 0)
+            {
+                speed = movementSpeed * 100f;
+            }
             zooming = true;
-            this.transform.position = this.transform.position - (cam.transform.forward * movementSpeed * 5f * Time.deltaTime);
+            this.transform.position = this.transform.position - (cam.transform.forward * speed * Time.deltaTime);
         }
 
         if (looking)
@@ -79,9 +103,20 @@ public class Player : MonoBehaviour
             cam.transform.localEulerAngles = new Vector3(newRotationY, 0f, 0f);
         }
 
-        if(pannig) {
-            this.transform.position = this.transform.position + (-this.transform.right * Input.GetAxis("Mouse X") * pannigSpeed * Time.deltaTime);
-            this.transform.position = this.transform.position + (-this.transform.up * Input.GetAxis("Mouse Y") * pannigSpeed * Time.deltaTime);
+        if(pannig) 
+        {
+            float speed = pannigSpeed;
+            if(PlayerPrefs.GetInt("quality") == 1) 
+            {
+                speed = pannigSpeed * 1.1f;
+            } 
+            else if(PlayerPrefs.GetInt("quality") == 0)
+            {
+                speed = pannigSpeed * 30;
+            }
+            this.transform.position = this.transform.position + (-this.transform.right * Input.GetAxis("Mouse X") * speed * Time.deltaTime);
+            this.transform.position = this.transform.position + (-this.transform.up * Input.GetAxis("Mouse Y") * speed * Time.deltaTime);
+            
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
