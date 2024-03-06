@@ -32,6 +32,8 @@ public class Section3 : SectionBase
 
     private IEnumerator coTimer = null;
 
+    private bool isZoom = false;
+
 
     public override void StartSection ( bool isFirst = false ) 
     {
@@ -43,6 +45,7 @@ public class Section3 : SectionBase
         coTimer = Start1();
         StartCoroutine(coTimer);
         base.StartSection(isFirst);
+        isZoom = false;
     }
 
     private IEnumerator Start1() 
@@ -64,11 +67,13 @@ public class Section3 : SectionBase
         animator.Play("Xray_door_open");
         coTimer = Start2();
         StartCoroutine(coTimer);
+        Main.Instance.repositionBtn.SetActive(false);
     }
 
     private IEnumerator Start2() 
     {
         yield return new WaitForSeconds(1f);
+        isZoom = true;
         player.GetComponent<Player>().isActive = false;
         player.transform.DOLocalMove(zoomPlayerPos, 1f).SetEase(Ease.OutCubic);
         player.transform.DOLocalRotate(zoomPlayerRo, 1f).SetEase(Ease.OutCubic);
@@ -83,6 +88,7 @@ public class Section3 : SectionBase
                 prop.GetComponent<Clickable>().onMouseClick += Clickprop1;
             });
         });
+        Main.Instance.repositionBtn.SetActive(true);
     }
 
     private void Clickprop1 ( GameObject target, Vector3 mousePos ) 
@@ -181,10 +187,13 @@ public class Section3 : SectionBase
             coTimer = Start8();
             StartCoroutine(coTimer);
         });
+        Main.Instance.repositionBtn.SetActive(false);
+        isZoom = false;
     }
 
     private IEnumerator Start8() 
     {
+        Main.Instance.repositionBtn.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         Main.Instance.PlayAudio(audioClips[5], () => {
             animator.Play("Xray_door_close_outline_on");
@@ -209,6 +218,7 @@ public class Section3 : SectionBase
             coTimer = Ended();
             StartCoroutine(coTimer);
         });
+        
     }
     
 
@@ -216,6 +226,20 @@ public class Section3 : SectionBase
     {
         yield return new WaitForSeconds( 1.0f );
         this.EndSection();
+    }
+
+    public override void RepositionSection ()
+    {
+        if(!isZoom) 
+        {
+            base.RepositionSection();
+        } 
+        else 
+        {
+            player.transform.DOLocalMove(zoomPlayerPos, 3f).SetEase(Ease.OutCubic);
+            player.transform.DOLocalRotate(zoomPlayerRo, 3f).SetEase(Ease.OutCubic);
+            camera.transform.DOLocalRotate(zoomCameraRo, 3f).SetEase(Ease.OutCubic);
+        }
     }
 
     public override void ResetSection () 

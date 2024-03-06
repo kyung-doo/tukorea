@@ -72,6 +72,9 @@ public class Main : SingletonBase<Main>
     [SerializeField]
     private AudioClip infoAudio;
 
+    [SerializeField]
+    public GameObject repositionBtn;
+
 
     private float audioLength = 0;
 
@@ -103,10 +106,12 @@ public class Main : SingletonBase<Main>
         foreach(SectionBase section in sections) 
         {
             section.onSectionEnd += SectionEnd;
+            section.onSectionStart += SectionStart;
         }
     
         enterhelpBtn.onClick.AddListener(HideHelp);
         enterOptionBtn.onClick.AddListener(HideOption);
+        repositionBtn.GetComponent<Button>().onClick.AddListener(OnSectionReposition);
         
         StartCoroutine(StartMain());
         // StartCoroutine(StartContent());
@@ -204,6 +209,7 @@ public class Main : SingletonBase<Main>
         tabIndex.GetComponent<TabMenu>().currentIndex = sectionIndex;
         tabIndex.GetComponent<TabMenu>().onTabChange += OnChangeTabmenu;
         sections[sectionIndex].StartSection(true);
+        repositionBtn.SetActive(false);
     }
 
     private void OnChangeTabmenu( int idx )
@@ -213,7 +219,13 @@ public class Main : SingletonBase<Main>
         }
         sectionIndex = idx;
         sections[sectionIndex].StartSection();
+        repositionBtn.SetActive(false);
         Debug.Log("change tab: " + idx);
+    }
+
+    private void SectionStart () 
+    {
+        repositionBtn.SetActive(true);
     }
 
 
@@ -237,7 +249,7 @@ public class Main : SingletonBase<Main>
             player.GetComponent<Player>().isActive = false;
             reStartBtn.onClick.AddListener(ClickReStart);
         }
-        
+        repositionBtn.SetActive(false);
         
         Debug.Log("section end"+ sectionIndex +", "+sections.Length);
     }
@@ -252,6 +264,7 @@ public class Main : SingletonBase<Main>
         sectionIndex = 0;
         tabIndex.GetComponent<TabMenu>().currentIndex = sectionIndex;
         sections[sectionIndex].StartSection();
+        repositionBtn.SetActive(false);
     }
 
 
@@ -275,6 +288,11 @@ public class Main : SingletonBase<Main>
     {
         yield return new WaitWhile(() => audioPlayer.isPlaying);
         if(onAudioFinish != null) onAudioFinish();
+    }
+
+    private void OnSectionReposition () 
+    {
+        sections[sectionIndex].RepositionSection();
     }
     
     public void SkipAudio () 

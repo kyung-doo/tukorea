@@ -22,6 +22,10 @@ public abstract class SectionBase : MonoBehaviour
 
     public event OnSectionEnd onSectionEnd;
 
+    public delegate void OnSectionStart();
+
+    public event OnSectionEnd onSectionStart;
+
 
     void Awake()
     {
@@ -31,19 +35,26 @@ public abstract class SectionBase : MonoBehaviour
 
     public virtual void StartSection ( bool isFirst = false ) 
     {
+        Ease ease = Ease.OutCubic;
         if(isFirst) 
         {
-            player.transform.DOLocalMove(startPlayerPos, 3f).SetEase(Ease.InOutCubic);
-            player.transform.DOLocalRotate(startPlayerRo, 3f).SetEase(Ease.InOutCubic);
-            camera.transform.DOLocalRotate(startCameraRo, 3f).SetEase(Ease.InOutCubic);
+            ease = Ease.InOutCubic;
         }
-        else 
-        {
-            player.transform.DOLocalMove(startPlayerPos, 3f).SetEase(Ease.OutCubic);
-            player.transform.DOLocalRotate(startPlayerRo, 3f).SetEase(Ease.OutCubic);
-            camera.transform.DOLocalRotate(startCameraRo, 3f).SetEase(Ease.OutCubic);
-        }
+        player.transform.DOLocalMove(startPlayerPos, 3f).SetEase(ease);
+        player.transform.DOLocalRotate(startPlayerRo, 3f).SetEase(ease);
+        camera.transform.DOLocalRotate(startCameraRo, 3f)
+        .SetEase(ease)
+        .OnComplete(() => {
+            if(onSectionStart != null) onSectionStart();
+        });
         
+    }
+
+    public virtual void RepositionSection ()
+    {
+        player.transform.DOLocalMove(startPlayerPos, 3f).SetEase(Ease.OutCubic);
+        player.transform.DOLocalRotate(startPlayerRo, 3f).SetEase(Ease.OutCubic);
+        camera.transform.DOLocalRotate(startCameraRo, 3f).SetEase(Ease.OutCubic);
     }
 
     public abstract void ResetSection();
@@ -51,6 +62,6 @@ public abstract class SectionBase : MonoBehaviour
 
     public virtual void EndSection () 
     {
-        this.onSectionEnd();
+        if(onSectionEnd != null) onSectionEnd();
     }
 }
