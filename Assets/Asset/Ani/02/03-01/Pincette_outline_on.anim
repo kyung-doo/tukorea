@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CarbonTape_outline_on
+  m_Name: Pincette_outline_on
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -499,7 +499,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 0, y: 0, z: -177.532}
+        value: {x: 0, y: 0, z: -170.679}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -515,7 +515,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 0, y: 0, z: 180.338}
+        value: {x: 0, y: 0, z: 178.213}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -526,6 +526,134 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     path: NickelCarbonTape_FBX/Bone_scissors/Bone002_scissors
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.000010245283, y: -90, z: -90}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: CarbonTape_FBX/Bone_CarbonTape
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: 0, z: 13.121}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape/Bone005_CarbonTape/DumBone006_CarbonTape
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 5.784, y: -0.773, z: 6.12}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001/Bone004_CarbonTape001/Bone005_CarbonTape001
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: 0, z: 6.368}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: 0, z: -28.501}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 5.783, y: -0.773, z: 7.65}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape/Bone005_CarbonTape
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: 0, z: 13.121}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001/Bone004_CarbonTape001/Bone005_CarbonTape001/DumBone006_CarbonTape001
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: 0, z: -522.682}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: powder/opener
   m_PositionCurves:
   - curve:
       serializedVersion: 2
@@ -831,6 +959,198 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     path: NickelCarbonTape_FBX/Bone_scissors
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.044766348, y: -0.001339261, z: -0.069204055}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: CarbonTape_FBX/Bone_CarbonTape
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.0507, y: -0.0043, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape/Bone005_CarbonTape/DumBone006_CarbonTape
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.0439, y: -0.004799881, z: -0.00049984735}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001/Bone004_CarbonTape001/Bone005_CarbonTape001
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.0437914, y: 0.000000002384186, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.043999918, y: -0.0035000157, z: -0.00039982796}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape/Bone005_CarbonTape
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.0504, y: -0.0049, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001/Bone004_CarbonTape001/Bone005_CarbonTape001/DumBone006_CarbonTape001
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.0005619001, y: 0.00005039215, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: NickelCarbonTape_FBX/Bone_scissors/Bone001_scissors
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.0004787898, y: -0.0000033187869, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: NickelCarbonTape_FBX/Bone_scissors/Bone002_scissors
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.212, y: -0.0259, z: -0.4419}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: CarbonTape_FBX_1/Bone_CarbonTape
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.349, y: 0.579, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: powder
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1.74, y: -5.62, z: -5.98}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: powder/opener
   m_ScaleCurves:
   - curve:
       serializedVersion: 2
@@ -928,30 +1248,28 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     path: NickelCarbonTape_FBX/ui_NickelCarbonTape
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.06960143, y: 0, z: -0.06960146}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: powder/ui_powder
   m_FloatCurves:
   - curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.5
-        value: 7
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 1
         value: 1
         inSlope: 0
         outSlope: 0
@@ -1237,25 +1555,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.5
         value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -1285,9 +1585,122 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: 01
+    path: CarbonTape_FBX_1
     classID: 1
     script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_IsActive
+    path: CarbonTape_FBX/CarbonTape004
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_IsActive
+    path: CarbonTape_FBX/CarbonTape-4
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Enabled
+    path: powder
+    classID: 114
+    script: {fileID: 11500000, guid: 3fe91dc294731a9428c0941ea7579110, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Alpha
+    path: powder/ui_powder
+    classID: 225
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.5
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Enabled
+    path: Pincette_FBX/Pincette
+    classID: 114
+    script: {fileID: 11500000, guid: 3fe91dc294731a9428c0941ea7579110, type: 3}
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1312,7 +1725,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0
+        value: 1
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -1323,26 +1736,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: NickelCarbonTape_2/NickelCarbonTape-2
-    classID: 1
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: NickelCarbonTape_1/NickelCarbonTape-3
+    path: 01
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -1383,6 +1777,25 @@ AnimationClip:
     path: 01/Object001
     classID: 1
     script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_IsActive
+    path: CarbonTape_FBX/ui_CarbonTape
+    classID: 1
+    script: {fileID: 0}
   m_PPtrCurves: []
   m_SampleRate: 30
   m_WrapMode: 0
@@ -1391,13 +1804,6 @@ AnimationClip:
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
     genericBindings:
-    - serializedVersion: 2
-      path: 2783033156
-      attribute: 2383718995
-      script: {fileID: 0}
-      typeID: 137
-      customType: 22
-      isPPtrCurve: 0
     - serializedVersion: 2
       path: 952340420
       attribute: 2086281974
@@ -1476,11 +1882,39 @@ AnimationClip:
       customType: 24
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 3477152822
+      path: 3055499583
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
       customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 784478700
+      attribute: 2086281974
+      script: {fileID: 0}
+      typeID: 1
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2170008938
+      attribute: 2086281974
+      script: {fileID: 0}
+      typeID: 1
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3191158997
+      attribute: 3305885265
+      script: {fileID: 11500000, guid: 3fe91dc294731a9428c0941ea7579110, type: 3}
+      typeID: 114
+      customType: 24
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3584272411
+      attribute: 3305885265
+      script: {fileID: 11500000, guid: 3fe91dc294731a9428c0941ea7579110, type: 3}
+      typeID: 114
+      customType: 24
       isPPtrCurve: 0
     - serializedVersion: 2
       path: 3392915579
@@ -1490,14 +1924,7 @@ AnimationClip:
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 2606512767
-      attribute: 2086281974
-      script: {fileID: 0}
-      typeID: 1
-      customType: 0
-      isPPtrCurve: 0
-    - serializedVersion: 2
-      path: 1139951395
+      path: 3477152822
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
@@ -1512,6 +1939,13 @@ AnimationClip:
       isPPtrCurve: 0
     - serializedVersion: 2
       path: 1281897399
+      attribute: 2086281974
+      script: {fileID: 0}
+      typeID: 1
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1720061431
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
@@ -1645,6 +2079,90 @@ AnimationClip:
       isPPtrCurve: 0
     - serializedVersion: 2
       path: 2085830245
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3573495565
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2476430661
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 852493784
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2407899588
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 399017607
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2767923393
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1993317576
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 839259354
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3643912153
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2633697832
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3191158997
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3378971359
       attribute: 1
       script: {fileID: 0}
       typeID: 4
@@ -1875,6 +2393,62 @@ AnimationClip:
       customType: 4
       isPPtrCurve: 0
     - serializedVersion: 2
+      path: 3573495565
+      attribute: 4
+      script: {fileID: 0}
+      typeID: 4
+      customType: 4
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2476430661
+      attribute: 4
+      script: {fileID: 0}
+      typeID: 4
+      customType: 4
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 852493784
+      attribute: 4
+      script: {fileID: 0}
+      typeID: 4
+      customType: 4
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2407899588
+      attribute: 4
+      script: {fileID: 0}
+      typeID: 4
+      customType: 4
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 399017607
+      attribute: 4
+      script: {fileID: 0}
+      typeID: 4
+      customType: 4
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2767923393
+      attribute: 4
+      script: {fileID: 0}
+      typeID: 4
+      customType: 4
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1993317576
+      attribute: 4
+      script: {fileID: 0}
+      typeID: 4
+      customType: 4
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3378971359
+      attribute: 4
+      script: {fileID: 0}
+      typeID: 4
+      customType: 4
+      isPPtrCurve: 0
+    - serializedVersion: 2
       path: 543885446
       attribute: 3
       script: {fileID: 0}
@@ -1917,6 +2491,20 @@ AnimationClip:
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
+      path: 1670398506
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2783033156
+      attribute: 2383718995
+      script: {fileID: 0}
+      typeID: 137
+      customType: 22
+      isPPtrCurve: 0
+    - serializedVersion: 2
       path: 543885446
       attribute: 1574349066
       script: {fileID: 0}
@@ -1939,6 +2527,13 @@ AnimationClip:
       isPPtrCurve: 0
     - serializedVersion: 2
       path: 3133196831
+      attribute: 1574349066
+      script: {fileID: 0}
+      typeID: 225
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1670398506
       attribute: 1574349066
       script: {fileID: 0}
       typeID: 225
@@ -1971,24 +2566,6 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.5
-        value: 7
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 1
         value: 1
         inSlope: 0
         outSlope: 0
@@ -5143,7 +5720,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -177.532
+        value: -170.679
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -5200,7 +5777,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 180.338
+        value: 178.213
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -5523,6 +6100,1317 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Enabled
+    path: CarbonTape_FBX/CarbonTape
+    classID: 114
+    script: {fileID: 11500000, guid: 3fe91dc294731a9428c0941ea7579110, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.044766348
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: CarbonTape_FBX/Bone_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.001339261
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: CarbonTape_FBX/Bone_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.069204055
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: CarbonTape_FBX/Bone_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.000010245283
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.x
+    path: CarbonTape_FBX/Bone_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -90
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.y
+    path: CarbonTape_FBX/Bone_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -90
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.z
+    path: CarbonTape_FBX/Bone_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.0507
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape/Bone005_CarbonTape/DumBone006_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.0043
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape/Bone005_CarbonTape/DumBone006_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape/Bone005_CarbonTape/DumBone006_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.0439
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001/Bone004_CarbonTape001/Bone005_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.004799881
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001/Bone004_CarbonTape001/Bone005_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.00049984735
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001/Bone004_CarbonTape001/Bone005_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.x
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape/Bone005_CarbonTape/DumBone006_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.y
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape/Bone005_CarbonTape/DumBone006_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 13.121
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.z
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape/Bone005_CarbonTape/DumBone006_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 5.784
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.x
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001/Bone004_CarbonTape001/Bone005_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.773
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.y
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001/Bone004_CarbonTape001/Bone005_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 6.12
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.z
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001/Bone004_CarbonTape001/Bone005_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.0437914
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.000000002384186
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.x
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.y
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 6.368
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.z
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.x
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.y
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -28.501
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.z
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.043999918
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape/Bone005_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.0035000157
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape/Bone005_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.00039982796
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape/Bone005_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 5.783
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.x
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape/Bone005_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.773
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.y
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape/Bone005_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 7.65
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.z
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape/Bone005_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.0504
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001/Bone004_CarbonTape001/Bone005_CarbonTape001/DumBone006_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.0049
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001/Bone004_CarbonTape001/Bone005_CarbonTape001/DumBone006_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001/Bone004_CarbonTape001/Bone005_CarbonTape001/DumBone006_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.x
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001/Bone004_CarbonTape001/Bone005_CarbonTape001/DumBone006_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.y
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001/Bone004_CarbonTape001/Bone005_CarbonTape001/DumBone006_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 13.121
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.z
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001/Bone004_CarbonTape001/Bone005_CarbonTape001/DumBone006_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.0005619001
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: NickelCarbonTape_FBX/Bone_scissors/Bone001_scissors
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.00005039215
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: NickelCarbonTape_FBX/Bone_scissors/Bone001_scissors
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: NickelCarbonTape_FBX/Bone_scissors/Bone001_scissors
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.0004787898
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: NickelCarbonTape_FBX/Bone_scissors/Bone002_scissors
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.0000033187869
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: NickelCarbonTape_FBX/Bone_scissors/Bone002_scissors
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: NickelCarbonTape_FBX/Bone_scissors/Bone002_scissors
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_IsActive
+    path: CarbonTape_FBX_1
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_IsActive
+    path: CarbonTape_FBX/CarbonTape004
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_IsActive
+    path: CarbonTape_FBX/CarbonTape-4
+    classID: 1
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.212
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: CarbonTape_FBX_1/Bone_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.0259
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: CarbonTape_FBX_1/Bone_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.4419
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: CarbonTape_FBX_1/Bone_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Enabled
+    path: powder
+    classID: 114
+    script: {fileID: 11500000, guid: 3fe91dc294731a9428c0941ea7579110, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.349
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: powder
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.579
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: powder
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: powder
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1.74
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: powder/opener
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -5.62
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: powder/opener
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -5.98
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: powder/opener
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.x
+    path: powder/opener
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.y
+    path: powder/opener
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -522.682
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.z
+    path: powder/opener
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Alpha
+    path: powder/ui_powder
+    classID: 225
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.06960143
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.x
+    path: powder/ui_powder
+    classID: 224
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.y
+    path: powder/ui_powder
+    classID: 224
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.06960146
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalScale.z
+    path: powder/ui_powder
+    classID: 224
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -5552,28 +7440,9 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: CarbonTape_FBX/CarbonTape
+    path: Pincette_FBX/Pincette
     classID: 114
     script: {fileID: 11500000, guid: 3fe91dc294731a9428c0941ea7579110, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: 01
-    classID: 1
-    script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -5598,7 +7467,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0
+        value: 1
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -5609,26 +7478,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: NickelCarbonTape_2/NickelCarbonTape-2
-    classID: 1
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: NickelCarbonTape_1/NickelCarbonTape-3
+    path: 01
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -5669,6 +7519,25 @@ AnimationClip:
     path: 01/Object001
     classID: 1
     script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_IsActive
+    path: CarbonTape_FBX/ui_CarbonTape
+    classID: 1
+    script: {fileID: 0}
   m_EulerEditorCurves:
   - curve:
       serializedVersion: 2
@@ -5676,637 +7545,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_1/Bone_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_1/Bone_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_1/Bone_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_1/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape/Bone005_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_1/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape/Bone005_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_1/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape/Bone005_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_1/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_1/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_1/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_1/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001/Bone005_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_1/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001/Bone005_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_1/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001/Bone005_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_2
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_2
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_2
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_2/Bone_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_2/Bone_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_2/Bone_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape/Bone005_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape/Bone005_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape/Bone005_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape/Bone005_NickelCarbonTape/DumBone006_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape/Bone005_NickelCarbonTape/DumBone006_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape/Bone005_NickelCarbonTape/DumBone006_NickelCarbonTape
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
     path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001
     classID: 4
     script: {fileID: 0}
@@ -6326,7 +7565,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
+    attribute: m_LocalEulerAngles.x
     path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001
     classID: 4
     script: {fileID: 0}
@@ -6336,97 +7575,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
     path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001
     classID: 4
     script: {fileID: 0}
@@ -6446,7 +7595,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
+    attribute: m_LocalEulerAngles.x
     path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001
     classID: 4
     script: {fileID: 0}
@@ -6456,38 +7605,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001/Bone005_NickelCarbonTape001
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -6497,7 +7616,17 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001/Bone005_NickelCarbonTape001
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -6516,7 +7645,27 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001/Bone005_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001/Bone005_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
     path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001/Bone005_NickelCarbonTape001/DumBone006_NickelCarbonTape001
     classID: 4
     script: {fileID: 0}
@@ -6536,7 +7685,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
+    attribute: m_LocalEulerAngles.x
     path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001/Bone005_NickelCarbonTape001/DumBone006_NickelCarbonTape001
     classID: 4
     script: {fileID: 0}
@@ -6546,7 +7695,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
+    attribute: m_LocalEulerAngles.z
     path: NickelCarbonTape_FBX/Bone_scissors
     classID: 4
     script: {fileID: 0}
@@ -6566,7 +7715,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
+    attribute: m_LocalEulerAngles.x
     path: NickelCarbonTape_FBX/Bone_scissors
     classID: 4
     script: {fileID: 0}
@@ -6576,7 +7725,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
+    attribute: m_LocalEulerAngles.z
     path: NickelCarbonTape_FBX/Bone_scissors/Bone001_scissors
     classID: 4
     script: {fileID: 0}
@@ -6596,8 +7745,938 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
+    attribute: m_LocalEulerAngles.x
     path: NickelCarbonTape_FBX/Bone_scissors/Bone001_scissors
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: CarbonTape_FBX/Bone_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: CarbonTape_FBX/Bone_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: CarbonTape_FBX/Bone_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape/Bone005_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape/Bone005_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape/Bone005_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape/Bone005_CarbonTape/DumBone006_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape/Bone005_CarbonTape/DumBone006_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape/Bone001_CarbonTape/DumBone002_CarbonTape/Bone002_CarbonTape/Bone003_CarbonTape/DumBone004_CarbonTape/Bone004_CarbonTape/Bone005_CarbonTape/DumBone006_CarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001/Bone004_CarbonTape001/Bone005_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001/Bone004_CarbonTape001/Bone005_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001/Bone004_CarbonTape001/Bone005_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001/Bone004_CarbonTape001/Bone005_CarbonTape001/DumBone006_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001/Bone004_CarbonTape001/Bone005_CarbonTape001/DumBone006_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: CarbonTape_FBX/Bone_CarbonTape/DumBone001_CarbonTape001/Bone001_CarbonTape001/DumBone002_CarbonTape001/Bone002_CarbonTape001/Bone003_CarbonTape001/DumBone004_CarbonTape001/Bone004_CarbonTape001/Bone005_CarbonTape001/DumBone006_CarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_1/Bone_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_1/Bone_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_1/Bone_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_1/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape/Bone005_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_1/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape/Bone005_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_1/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape/Bone005_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_1/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_1/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_1/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_1/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001/Bone005_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_1/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001/Bone005_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_1/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001/Bone005_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_2
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_2
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_2
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_2/Bone_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_2/Bone_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_2/Bone_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_2/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape/Bone005_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape/Bone005_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape/Bone005_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape/Bone005_NickelCarbonTape/DumBone006_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape/Bone005_NickelCarbonTape/DumBone006_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape/Bone001_NickelCarbonTape/DumBone002_NickelCarbonTape/Bone002_NickelCarbonTape/Bone003_NickelCarbonTape/DumBone004_NickelCarbonTape/Bone004_NickelCarbonTape/Bone005_NickelCarbonTape/DumBone006_NickelCarbonTape
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001/Bone001_NickelCarbonTape001/DumBone002_NickelCarbonTape001/Bone002_NickelCarbonTape001/Bone003_NickelCarbonTape001/DumBone004_NickelCarbonTape001/Bone004_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: NickelCarbonTape_FBX/Bone_NickelCarbonTape/DumBone001_NickelCarbonTape001
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -6628,6 +8707,36 @@ AnimationClip:
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
     path: NickelCarbonTape_FBX/Bone_scissors/Bone002_scissors
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: powder/opener
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: powder/opener
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: powder/opener
     classID: 4
     script: {fileID: 0}
   m_HasGenericRootTransform: 0
