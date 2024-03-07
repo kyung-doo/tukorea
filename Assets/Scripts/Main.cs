@@ -318,11 +318,11 @@ public class Main : SingletonBase<Main>
     {
         if(isCursor) 
         {
-            Cursor.SetCursor(linkCursorTexture, new Vector2(5, 0), CursorMode.ForceSoftware);
+            Cursor.SetCursor(linkCursorTexture, new Vector2(15, 0), CursorMode.ForceSoftware);
         } 
         else 
         {
-            Cursor.SetCursor(moveCursorTexture, Vector2.zero, CursorMode.ForceSoftware);
+            Cursor.SetCursor(moveCursorTexture, new Vector2(15, 0), CursorMode.ForceSoftware);
         }
     }
 

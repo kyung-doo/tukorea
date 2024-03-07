@@ -3,7 +3,7 @@ using UnityEngine;
 using DG.Tweening;
 
 
-public class Section3 : SectionBase
+public class Section1_3 : SectionBase
 {
 
     [SerializeField]

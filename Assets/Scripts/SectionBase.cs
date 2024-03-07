@@ -40,13 +40,17 @@ public abstract class SectionBase : MonoBehaviour
         {
             ease = Ease.InOutCubic;
         }
-        player.transform.DOLocalMove(startPlayerPos, 3f).SetEase(ease);
-        player.transform.DOLocalRotate(startPlayerRo, 3f).SetEase(ease);
-        camera.transform.DOLocalRotate(startCameraRo, 3f)
-        .SetEase(ease)
-        .OnComplete(() => {
-            if(onSectionStart != null) onSectionStart();
-        });
+
+        if(startPlayerPos != Vector3.zero) 
+        {
+            player.transform.DOLocalMove(startPlayerPos, 3f).SetEase(ease);
+            player.transform.DOLocalRotate(startPlayerRo, 3f).SetEase(ease);
+            camera.transform.DOLocalRotate(startCameraRo, 3f)
+            .SetEase(ease)
+            .OnComplete(() => {
+                if(onSectionStart != null) onSectionStart();
+            });
+        } 
         
     }
 

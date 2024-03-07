@@ -155,7 +155,7 @@ public class Player : MonoBehaviour
     private bool CheckHit ( Vector3 targetPos )
     {
         // Debug.DrawRay(this.transform.position, (targetPos - this.transform.position) * 10f, Color.red);
-        if (Physics.Raycast(this.transform.position, (targetPos - this.transform.position), out RaycastHit hit, 0.4f))
+        if (Physics.Raycast(this.transform.position, (targetPos - this.transform.position), out RaycastHit hit, 0.35f))
         {
             if (hit.collider)   
             {

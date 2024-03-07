@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Section2 : SectionBase
+public class Section1_2 : SectionBase
 {
 
     [SerializeField]
