@@ -113,8 +113,8 @@ public class Main : SingletonBase<Main>
         enterOptionBtn.onClick.AddListener(HideOption);
         repositionBtn.GetComponent<Button>().onClick.AddListener(OnSectionReposition);
         
-        StartCoroutine(StartMain());
-        // StartCoroutine(StartContent());
+        // StartCoroutine(StartMain());
+        StartCoroutine(StartContent());
     }
 
 
@@ -188,6 +188,7 @@ public class Main : SingletonBase<Main>
         .OnComplete(() => {
             startBtn.onClick.AddListener(OnStartClick);
         });
+        player.GetComponent<Collider>().isTrigger = false;
     }
 
 

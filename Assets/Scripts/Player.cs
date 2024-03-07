@@ -14,12 +14,6 @@ public class Player : MonoBehaviour
     public float pannigSpeed = 150f;
 
     [SerializeField]
-    public Vector3 minPosition = new Vector3(-10f, 0f, -10f);
-
-    [SerializeField]
-    public Vector3 maxPosition = new Vector3(10f, 5f, 10f);
-
-    [SerializeField]
     public Transform cam;
 
     [SerializeField]
@@ -38,9 +32,7 @@ public class Player : MonoBehaviour
     
     
     
-    
-
-    private void Update()
+    private void FixedUpdate()
     {
         if(!isActive) return;
         if(optionView.GetComponent<CanvasGroup>().interactable) return;
@@ -64,36 +56,16 @@ public class Player : MonoBehaviour
         {
             this.transform.position = this.transform.position + (-this.transform.forward * movementSpeed * Time.deltaTime);
         }
+        this.GetComponent<Rigidbody>().velocity = Vector3.zero;
+    }
+    
+    
 
-        if(Input.GetAxis("Mouse ScrollWheel") > 0f) 
-        {
-            float speed = movementSpeed * 5f;
-            if(PlayerPrefs.GetInt("quality") == 1) 
-            {
-                speed = movementSpeed * 6f;
-            } 
-            else if(PlayerPrefs.GetInt("quality") == 0)
-            {
-                speed = movementSpeed * 100f;
-            }
-            zooming = true;
-            this.transform.position = this.transform.position + (cam.transform.forward * speed * Time.deltaTime);
-        } 
+    private void Update()
+    {
+        if(!isActive) return;
+        if(optionView.GetComponent<CanvasGroup>().interactable) return;
 
-        if(Input.GetAxis("Mouse ScrollWheel") < 0f)
-        {
-            float speed = movementSpeed * 5f;
-            if(PlayerPrefs.GetInt("quality") == 1) 
-            {
-                speed = movementSpeed * 6f;
-            } 
-            else if(PlayerPrefs.GetInt("quality") == 0)
-            {
-                speed = movementSpeed * 100f;
-            }
-            zooming = true;
-            this.transform.position = this.transform.position - (cam.transform.forward * speed * Time.deltaTime);
-        }
 
         if (looking)
         {
@@ -114,10 +86,44 @@ public class Player : MonoBehaviour
             {
                 speed = pannigSpeed * 30;
             }
-            this.transform.position = this.transform.position + (-this.transform.right * Input.GetAxis("Mouse X") * speed * Time.deltaTime);
+            Vector3 moveX = this.transform.position + (-this.transform.right * Input.GetAxis("Mouse X") * speed * Time.deltaTime);
+            if(!CheckHit(moveX)) this.transform.position = this.transform.position + (-this.transform.right * Input.GetAxis("Mouse X") * speed * Time.deltaTime);           
             this.transform.position = this.transform.position + (-this.transform.up * Input.GetAxis("Mouse Y") * speed * Time.deltaTime);
             
         }
+
+        if(Input.GetAxis("Mouse ScrollWheel") > 0f) 
+        {
+            float speed = movementSpeed * 5f;
+            if(PlayerPrefs.GetInt("quality") == 1) 
+            {
+                speed = movementSpeed * 6f;
+            } 
+            else if(PlayerPrefs.GetInt("quality") == 0)
+            {
+                speed = movementSpeed * 100f;
+            }
+            zooming = true;
+            Vector3 movePos = this.transform.position + (cam.transform.forward * speed * Time.deltaTime);
+            if(!CheckHit(movePos)) this.transform.position = movePos;
+        } 
+
+        if(Input.GetAxis("Mouse ScrollWheel") < 0f)
+        {
+            float speed = movementSpeed * 5f;
+            if(PlayerPrefs.GetInt("quality") == 1) 
+            {
+                speed = movementSpeed * 6f;
+            } 
+            else if(PlayerPrefs.GetInt("quality") == 0)
+            {
+                speed = movementSpeed * 100f;
+            }
+            zooming = true;
+            Vector3 movePos = this.transform.position - (cam.transform.forward * speed * Time.deltaTime);
+            if(!CheckHit(movePos)) this.transform.position = movePos;
+        }
+        
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
@@ -136,38 +142,37 @@ public class Player : MonoBehaviour
         {
             pannig = false;
         }
+        this.GetComponent<Rigidbody>().velocity = Vector3.zero;
+    }
+
+    private bool CheckHit ( Vector3 targetPos )
+    {
+        // Debug.DrawRay(this.transform.position, (targetPos - this.transform.position) * 10f, Color.red);
+        if (Physics.Raycast(this.transform.position, (targetPos - this.transform.position), out RaycastHit hit, 0.8f))
+        {
+            if (hit.collider)   
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     private void LateUpdate() 
     {    
         Vector3 targetPos = this.transform.position;
         if(zooming) targetPos = prevPos;
-        if(this.transform.position.x > maxPosition.x)
+
+
+        if(this.transform.position.y > 2f)
         {
-            this.transform.position = new Vector3(maxPosition.x, targetPos.y, targetPos.z);
+            this.transform.position = new Vector3(targetPos.x, 2f, targetPos.z);
         }
-        if(this.transform.position.x < minPosition.x)
+        if(this.transform.position.y < 0)
         {
-            this.transform.position = new Vector3(minPosition.x, targetPos.y, targetPos.z);
+            this.transform.position = new Vector3(targetPos.x, 0, targetPos.z);
         }
 
-        if(this.transform.position.y > maxPosition.y)
-        {
-            this.transform.position = new Vector3(targetPos.x, maxPosition.y, targetPos.z);
-        }
-        if(this.transform.position.y < minPosition.y)
-        {
-            this.transform.position = new Vector3(targetPos.x, minPosition.y, targetPos.z);
-        }
-
-        if(this.transform.position.z > maxPosition.z)
-        {
-            this.transform.position = new Vector3(targetPos.x, targetPos.y, maxPosition.z);
-        }
-        if(this.transform.position.z < minPosition.z)
-        {
-            this.transform.position = new Vector3(targetPos.x, targetPos.y, minPosition.z);
-        }
         zooming = false;
         prevPos = this.transform.position;
     }
