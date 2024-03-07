@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -86,22 +87,28 @@ public class Player : MonoBehaviour
             {
                 speed = pannigSpeed * 30;
             }
-            Vector3 moveX = this.transform.position + (-this.transform.right * Input.GetAxis("Mouse X") * speed * Time.deltaTime);
-            if(!CheckHit(moveX)) this.transform.position = this.transform.position + (-this.transform.right * Input.GetAxis("Mouse X") * speed * Time.deltaTime);           
-            this.transform.position = this.transform.position + (-this.transform.up * Input.GetAxis("Mouse Y") * speed * Time.deltaTime);
-            
+            if(Math.Abs(Input.GetAxis("Mouse X")) > Math.Abs(Input.GetAxis("Mouse Y"))) 
+            {
+                Vector3 moveX = this.transform.position + (-this.transform.right * Input.GetAxis("Mouse X") * speed * Time.deltaTime);
+                if(!CheckHit(moveX)) this.transform.position = moveX;
+            }
+            if(Math.Abs(Input.GetAxis("Mouse Y")) > Math.Abs(Input.GetAxis("Mouse X"))) 
+            {
+                Vector3 moveY = this.transform.position + (-this.transform.up * Input.GetAxis("Mouse Y") * speed * Time.deltaTime);
+                if(!CheckHit(moveY)) this.transform.position = moveY;
+            }
         }
 
         if(Input.GetAxis("Mouse ScrollWheel") > 0f) 
         {
-            float speed = movementSpeed * 5f;
+            float speed = movementSpeed * 2.5f;
             if(PlayerPrefs.GetInt("quality") == 1) 
             {
-                speed = movementSpeed * 6f;
+                speed = movementSpeed * 3f;
             } 
             else if(PlayerPrefs.GetInt("quality") == 0)
             {
-                speed = movementSpeed * 100f;
+                speed = movementSpeed * 50f;
             }
             zooming = true;
             Vector3 movePos = this.transform.position + (cam.transform.forward * speed * Time.deltaTime);
@@ -110,14 +117,14 @@ public class Player : MonoBehaviour
 
         if(Input.GetAxis("Mouse ScrollWheel") < 0f)
         {
-            float speed = movementSpeed * 5f;
+            float speed = movementSpeed * 2.5f;
             if(PlayerPrefs.GetInt("quality") == 1) 
             {
-                speed = movementSpeed * 6f;
+                speed = movementSpeed * 3f;
             } 
             else if(PlayerPrefs.GetInt("quality") == 0)
             {
-                speed = movementSpeed * 100f;
+                speed = movementSpeed * 50f;
             }
             zooming = true;
             Vector3 movePos = this.transform.position - (cam.transform.forward * speed * Time.deltaTime);
@@ -148,7 +155,7 @@ public class Player : MonoBehaviour
     private bool CheckHit ( Vector3 targetPos )
     {
         // Debug.DrawRay(this.transform.position, (targetPos - this.transform.position) * 10f, Color.red);
-        if (Physics.Raycast(this.transform.position, (targetPos - this.transform.position), out RaycastHit hit, 0.8f))
+        if (Physics.Raycast(this.transform.position, (targetPos - this.transform.position), out RaycastHit hit, 0.4f))
         {
             if (hit.collider)   
             {
@@ -168,9 +175,9 @@ public class Player : MonoBehaviour
         {
             this.transform.position = new Vector3(targetPos.x, 2f, targetPos.z);
         }
-        if(this.transform.position.y < 0)
+        if(this.transform.position.y < 0f)
         {
-            this.transform.position = new Vector3(targetPos.x, 0, targetPos.z);
+            this.transform.position = new Vector3(targetPos.x, 0f, targetPos.z);
         }
 
         zooming = false;

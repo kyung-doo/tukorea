@@ -25,8 +25,7 @@ public class Section3 : SectionBase
     [SerializeField]
     public GameObject tongs;
 
-
-    private Vector3 zoomPlayerPos = new Vector3(3.372322f, 0.6167073f, 4.592638f);
+    private Vector3 zoomPlayerPos = new Vector3(3.34241962f, 0.696435094f, 4.6283226f);
     private Vector3 zoomPlayerRo = new Vector3(0f, -0.001f, 0f);
     private Vector3 zoomCameraRo = new Vector3(43.658f, 0f, 0f);
 

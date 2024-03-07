@@ -7,9 +7,9 @@ using DG.Tweening;
 public class Main : SingletonBase<Main>
 {
 
-    private Vector3 startPos = new Vector3(-2.84647298f, 0.291052192f, -0.424512506f);
-    private Vector3 startRo = new Vector3(0f, 60.7499924f, 0f);
-    private Vector3 startCamRo = new Vector3(3.149997f, 0f, 0f);
+    private Vector3 startPos = new Vector3(-2.18423247f,0.341821343f,0.0126060247f);
+    private Vector3 startRo = new Vector3(0f, 63.4500618f, 0f);
+    private Vector3 startCamRo = new Vector3(0.150053501f, 0f, 0f);
 
     [SerializeField]
     private GameObject player;
@@ -112,9 +112,9 @@ public class Main : SingletonBase<Main>
         enterhelpBtn.onClick.AddListener(HideHelp);
         enterOptionBtn.onClick.AddListener(HideOption);
         repositionBtn.GetComponent<Button>().onClick.AddListener(OnSectionReposition);
-        
-        // StartCoroutine(StartMain());
-        StartCoroutine(StartContent());
+        StartCoroutine(StartMain());
+        // player.GetComponent<Player>().isActive = true;
+        // StartCoroutine(StartContent());
     }
 
 
