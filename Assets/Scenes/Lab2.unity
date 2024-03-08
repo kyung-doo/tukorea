@@ -1746,8 +1746,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c30c3e0107a0824ea5a6a77d1414a6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPlayerPos: {x: -0.7220185, y: 0.2427865, z: 3.7970233}
-  startPlayerRo: {x: 0, y: 2.8482933, z: 0}
+  startPlayerPos: {x: -0.33659673, y: 0.3287488, z: 3.6785898}
+  startPlayerRo: {x: 0, y: 2.8482969, z: 0}
   startCameraRo: {x: 7.6520753, y: 0, z: 0}
   isBackMotion: 1
   audioClips:
