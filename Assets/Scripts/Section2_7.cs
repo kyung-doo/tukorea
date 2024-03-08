@@ -35,6 +35,7 @@ public class Section2_7 : SectionBase
     // private Vector3 zoomCameraRo2 = new Vector3(6.752f, 0f, 0f);
 
     // private bool isZoom = false;
+    private IEnumerator coGlowAni = null;
 
 
     public override void StartSection ( bool isFirst = false ) 
@@ -64,8 +65,9 @@ public class Section2_7 : SectionBase
         Main.Instance.PlayAudio(audioClips[0], () => {
             Main.Instance.PlayAudio(audioClips[1], () => {
                 Main.Instance.PlayAudio(audioClips[2], () => {
-                    
                     touch1.SetActive(true);
+                    coGlowAni = GlowAni(touch1);
+                    StartCoroutine(coGlowAni);
                     touch1.GetComponent<Clickable>().onMouseClick += ClickTouch1;
                 });
             });
@@ -77,18 +79,48 @@ public class Section2_7 : SectionBase
     {
         touch1.SetActive(false);
         touch1.GetComponent<Clickable>().onMouseClick -= ClickTouch1;
-        
-        // animator.Play("handle_open");
-        // coTimer = Start2();
-        // StartCoroutine(coTimer);
+        StopCoroutine(coGlowAni);
+        coTimer = Ended();
+        StartCoroutine(coTimer);
+    }
+
+
+    private IEnumerator GlowAni( GameObject target ) 
+    {
+        int num = 0;
+        while (true)
+        {
+            if(num >= 100) num = 0;
+            if(num >= 0 && num < 50) 
+            {
+                target.GetComponent<Outlinable>().enabled = true;
+            }
+            else if(num >= 50 && num < 100) 
+            {
+                target.GetComponent<Outlinable>().enabled = false;
+            }
+            num++;
+            yield return new WaitForSeconds(0.01f);
+        }
     }
 
 
     private IEnumerator Ended() 
     {
         yield return new WaitForSeconds( 3.0f );
-        this.EndSection();
+        player.GetComponent<Player>().isActive = false;
+        Main.Instance.repositionBtn.SetActive(false);
+        player.transform.DOLocalMove(startPlayerPos, 1f).SetEase(Ease.OutCubic);
+        player.transform.DOLocalRotate(startPlayerRo, 1f).SetEase(Ease.OutCubic);
+        camera.transform
+        .DOLocalRotate(startCameraRo, 1f)
+        .SetEase(Ease.OutCubic)
+        .OnComplete(() => {
+            this.EndSection();
+        });
     }
+
+    
 
     public override void RepositionSection ()
     {
@@ -115,7 +147,8 @@ public class Section2_7 : SectionBase
         touch1.GetComponent<Clickable>().onMouseClick -= ClickTouch1;
         
         
-        if(coTimer != null) StopCoroutine(coTimer);
+        if(coTimer != null)     StopCoroutine(coTimer);
+        if(coGlowAni != null)   StopCoroutine(coGlowAni);
     }
 
     public override void EndSection () 

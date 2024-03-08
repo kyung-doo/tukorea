@@ -206,7 +206,16 @@ public class Section2_6 : SectionBase
     private IEnumerator Ended() 
     {
         yield return new WaitForSeconds( 3.0f );
-        this.EndSection();
+        player.GetComponent<Player>().isActive = false;
+        Main.Instance.repositionBtn.SetActive(false);
+        player.transform.DOLocalMove(startPlayerPos, 1f).SetEase(Ease.OutCubic);
+        player.transform.DOLocalRotate(startPlayerRo, 1f).SetEase(Ease.OutCubic);
+        camera.transform
+        .DOLocalRotate(startCameraRo, 1f)
+        .SetEase(Ease.OutCubic)
+        .OnComplete(() => {
+            this.EndSection();
+        });
     }
 
     public override void RepositionSection ()
