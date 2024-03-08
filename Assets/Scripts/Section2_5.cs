@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Section2_4 : SectionBase
+public class Section2_5 : SectionBase
 {
 
     [SerializeField]
@@ -17,13 +17,11 @@ public class Section2_4 : SectionBase
     public GameObject nickelCarbonTape;
 
     [SerializeField]
-    public GameObject bulk;
+    public GameObject mounting;
 
-    [SerializeField]
-    public GameObject pincette;
-
-    [SerializeField]
+    // [SerializeField]
     public GameObject carbonTape;
+
 
     [SerializeField]
     public Animator animator;
@@ -40,8 +38,7 @@ public class Section2_4 : SectionBase
         target.SetActive(true);
         holder.GetComponent<BoxCollider>().enabled = false;
         nickelCarbonTape.GetComponent<BoxCollider>().enabled = false;
-        bulk.GetComponent<BoxCollider>().enabled = false;
-        pincette.GetComponent<BoxCollider>().enabled = false;
+        mounting.GetComponent<BoxCollider>().enabled = false;
         carbonTape.GetComponent<BoxCollider>().enabled = false;
         coTimer = Start1();
         StartCoroutine(coTimer);
@@ -87,59 +84,30 @@ public class Section2_4 : SectionBase
         StartCoroutine(coTimer);
     }
 
-
     private IEnumerator Start3() 
     {
-        yield return new WaitForSeconds( 10f );
+        yield return new WaitForSeconds( 14f );
         Main.Instance.PlayAudio(audioClips[2], () => {
-            animator.Play("bulk_outline_on");
-            bulk.GetComponent<BoxCollider>().enabled = true;
-            bulk.GetComponent<Clickable>().onMouseClick += ClickBulk;
+            animator.Play("Holder04_outline_on");
+            mounting.GetComponent<BoxCollider>().enabled = true;
+            mounting.GetComponent<Clickable>().onMouseClick += ClickMounting;
         });
     }
 
-    private void ClickBulk ( GameObject target, Vector3 mousePos ) 
+    private void ClickMounting ( GameObject target, Vector3 mousePos ) 
     {
-        bulk.GetComponent<BoxCollider>().enabled = false;
-        bulk.GetComponent<Clickable>().onMouseClick -= ClickBulk;
-        animator.Play("bulk_outline_move");
+        mounting.GetComponent<BoxCollider>().enabled = false;
+        mounting.GetComponent<Clickable>().onMouseClick -= ClickMounting;
+        animator.Play("Holder04_move");
         coTimer = Start4();
         StartCoroutine(coTimer);
     }
 
+
     private IEnumerator Start4() 
     {
-        yield return new WaitForSeconds( 1.5f );
-        animator.Play("Pincette_outline_on");
-        pincette.GetComponent<BoxCollider>().enabled = true;
-        pincette.GetComponent<Clickable>().onMouseClick += ClickPincette;
-    }
-
-    private void ClickPincette ( GameObject target, Vector3 mousePos ) 
-    {
-        pincette.GetComponent<BoxCollider>().enabled = false;
-        pincette.GetComponent<Clickable>().onMouseClick -= ClickPincette;
-        animator.Play("Pincette_move");
-        coTimer = Start5();
-        StartCoroutine(coTimer);
-    }
-
-
-    private IEnumerator Start5() 
-    {
-        yield return new WaitForSeconds( 5f );
-        Main.Instance.PlayAudio(audioClips[3]);
-        yield return new WaitForSeconds( 8f );
-        Main.Instance.PlayAudio(audioClips[4], () => {
-            coTimer = Start6();
-            StartCoroutine(coTimer);
-        });
-    }
-
-    private IEnumerator Start6() 
-    {
-        yield return new WaitForSeconds( 1f );
-        Main.Instance.PlayAudio(audioClips[5], () => {
+        yield return new WaitForSeconds( 3f );
+        Main.Instance.PlayAudio(audioClips[3], () => {
             animator.Play("CarbonTape_outline_on");
             carbonTape.GetComponent<BoxCollider>().enabled = true;
             carbonTape.GetComponent<Clickable>().onMouseClick += ClickCarbonTape;
@@ -154,6 +122,7 @@ public class Section2_4 : SectionBase
         coTimer = Ended();
         StartCoroutine(coTimer);
     }
+    
 
 
     private IEnumerator Ended() 
@@ -170,9 +139,9 @@ public class Section2_4 : SectionBase
         target.SetActive(false);
         holder.GetComponent<Clickable>().onMouseClick -= ClickHolder;
         nickelCarbonTape.GetComponent<Clickable>().onMouseClick -= ClickNickelCarbonTape;
-        bulk.GetComponent<Clickable>().onMouseClick -= ClickBulk;
-        pincette.GetComponent<Clickable>().onMouseClick -= ClickPincette;
+        mounting.GetComponent<Clickable>().onMouseClick -= ClickMounting;
         carbonTape.GetComponent<Clickable>().onMouseClick -= ClickCarbonTape;
+        
         if(coTimer != null) StopCoroutine(coTimer);
     }
 

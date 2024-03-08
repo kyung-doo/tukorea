@@ -12,6 +12,9 @@ public abstract class SectionBase : MonoBehaviour
     [SerializeField]
     protected Vector3 startCameraRo;
 
+    [SerializeField]
+    public bool isBackMotion = false;
+
     
     protected GameObject player;
 
@@ -25,6 +28,8 @@ public abstract class SectionBase : MonoBehaviour
     public delegate void OnSectionStart();
 
     public event OnSectionEnd onSectionStart;
+
+    
 
 
     void Awake()

@@ -20,10 +20,10 @@ public class Section2_3 : SectionBase
     public GameObject bulk;
 
     [SerializeField]
-    public GameObject carbonTape;
+    public GameObject pincette;
 
     [SerializeField]
-    public GameObject pincette;
+    public GameObject carbonTape;
 
     [SerializeField]
     public Animator animator;
