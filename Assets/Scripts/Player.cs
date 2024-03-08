@@ -30,6 +30,8 @@ public class Player : MonoBehaviour
     private bool zooming = false;
 
     private Vector3 prevPos;
+
+    private float mouseWheel = 0f;
     
     
     
@@ -58,6 +60,23 @@ public class Player : MonoBehaviour
             this.transform.position = this.transform.position + (-this.transform.forward * movementSpeed * Time.deltaTime);
         }
         this.GetComponent<Rigidbody>().velocity = Vector3.zero;
+
+        if(mouseWheel > 0f) 
+        {
+            zooming = true;
+            Vector3 movePos = this.transform.position + (cam.transform.forward * movementSpeed * 2.5f * Time.deltaTime);
+            if(!CheckHit(movePos)) this.transform.position = movePos;
+        } 
+
+        if(mouseWheel < 0f)
+        {
+            zooming = true;
+            Vector3 movePos = this.transform.position - (cam.transform.forward * movementSpeed * 2.5f * Time.deltaTime);
+            if(!CheckHit(movePos)) this.transform.position = movePos;
+        }
+
+        mouseWheel = 0f;
+
     }
     
     
@@ -87,6 +106,9 @@ public class Player : MonoBehaviour
             {
                 speed = pannigSpeed * 30;
             }
+#if UNITY_EDITOR
+            speed = pannigSpeed *5f;
+#endif            
             if(Math.Abs(Input.GetAxis("Mouse X")) > Math.Abs(Input.GetAxis("Mouse Y"))) 
             {
                 Vector3 moveX = this.transform.position + (-this.transform.right * Input.GetAxis("Mouse X") * speed * Time.deltaTime);
@@ -101,34 +123,12 @@ public class Player : MonoBehaviour
 
         if(Input.GetAxis("Mouse ScrollWheel") > 0f) 
         {
-            float speed = movementSpeed * 2.5f;
-            if(PlayerPrefs.GetInt("quality") == 1) 
-            {
-                speed = movementSpeed * 3f;
-            } 
-            else if(PlayerPrefs.GetInt("quality") == 0)
-            {
-                speed = movementSpeed * 50f;
-            }
-            zooming = true;
-            Vector3 movePos = this.transform.position + (cam.transform.forward * speed * Time.deltaTime);
-            if(!CheckHit(movePos)) this.transform.position = movePos;
+            mouseWheel = 1f;
         } 
 
         if(Input.GetAxis("Mouse ScrollWheel") < 0f)
         {
-            float speed = movementSpeed * 2.5f;
-            if(PlayerPrefs.GetInt("quality") == 1) 
-            {
-                speed = movementSpeed * 3f;
-            } 
-            else if(PlayerPrefs.GetInt("quality") == 0)
-            {
-                speed = movementSpeed * 50f;
-            }
-            zooming = true;
-            Vector3 movePos = this.transform.position - (cam.transform.forward * speed * Time.deltaTime);
-            if(!CheckHit(movePos)) this.transform.position = movePos;
+            mouseWheel = -1f;
         }
         
 
@@ -149,7 +149,6 @@ public class Player : MonoBehaviour
         {
             pannig = false;
         }
-        this.GetComponent<Rigidbody>().velocity = Vector3.zero;
     }
 
     private bool CheckHit ( Vector3 targetPos )
@@ -182,5 +181,6 @@ public class Player : MonoBehaviour
 
         zooming = false;
         prevPos = this.transform.position;
+        this.GetComponent<Rigidbody>().velocity = Vector3.zero;
     }
 }

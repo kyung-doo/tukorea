@@ -87,6 +87,7 @@ public class Section2_1 : SectionBase
         guide1.SetActive(false);
         guide2.SetActive(false);
         guide3.SetActive(false);
+        if(coTimer != null) StopCoroutine(coTimer);
     }
 
     public override void EndSection () 
