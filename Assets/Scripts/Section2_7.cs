@@ -99,8 +99,8 @@ public class Section2_7 : SectionBase
             {
                 target.GetComponent<Outlinable>().enabled = false;
             }
-            num++;
-            yield return new WaitForSeconds(0.01f);
+            num+=2;
+            yield return new WaitForFixedUpdate();
         }
     }
 
