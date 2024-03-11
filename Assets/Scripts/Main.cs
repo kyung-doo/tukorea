@@ -112,9 +112,9 @@ public class Main : SingletonBase<Main>
         enterhelpBtn.onClick.AddListener(HideHelp);
         enterOptionBtn.onClick.AddListener(HideOption);
         repositionBtn.GetComponent<Button>().onClick.AddListener(OnSectionReposition);
-        StartCoroutine(StartMain());
-        // player.GetComponent<Player>().isActive = true;
-        // StartCoroutine(StartContent());
+        // StartCoroutine(StartMain());
+        player.GetComponent<Player>().isActive = true;
+        StartCoroutine(StartContent());
     }
 
 

@@ -17,7 +17,19 @@ public class Section2_7 : SectionBase
     public GameObject touch1;
 
     [SerializeField]
+    public GameObject touch2;
+
+    [SerializeField]
+    public GameObject touch3;
+
+    [SerializeField]
+    public GameObject mouse;
+
+    [SerializeField]
     public GameObject screen1;
+
+    [SerializeField]
+    public GameObject popup1;
 
 
 
@@ -47,6 +59,11 @@ public class Section2_7 : SectionBase
         target.SetActive(true);
         
         touch1.SetActive(false);
+        touch2.SetActive(false);
+        touch3.SetActive(false);
+        mouse.SetActive(false);
+        screen1.SetActive(false);
+        popup1.SetActive(false);
 
         
         coTimer = Start1();
@@ -83,7 +100,49 @@ public class Section2_7 : SectionBase
         touch1.SetActive(false);
         touch1.GetComponent<Clickable>().onMouseClick -= ClickTouch1;
         StopCoroutine(coGlowAni);
-        // coTimer = Ended();
+        screen1.SetActive(true);
+        coTimer = Start2();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start2() 
+    {
+        yield return new WaitForSeconds( 1f );
+        Main.Instance.PlayAudio(audioClips[3], () => {
+            touch2.SetActive(true);
+            coGlowAni = GlowAni(touch2);
+            StartCoroutine(coGlowAni);
+            touch2.GetComponent<Clickable>().onMouseClick += ClickTouch2;
+        });
+    }
+
+    private void ClickTouch2 ( GameObject target, Vector3 mousePos ) 
+    {
+        touch2.SetActive(false);
+        touch2.GetComponent<Clickable>().onMouseClick -= ClickTouch2;
+        StopCoroutine(coGlowAni);
+        popup1.SetActive(true);
+        coTimer = Start3();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start3() 
+    {
+        yield return new WaitForSeconds( 1f );
+        Main.Instance.PlayAudio(audioClips[4], () => {
+            touch3.SetActive(true);
+            coGlowAni = GlowAni(touch3);
+            StartCoroutine(coGlowAni);
+            touch3.GetComponent<Clickable>().onMouseClick += ClickTouch3;
+        });
+    }
+
+    private void ClickTouch3 ( GameObject target, Vector3 mousePos ) 
+    {
+        touch3.SetActive(false);
+        touch3.GetComponent<Clickable>().onMouseClick -= ClickTouch3;
+        StopCoroutine(coGlowAni);
+        // coTimer = Start3();
         // StartCoroutine(coTimer);
     }
 
@@ -148,6 +207,8 @@ public class Section2_7 : SectionBase
         animator.Update(0f);
         target.SetActive(false);
         touch1.GetComponent<Clickable>().onMouseClick -= ClickTouch1;
+        touch2.GetComponent<Clickable>().onMouseClick -= ClickTouch2;
+        touch3.GetComponent<Clickable>().onMouseClick -= ClickTouch3;
         
         
         if(coTimer != null)     StopCoroutine(coTimer);
