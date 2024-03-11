@@ -26,6 +26,10 @@ public class Section2_4 : SectionBase
     public GameObject carbonTape;
 
     [SerializeField]
+    public GameObject bulkUi;
+
+
+    [SerializeField]
     public Animator animator;
 
 
@@ -131,6 +135,7 @@ public class Section2_4 : SectionBase
         Main.Instance.PlayAudio(audioClips[3]);
         yield return new WaitForSeconds( 8f );
         Main.Instance.PlayAudio(audioClips[4], () => {
+            bulkUi.SetActive(true);
             coTimer = Start6();
             StartCoroutine(coTimer);
         });
@@ -138,7 +143,8 @@ public class Section2_4 : SectionBase
 
     private IEnumerator Start6() 
     {
-        yield return new WaitForSeconds( 1f );
+        yield return new WaitForSeconds( 5f );
+        bulkUi.SetActive(false);
         Main.Instance.PlayAudio(audioClips[5], () => {
             animator.Play("CarbonTape_outline_on");
             carbonTape.GetComponent<BoxCollider>().enabled = true;
@@ -173,6 +179,7 @@ public class Section2_4 : SectionBase
         bulk.GetComponent<Clickable>().onMouseClick -= ClickBulk;
         pincette.GetComponent<Clickable>().onMouseClick -= ClickPincette;
         carbonTape.GetComponent<Clickable>().onMouseClick -= ClickCarbonTape;
+        bulkUi.SetActive(false);
         if(coTimer != null) StopCoroutine(coTimer);
     }
 

@@ -119,15 +119,44 @@ public class Section2_5 : SectionBase
         carbonTape.GetComponent<BoxCollider>().enabled = false;
         carbonTape.GetComponent<Clickable>().onMouseClick -= ClickCarbonTape;
         animator.Play("CarbonTape_move");
-        coTimer = Ended();
+        coTimer = Start5();
         StartCoroutine(coTimer);
     }
-    
+
+    private IEnumerator Start5() 
+    {
+        yield return new WaitForSeconds( 10f );
+        Main.Instance.PlayAudio(audioClips[4], () => {
+            animator.Play("mount_outline_on");
+            mounting.GetComponent<BoxCollider>().enabled = true;
+            mounting.GetComponent<Clickable>().onMouseClick += ClickMounting2;
+        });
+    }
+
+
+
+    private void ClickMounting2 ( GameObject target, Vector3 mousePos ) 
+    {
+        mounting.GetComponent<BoxCollider>().enabled = false;
+        mounting.GetComponent<Clickable>().onMouseClick -= ClickMounting2;
+        animator.Play("mount_move");
+        coTimer = Start6();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start6() 
+    {
+        yield return new WaitForSeconds( 4f );
+        Main.Instance.PlayAudio(audioClips[5], () => {
+            coTimer = Ended();
+            StartCoroutine(coTimer);
+        });
+    }
 
 
     private IEnumerator Ended() 
     {
-        yield return new WaitForSeconds( 12.0f );
+        yield return new WaitForSeconds( 3.0f );
         this.EndSection();
     }
 

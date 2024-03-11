@@ -24,6 +24,9 @@ public class Section2_7 : SectionBase
     public GameObject touch3;
 
     [SerializeField]
+    public GameObject touch4;
+
+    [SerializeField]
     public GameObject mouse;
     [SerializeField]
     public GameObject mouseTouch;
@@ -77,6 +80,7 @@ public class Section2_7 : SectionBase
         touch1.SetActive(false);
         touch2.SetActive(false);
         touch3.SetActive(false);
+        touch4.SetActive(false);
         screen1.SetActive(false);
         popup1.SetActive(false);
         mouse.SetActive(false);
@@ -475,7 +479,7 @@ public class Section2_7 : SectionBase
     {
         yield return new WaitForSeconds( 1f );
         Main.Instance.PlayAudio(audioClips[20], () => {
-            animator.Play("handle_outline_on");
+            animator.Play("handle_outline_on3");
             handle.GetComponent<BoxCollider>().enabled = true;
             handle.GetComponent<Clickable>().onMouseClick += ClickHandle3;
         });
@@ -485,7 +489,7 @@ public class Section2_7 : SectionBase
     {
         handle.GetComponent<BoxCollider>().enabled = false;
         handle.GetComponent<Clickable>().onMouseClick -= ClickHandle3;
-        animator.Play("handle_open");
+        animator.Play("handle_open2");
         coTimer = Start22();
         StartCoroutine(coTimer);
     }
@@ -494,7 +498,7 @@ public class Section2_7 : SectionBase
     {
         yield return new WaitForSeconds( 3f );
         Main.Instance.PlayAudio(audioClips[21], () => {
-            animator.Play("HexagonDriver_outline_on");
+            animator.Play("HexagonDriver_outline_on2");
             driver.GetComponent<BoxCollider>().enabled = true;
             driver.GetComponent<Clickable>().onMouseClick += ClickDriver2;
         });
@@ -504,12 +508,101 @@ public class Section2_7 : SectionBase
     {
         driver.GetComponent<BoxCollider>().enabled = false;
         driver.GetComponent<Clickable>().onMouseClick -= ClickDriver2;
-        animator.Play("HexagonDriver_move");
-        // coTimer = Start11();
-        // StartCoroutine(coTimer);
+        animator.Play("HexagonDriver_move2");
+        coTimer = Start23();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start23() 
+    {
+        yield return new WaitForSeconds( 4f );
+        Main.Instance.PlayAudio(audioClips[22], () => {
+            coTimer = Start24();
+            StartCoroutine(coTimer);
+        });
+    }
+
+    private IEnumerator Start24() 
+    {
+        yield return new WaitForSeconds( 1f );
+        Main.Instance.PlayAudio(audioClips[23], () => {
+            animator.Play("handle_outline_on4");
+            handle.GetComponent<BoxCollider>().enabled = true;
+            handle.GetComponent<Clickable>().onMouseClick += ClickHandle4;
+           
+        });
+    }
+
+    private void ClickHandle4 ( GameObject target, Vector3 mousePos ) 
+    {
+        handle.GetComponent<BoxCollider>().enabled = false;
+        handle.GetComponent<Clickable>().onMouseClick -= ClickHandle4;
+        animator.Play("handle_close");
+        coTimer = Start25();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start25()
+    {
+        yield return new WaitForSeconds( 3f );
+        screen1.SetActive(false);
+        player.GetComponent<Player>().isActive = false;
+        Main.Instance.repositionBtn.SetActive(false);
+        player.transform.DOLocalMove(zoomPlayerPos1, 1f).SetEase(Ease.OutCubic);
+        player.transform.DOLocalRotate(zoomPlayerRo1, 1f).SetEase(Ease.OutCubic);
+        camera.transform
+        .DOLocalRotate(zoomCameraRo1, 1f)
+        .SetEase(Ease.OutCubic)
+        .OnComplete(() => {
+            player.GetComponent<Player>().isActive = true;
+            Main.Instance.repositionBtn.SetActive(true);
+            coTimer = Start26();
+            StartCoroutine(coTimer);
+        });
+        isZoom = false;
+    }
+
+    private IEnumerator Start26() 
+    {
+        yield return new WaitForSeconds( 2f );
+        Main.Instance.PlayAudio(audioClips[24], () => {
+             touch1.SetActive(true);
+            coGlowAni = GlowAni(touch1);
+            StartCoroutine(coGlowAni);
+            touch1.GetComponent<Clickable>().onMouseClick += ClickTouch1_3;
+        });
+    }
+
+    private void ClickTouch1_3 ( GameObject target, Vector3 mousePos ) 
+    {
+        touch1.SetActive(false);
+        touch1.GetComponent<Clickable>().onMouseClick -= ClickTouch1_3;
+        StopCoroutine(coGlowAni);
+        screen1.SetActive(true);
+        coTimer = Start27();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start27() 
+    {
+        yield return new WaitForSeconds( 2f );
+        Main.Instance.PlayAudio(audioClips[25], () => {
+            touch4.SetActive(true);
+            coGlowAni = GlowAni(touch4);
+            StartCoroutine(coGlowAni);
+            touch4.GetComponent<Clickable>().onMouseClick += ClickTouch4;
+        });
     }
 
 
+    private void ClickTouch4 ( GameObject target, Vector3 mousePos ) 
+    {
+        touch4.SetActive(false);
+        touch4.GetComponent<Clickable>().onMouseClick -= ClickTouch4;
+        StopCoroutine(coGlowAni);
+        coTimer = Ended();
+        StartCoroutine(coTimer);
+    }
 
 
     private IEnumerator GlowAni( GameObject target ) 
@@ -572,17 +665,19 @@ public class Section2_7 : SectionBase
         animator.Update(0f);
         target.SetActive(false);
         touch1.GetComponent<Clickable>().onMouseClick -= ClickTouch1;
-        holder.GetComponent<Clickable>().onMouseClick -= ClickTouch1_2;
+        touch1.GetComponent<Clickable>().onMouseClick -= ClickTouch1_2;
+        touch1.GetComponent<Clickable>().onMouseClick -= ClickTouch1_3;
         touch2.GetComponent<Clickable>().onMouseClick -= ClickTouch2;
-        holder.GetComponent<Clickable>().onMouseClick -= ClickTouch2_2;
+        touch2.GetComponent<Clickable>().onMouseClick -= ClickTouch2_2;
         touch3.GetComponent<Clickable>().onMouseClick -= ClickTouch3;
-        holder.GetComponent<Clickable>().onMouseClick -= ClickTouch3_2;
+        touch3.GetComponent<Clickable>().onMouseClick -= ClickTouch3_2;
+        touch4.GetComponent<Clickable>().onMouseClick -= ClickTouch4;
         mouseTouch.GetComponent<Clickable>().onMouseClick -= ClickMouse;
         f6Touch.GetComponent<Clickable>().onMouseClick -= ClickF6;
         handle.GetComponent<Clickable>().onMouseClick -= ClickHandle;
         handle.GetComponent<Clickable>().onMouseClick -= ClickHandle2;
         handle.GetComponent<Clickable>().onMouseClick -= ClickHandle3;
-        // handle.GetComponent<Clickable>().onMouseClick -= ClickHandle4;
+        handle.GetComponent<Clickable>().onMouseClick -= ClickHandle4;
         holder.GetComponent<Clickable>().onMouseClick -= ClickHolder;
         driver.GetComponent<Clickable>().onMouseClick -= ClickDriver;
         driver.GetComponent<Clickable>().onMouseClick -= ClickDriver2;
