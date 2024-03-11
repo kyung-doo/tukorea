@@ -16,6 +16,9 @@ public class Section2_7 : SectionBase
     [SerializeField]
     public GameObject touch1;
 
+    [SerializeField]
+    public GameObject screen1;
+
 
 
 
@@ -80,8 +83,8 @@ public class Section2_7 : SectionBase
         touch1.SetActive(false);
         touch1.GetComponent<Clickable>().onMouseClick -= ClickTouch1;
         StopCoroutine(coGlowAni);
-        coTimer = Ended();
-        StartCoroutine(coTimer);
+        // coTimer = Ended();
+        // StartCoroutine(coTimer);
     }
 
 
