@@ -97,26 +97,16 @@ public class Player : MonoBehaviour
 
         if(pannig) 
         {
-            float speed = pannigSpeed;
-            if(PlayerPrefs.GetInt("quality") == 1) 
-            {
-                speed = pannigSpeed * 1.1f;
-            } 
-            else if(PlayerPrefs.GetInt("quality") == 0)
-            {
-                speed = pannigSpeed * 30;
-            }
-#if UNITY_EDITOR
-            speed = pannigSpeed *5f;
-#endif            
+            float speed = pannigSpeed * 0.02f;
+       
             if(Math.Abs(Input.GetAxis("Mouse X")) > Math.Abs(Input.GetAxis("Mouse Y"))) 
             {
-                Vector3 moveX = this.transform.position + (-this.transform.right * Input.GetAxis("Mouse X") * speed * Time.deltaTime);
+                Vector3 moveX = this.transform.position + (-this.transform.right * Input.GetAxis("Mouse X") * speed);
                 if(!CheckHit(moveX)) this.transform.position = moveX;
             }
             if(Math.Abs(Input.GetAxis("Mouse Y")) > Math.Abs(Input.GetAxis("Mouse X"))) 
             {
-                Vector3 moveY = this.transform.position + (-this.transform.up * Input.GetAxis("Mouse Y") * speed * Time.deltaTime);
+                Vector3 moveY = this.transform.position + (-this.transform.up * Input.GetAxis("Mouse Y") * speed);
                 if(!CheckHit(moveY)) this.transform.position = moveY;
             }
         }
