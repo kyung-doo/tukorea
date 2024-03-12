@@ -37,42 +37,42 @@ public class Player : MonoBehaviour
     
     private void FixedUpdate()
     {
-        if(!isActive) return;
-        if(optionView.GetComponent<CanvasGroup>().interactable) return;
+        if(isActive && !optionView.GetComponent<CanvasGroup>().interactable) {
         
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-        {
-            this.transform.position = this.transform.position + (-this.transform.right * movementSpeed * Time.deltaTime);
-        }
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            {
+                this.transform.position = this.transform.position + (-this.transform.right * movementSpeed * Time.deltaTime);
+            }
 
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-        {
-            this.transform.position = this.transform.position + (this.transform.right * movementSpeed * Time.deltaTime);
-        }
+            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            {
+                this.transform.position = this.transform.position + (this.transform.right * movementSpeed * Time.deltaTime);
+            }
 
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
-        {
-            this.transform.position = this.transform.position + (this.transform.forward * movementSpeed * Time.deltaTime);
-        }
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+            {
+                this.transform.position = this.transform.position + (this.transform.forward * movementSpeed * Time.deltaTime);
+            }
 
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-        {
-            this.transform.position = this.transform.position + (-this.transform.forward * movementSpeed * Time.deltaTime);
-        }
-        this.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+            {
+                this.transform.position = this.transform.position + (-this.transform.forward * movementSpeed * Time.deltaTime);
+            }
+            this.GetComponent<Rigidbody>().velocity = Vector3.zero;
 
-        if(mouseWheel > 0f) 
-        {
-            zooming = true;
-            Vector3 movePos = this.transform.position + (cam.transform.forward * movementSpeed * 2.5f * Time.deltaTime);
-            if(!CheckHit(movePos)) this.transform.position = movePos;
-        } 
+            if(mouseWheel > 0f) 
+            {
+                zooming = true;
+                Vector3 movePos = this.transform.position + (cam.transform.forward * movementSpeed * 2.5f * Time.deltaTime);
+                if(!CheckHit(movePos)) this.transform.position = movePos;
+            } 
 
-        if(mouseWheel < 0f)
-        {
-            zooming = true;
-            Vector3 movePos = this.transform.position - (cam.transform.forward * movementSpeed * 2.5f * Time.deltaTime);
-            if(!CheckHit(movePos)) this.transform.position = movePos;
+            if(mouseWheel < 0f)
+            {
+                zooming = true;
+                Vector3 movePos = this.transform.position - (cam.transform.forward * movementSpeed * 2.5f * Time.deltaTime);
+                if(!CheckHit(movePos)) this.transform.position = movePos;
+            }
         }
 
         mouseWheel = 0f;
@@ -83,31 +83,30 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if(!isActive) return;
-        if(optionView.GetComponent<CanvasGroup>().interactable) return;
+        if(isActive && !optionView.GetComponent<CanvasGroup>().interactable) {
 
-
-        if (looking)
-        {
-            float newRotationX = this.transform.localEulerAngles.y - Input.GetAxis("Mouse X") * freeLookSensitivity;
-            float newRotationY = cam.transform.localEulerAngles.x + Input.GetAxis("Mouse Y") * freeLookSensitivity;
-            this.transform.localEulerAngles = new Vector3(0f, newRotationX, 0f);
-            cam.transform.localEulerAngles = new Vector3(newRotationY, 0f, 0f);
-        }
-
-        if(pannig) 
-        {
-            float speed = pannigSpeed * 0.02f;
-       
-            if(Math.Abs(Input.GetAxis("Mouse X")) > Math.Abs(Input.GetAxis("Mouse Y"))) 
+            if (looking)
             {
-                Vector3 moveX = this.transform.position + (-this.transform.right * Input.GetAxis("Mouse X") * speed);
-                if(!CheckHit(moveX)) this.transform.position = moveX;
+                float newRotationX = this.transform.localEulerAngles.y - Input.GetAxis("Mouse X") * freeLookSensitivity;
+                float newRotationY = cam.transform.localEulerAngles.x + Input.GetAxis("Mouse Y") * freeLookSensitivity;
+                this.transform.localEulerAngles = new Vector3(0f, newRotationX, 0f);
+                cam.transform.localEulerAngles = new Vector3(newRotationY, 0f, 0f);
             }
-            if(Math.Abs(Input.GetAxis("Mouse Y")) > Math.Abs(Input.GetAxis("Mouse X"))) 
+
+            if(pannig) 
             {
-                Vector3 moveY = this.transform.position + (-this.transform.up * Input.GetAxis("Mouse Y") * speed);
-                if(!CheckHit(moveY)) this.transform.position = moveY;
+                float speed = pannigSpeed * 0.02f;
+        
+                if(Math.Abs(Input.GetAxis("Mouse X")) > Math.Abs(Input.GetAxis("Mouse Y"))) 
+                {
+                    Vector3 moveX = this.transform.position + (-this.transform.right * Input.GetAxis("Mouse X") * speed);
+                    if(!CheckHit(moveX)) this.transform.position = moveX;
+                }
+                if(Math.Abs(Input.GetAxis("Mouse Y")) > Math.Abs(Input.GetAxis("Mouse X"))) 
+                {
+                    Vector3 moveY = this.transform.position + (-this.transform.up * Input.GetAxis("Mouse Y") * speed);
+                    if(!CheckHit(moveY)) this.transform.position = moveY;
+                }
             }
         }
 

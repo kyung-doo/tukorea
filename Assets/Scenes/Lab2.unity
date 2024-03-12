@@ -3760,7 +3760,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187973101}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.011037356, y: 0.011037354, z: 0.1343494}
@@ -3897,9 +3897,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9d441a5decb37340aea8131da138359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPlayerPos: {x: 0.9400001, y: 0.3682782, z: 2.795}
-  startPlayerRo: {x: 0, y: 180.6002, z: 0}
-  startCameraRo: {x: 77.4012, y: 0, z: 0}
+  startPlayerPos: {x: 0.9951119, y: 0.1255509, z: 3.0387063}
+  startPlayerRo: {x: 0, y: 180.75017, z: 0}
+  startCameraRo: {x: 52.652416, y: 0, z: 0}
   isBackMotion: 0
   audioClips:
   - {fileID: 8300000, guid: 8d596c35a296c1e4cbe9be6b715fbeec, type: 3}
@@ -32262,9 +32262,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 456d9bf293e411b4293c79981ef5b276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPlayerPos: {x: 0.9400001, y: 0.36827824, z: 2.795}
-  startPlayerRo: {x: 0, y: 180.6002, z: 0}
-  startCameraRo: {x: 77.4012, y: 0, z: 0}
+  startPlayerPos: {x: 0.9951119, y: 0.1255509, z: 3.0387063}
+  startPlayerRo: {x: 0, y: 180.75017, z: 0}
+  startCameraRo: {x: 52.652416, y: 0, z: 0}
   isBackMotion: 0
   audioClips:
   - {fileID: 8300000, guid: 0bc0bd154d43a3547b79a14c43d7348d, type: 3}
@@ -40818,9 +40818,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62fc0fb502f6a5349b95dd4a3e20da69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPlayerPos: {x: 0.9400001, y: 0.3682782, z: 2.795}
-  startPlayerRo: {x: 0, y: 180.6002, z: 0}
-  startCameraRo: {x: 77.4012, y: 0, z: 0}
+  startPlayerPos: {x: 0.9951119, y: 0.1255509, z: 3.0387063}
+  startPlayerRo: {x: 0, y: 180.75017, z: 0}
+  startCameraRo: {x: 52.652416, y: 0, z: 0}
   isBackMotion: 0
   audioClips:
   - {fileID: 8300000, guid: 80281fcde6f0cd54ca0ccb04a4d8c8db, type: 3}
@@ -52286,9 +52286,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da0a68ea117198848aa13a5021ba7a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPlayerPos: {x: 0.9400001, y: 0.3682782, z: 2.795}
-  startPlayerRo: {x: 0, y: 180.6002, z: 0}
-  startCameraRo: {x: 77.4012, y: 0, z: 0}
+  startPlayerPos: {x: 0.9951119, y: 0.1255509, z: 3.0387063}
+  startPlayerRo: {x: 0, y: 180.75017, z: 0}
+  startCameraRo: {x: 52.652416, y: 0, z: 0}
   isBackMotion: 0
   audioClips:
   - {fileID: 8300000, guid: dce0fe13ed31c7b40a4fc4a8344fcd17, type: 3}
@@ -53414,7 +53414,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2107896834}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.10823062, y: 0.108230636, z: 0.021578953}
@@ -69018,7 +69018,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4802026709471148355}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.07232632, y: 0.7617798, z: 0.07097836}

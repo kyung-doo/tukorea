@@ -86,8 +86,8 @@ public class Section1_3 : SectionBase
                 prop.GetComponent<BoxCollider>().enabled = true;
                 prop.GetComponent<Clickable>().onMouseClick += Clickprop1;
             });
+            Main.Instance.repositionBtn.SetActive(true);
         });
-        Main.Instance.repositionBtn.SetActive(true);
     }
 
     private void Clickprop1 ( GameObject target, Vector3 mousePos ) 
@@ -183,6 +183,7 @@ public class Section1_3 : SectionBase
         .SetEase(Ease.OutCubic)
         .OnComplete(() => {
             player.GetComponent<Player>().isActive = true;
+            Main.Instance.repositionBtn.SetActive(true);
             coTimer = Start8();
             StartCoroutine(coTimer);
         });
@@ -192,7 +193,6 @@ public class Section1_3 : SectionBase
 
     private IEnumerator Start8() 
     {
-        Main.Instance.repositionBtn.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         Main.Instance.PlayAudio(audioClips[5], () => {
             animator.Play("Xray_door_close_outline_on");

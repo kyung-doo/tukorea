@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using DG.Tweening;
 
 public class Section2_3 : SectionBase
 {
@@ -30,7 +31,10 @@ public class Section2_3 : SectionBase
 
 
     private IEnumerator coTimer = null;
-    
+
+    private Vector3 zoomPlayerPos = new Vector3(0.966170549f, -0.0998755395f, 3.01719284f);
+    private Vector3 zoomPlayerRo = new Vector3(0f, 180.850128f, 0f);
+    private Vector3 zoomCameraRo = new Vector3(49.1036263f, 0f, 0f);
 
 
 
@@ -148,6 +152,20 @@ public class Section2_3 : SectionBase
     {
         carbonTape.GetComponent<BoxCollider>().enabled = false;
         carbonTape.GetComponent<Clickable>().onMouseClick -= ClickCarbonTape;
+        player.transform.DOLocalMove(zoomPlayerPos, 1f).SetEase(Ease.OutCubic).SetDelay(6f);
+        player.transform.DOLocalRotate(zoomPlayerRo, 1f).SetEase(Ease.OutCubic).SetDelay(6f);
+        camera.transform
+        .DOLocalRotate(zoomCameraRo, 1f)
+        .SetEase(Ease.OutCubic)
+        .SetDelay(6f)
+        .OnStart(() => {
+            player.GetComponent<Player>().isActive = false;
+            Main.Instance.repositionBtn.SetActive(false);
+        })
+        .OnComplete(() => {
+            player.GetComponent<Player>().isActive = true;
+        });
+        
         animator.Play("CarbonTape_move");
         coTimer = Ended();
         StartCoroutine(coTimer);
