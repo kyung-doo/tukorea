@@ -1495,7 +1495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   complexMaskingMode: 0
-  drawingMode: -1
+  drawingMode: 1
   outlineLayer: 0
   outlineTargets:
   - IsVisible: 1
