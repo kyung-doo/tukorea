@@ -1495,7 +1495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   complexMaskingMode: 0
-  drawingMode: 1
+  drawingMode: -1
   outlineLayer: 0
   outlineTargets:
   - IsVisible: 1
@@ -2932,6 +2932,7 @@ MonoBehaviour:
   startPlayerPos: {x: 3.2054262, y: 0.87871563, z: 3.3748417}
   startPlayerRo: {x: 0, y: 359.49945, z: 0}
   startCameraRo: {x: 25.20711, y: 0, z: 0}
+  isBackMotion: 0
   audioClips:
   - {fileID: 8300000, guid: 92ff86613ab98484ca2fb9f6b9a40aca, type: 3}
   - {fileID: 8300000, guid: 9a00e67fc80b7e247b88ac91252366fb, type: 3}
@@ -10957,6 +10958,7 @@ MonoBehaviour:
   startPlayerPos: {x: 2.3495908, y: 0.24948928, z: 2.9047008}
   startPlayerRo: {x: 0, y: 179.04996, z: 0}
   startCameraRo: {x: 68.255424, y: 0, z: 0}
+  isBackMotion: 0
   audioClips:
   - {fileID: 8300000, guid: ff88221339e35f8489f52e58028e079a, type: 3}
   - {fileID: 8300000, guid: e5da9c9b4848ca449a5939d21a50a308, type: 3}
@@ -11546,6 +11548,7 @@ MonoBehaviour:
   startPlayerPos: {x: 2.349591, y: 0.24948928, z: 2.9047008}
   startPlayerRo: {x: 0, y: 179.04996, z: 0}
   startCameraRo: {x: 68.255424, y: 0, z: 0}
+  isBackMotion: 0
   audioClips:
   - {fileID: 8300000, guid: 473ad6ce6de8f8d4989a51f212a649a5, type: 3}
   - {fileID: 8300000, guid: 924aa923be8e311469c096f154b2f0f0, type: 3}
