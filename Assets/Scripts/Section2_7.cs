@@ -68,9 +68,9 @@ public class Section2_7 : SectionBase
     private Vector3 zoomPlayerRo2 = new Vector3(0f, -36.75f, 0f);
     private Vector3 zoomCameraRo2 = new Vector3(23.85f, 0f, 0f);
 
-    private Vector3 zoomPlayerPos3 = new Vector3(0.493331909f, -0.011175245f, 5.19654751f);
-    private Vector3 zoomPlayerRo3 = new Vector3(0f, -54.9f, 0f);
-    private Vector3 zoomCameraRo3 = new Vector3(23.85f, 22.350172f, 0f);
+    private Vector3 zoomPlayerPos3 = new Vector3(0.4764349f, -0.05728188f, 5.186139f);
+    private Vector3 zoomPlayerRo3 = new Vector3(0f, -52.5f, 0f);
+    private Vector3 zoomCameraRo3 = new Vector3(9.75f, 0f, 0f);
 
     private int isZoom = 0;
     private IEnumerator coGlowAni = null;
