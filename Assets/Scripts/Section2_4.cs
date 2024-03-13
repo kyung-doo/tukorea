@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using DG.Tweening;
 
 public class Section2_4 : SectionBase
 {
@@ -34,7 +35,12 @@ public class Section2_4 : SectionBase
 
 
     private IEnumerator coTimer = null;
-    
+
+    private Vector3 zoomPlayerPos = new Vector3(0.959688187f, -0.197897345f, 3.02322054f);
+    private Vector3 zoomPlayerRo = new Vector3(0f, 180.450241f, 0f);
+    private Vector3 zoomCameraRo = new Vector3(27.1530857f, 0f, 0f);
+
+    private bool isZoom = false;
 
 
 
@@ -87,6 +93,23 @@ public class Section2_4 : SectionBase
         nickelCarbonTape.GetComponent<BoxCollider>().enabled = false;
         nickelCarbonTape.GetComponent<Clickable>().onMouseClick -= ClickNickelCarbonTape;
         animator.Play("NickelCarbonTape_move");
+
+        player.transform.DOLocalMove(zoomPlayerPos, 1f).SetEase(Ease.OutCubic).SetDelay(7f);
+        player.transform.DOLocalRotate(zoomPlayerRo, 1f).SetEase(Ease.OutCubic).SetDelay(7f);
+        camera.transform
+        .DOLocalRotate(zoomCameraRo, 1f)
+        .SetEase(Ease.OutCubic)
+        .SetDelay(7f)
+        .OnStart(() => {
+            isZoom = true;
+            player.GetComponent<Player>().isActive = false;
+            Main.Instance.repositionBtn.SetActive(false);
+        })
+        .OnComplete(() => {
+            player.GetComponent<Player>().isActive = true;
+            Main.Instance.repositionBtn.SetActive(true);
+        });
+
         coTimer = Start3();
         StartCoroutine(coTimer);
     }
@@ -95,6 +118,20 @@ public class Section2_4 : SectionBase
     private IEnumerator Start3() 
     {
         yield return new WaitForSeconds( 10f );
+        
+        player.GetComponent<Player>().isActive = false;
+        Main.Instance.repositionBtn.SetActive(false);
+        player.transform.DOLocalMove(startPlayerPos, 1f).SetEase(Ease.OutCubic);
+        player.transform.DOLocalRotate(startPlayerRo, 1f).SetEase(Ease.OutCubic);
+        camera.transform
+        .DOLocalRotate(startCameraRo, 1f)
+        .SetEase(Ease.OutCubic)
+        .OnComplete(() => {
+            isZoom = false;
+            player.GetComponent<Player>().isActive = true;
+            Main.Instance.repositionBtn.SetActive(true);
+        });
+
         Main.Instance.PlayAudio(audioClips[2], () => {
             animator.Play("bulk_outline_on");
             bulk.GetComponent<BoxCollider>().enabled = true;
@@ -123,6 +160,23 @@ public class Section2_4 : SectionBase
     {
         pincette.GetComponent<BoxCollider>().enabled = false;
         pincette.GetComponent<Clickable>().onMouseClick -= ClickPincette;
+
+        player.transform.DOLocalMove(zoomPlayerPos, 1f).SetEase(Ease.OutCubic).SetDelay(3f);
+        player.transform.DOLocalRotate(zoomPlayerRo, 1f).SetEase(Ease.OutCubic).SetDelay(3f);
+        camera.transform
+        .DOLocalRotate(zoomCameraRo, 1f)
+        .SetEase(Ease.OutCubic)
+        .SetDelay(3f)
+        .OnStart(() => {
+            isZoom = true;
+            player.GetComponent<Player>().isActive = false;
+            Main.Instance.repositionBtn.SetActive(false);
+        })
+        .OnComplete(() => {
+            player.GetComponent<Player>().isActive = true;
+            Main.Instance.repositionBtn.SetActive(true);
+        });
+
         animator.Play("Pincette_move");
         coTimer = Start5();
         StartCoroutine(coTimer);
@@ -134,6 +188,20 @@ public class Section2_4 : SectionBase
         yield return new WaitForSeconds( 5f );
         Main.Instance.PlayAudio(audioClips[3]);
         yield return new WaitForSeconds( 8f );
+
+        player.GetComponent<Player>().isActive = false;
+        Main.Instance.repositionBtn.SetActive(false);
+        player.transform.DOLocalMove(startPlayerPos, 1f).SetEase(Ease.OutCubic);
+        player.transform.DOLocalRotate(startPlayerRo, 1f).SetEase(Ease.OutCubic);
+        camera.transform
+        .DOLocalRotate(startCameraRo, 1f)
+        .SetEase(Ease.OutCubic)
+        .OnComplete(() => {
+            isZoom = false;
+            player.GetComponent<Player>().isActive = true;
+            Main.Instance.repositionBtn.SetActive(true);
+        });
+        
         Main.Instance.PlayAudio(audioClips[4], () => {
             bulkUi.SetActive(true);
             coTimer = Start6();
@@ -156,6 +224,21 @@ public class Section2_4 : SectionBase
     {
         carbonTape.GetComponent<BoxCollider>().enabled = false;
         carbonTape.GetComponent<Clickable>().onMouseClick -= ClickCarbonTape;
+        player.transform.DOLocalMove(zoomPlayerPos, 1f).SetEase(Ease.OutCubic).SetDelay(5f);
+        player.transform.DOLocalRotate(zoomPlayerRo, 1f).SetEase(Ease.OutCubic).SetDelay(5f);
+        camera.transform
+        .DOLocalRotate(zoomCameraRo, 1f)
+        .SetEase(Ease.OutCubic)
+        .SetDelay(5f)
+        .OnStart(() => {
+            isZoom = true;
+            player.GetComponent<Player>().isActive = false;
+            Main.Instance.repositionBtn.SetActive(false);
+        })
+        .OnComplete(() => {
+            player.GetComponent<Player>().isActive = true;
+        });
+
         animator.Play("CarbonTape_move");
         coTimer = Ended();
         StartCoroutine(coTimer);

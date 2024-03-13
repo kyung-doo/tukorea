@@ -68,7 +68,11 @@ public class Section2_7 : SectionBase
     private Vector3 zoomPlayerRo2 = new Vector3(0f, -36.75f, 0f);
     private Vector3 zoomCameraRo2 = new Vector3(23.85f, 0f, 0f);
 
-    private bool isZoom = false;
+    private Vector3 zoomPlayerPos3 = new Vector3(0.493331909f, -0.011175245f, 5.19654751f);
+    private Vector3 zoomPlayerRo3 = new Vector3(0f, -54.9f, 0f);
+    private Vector3 zoomCameraRo3 = new Vector3(23.85f, 22.350172f, 0f);
+
+    private int isZoom = 0;
     private IEnumerator coGlowAni = null;
 
 
@@ -222,7 +226,7 @@ public class Section2_7 : SectionBase
     private IEnumerator Start7() 
     {
         yield return new WaitForSeconds( 2f );
-        isZoom = true;
+        isZoom = 1;
         player.GetComponent<Player>().isActive = false;
         player.transform.DOLocalMove(zoomPlayerPos2, 1f).SetEase(Ease.OutCubic);
         player.transform.DOLocalRotate(zoomPlayerRo2, 1f).SetEase(Ease.OutCubic);
@@ -270,6 +274,23 @@ public class Section2_7 : SectionBase
     {
         holder.GetComponent<BoxCollider>().enabled = false;
         holder.GetComponent<Clickable>().onMouseClick -= ClickHolder;
+
+        player.transform.DOLocalMove(zoomPlayerPos3, 1f).SetEase(Ease.OutCubic).SetDelay(1f);
+        player.transform.DOLocalRotate(zoomPlayerRo3, 1f).SetEase(Ease.OutCubic).SetDelay(1f);
+        camera.transform
+        .DOLocalRotate(zoomCameraRo3, 1f)
+        .SetEase(Ease.OutCubic)
+        .SetDelay(1f)
+        .OnStart(() => {
+            isZoom = 2;
+            player.GetComponent<Player>().isActive = false;
+            Main.Instance.repositionBtn.SetActive(false);
+        })
+        .OnComplete(() => {
+            player.GetComponent<Player>().isActive = true;
+            Main.Instance.repositionBtn.SetActive(true);
+        });
+
         animator.Play("holder_move");
         coTimer = Start10();
         StartCoroutine(coTimer);
@@ -278,6 +299,20 @@ public class Section2_7 : SectionBase
     private IEnumerator Start10() 
     {
         yield return new WaitForSeconds( 3f );
+
+        player.GetComponent<Player>().isActive = false;
+        Main.Instance.repositionBtn.SetActive(false);
+        player.transform.DOLocalMove(zoomPlayerPos2, 1f).SetEase(Ease.OutCubic);
+        player.transform.DOLocalRotate(zoomPlayerRo2, 1f).SetEase(Ease.OutCubic);
+        camera.transform
+        .DOLocalRotate(zoomCameraRo2, 1f)
+        .SetEase(Ease.OutCubic)
+        .OnComplete(() => {
+            isZoom = 1;
+            player.GetComponent<Player>().isActive = true;
+            Main.Instance.repositionBtn.SetActive(true);
+        });
+
         Main.Instance.PlayAudio(audioClips[10], () => {
             animator.Play("HexagonDriver_outline_on");
             driver.GetComponent<BoxCollider>().enabled = true;
@@ -289,6 +324,23 @@ public class Section2_7 : SectionBase
     {
         driver.GetComponent<BoxCollider>().enabled = false;
         driver.GetComponent<Clickable>().onMouseClick -= ClickDriver;
+
+        player.transform.DOLocalMove(zoomPlayerPos3, 1f).SetEase(Ease.OutCubic).SetDelay(0.5f);
+        player.transform.DOLocalRotate(zoomPlayerRo3, 1f).SetEase(Ease.OutCubic).SetDelay(0.5f);
+        camera.transform
+        .DOLocalRotate(zoomCameraRo3, 1f)
+        .SetEase(Ease.OutCubic)
+        .SetDelay(0.5f)
+        .OnStart(() => {
+            isZoom = 2;
+            player.GetComponent<Player>().isActive = false;
+            Main.Instance.repositionBtn.SetActive(false);
+        })
+        .OnComplete(() => {
+            player.GetComponent<Player>().isActive = true;
+            Main.Instance.repositionBtn.SetActive(true);
+        });
+
         animator.Play("HexagonDriver_move");
         coTimer = Start11();
         StartCoroutine(coTimer);
@@ -306,6 +358,20 @@ public class Section2_7 : SectionBase
     private IEnumerator Start12() 
     {
         yield return new WaitForSeconds( 1f );
+
+        player.GetComponent<Player>().isActive = false;
+        Main.Instance.repositionBtn.SetActive(false);
+        player.transform.DOLocalMove(zoomPlayerPos2, 1f).SetEase(Ease.OutCubic);
+        player.transform.DOLocalRotate(zoomPlayerRo2, 1f).SetEase(Ease.OutCubic);
+        camera.transform
+        .DOLocalRotate(zoomCameraRo2, 1f)
+        .SetEase(Ease.OutCubic)
+        .OnComplete(() => {
+            isZoom = 1;
+            player.GetComponent<Player>().isActive = true;
+            Main.Instance.repositionBtn.SetActive(true);
+        });
+
         Main.Instance.PlayAudio(audioClips[12], () => {
             animator.Play("handle_outline_on2");
             handle.GetComponent<BoxCollider>().enabled = true;
@@ -340,7 +406,7 @@ public class Section2_7 : SectionBase
             coTimer = Start14();
             StartCoroutine(coTimer);
         });
-        isZoom = false;
+        isZoom = 0;
     }
 
     private IEnumerator Start14() 
@@ -460,7 +526,7 @@ public class Section2_7 : SectionBase
     private IEnumerator Start20() 
     {
         yield return new WaitForSeconds( 2f );
-        isZoom = true;
+        isZoom = 1;
         player.GetComponent<Player>().isActive = false;
         player.transform.DOLocalMove(zoomPlayerPos2, 1f).SetEase(Ease.OutCubic);
         player.transform.DOLocalRotate(zoomPlayerRo2, 1f).SetEase(Ease.OutCubic);
@@ -559,7 +625,7 @@ public class Section2_7 : SectionBase
             coTimer = Start26();
             StartCoroutine(coTimer);
         });
-        isZoom = false;
+        isZoom = 0;
     }
 
     private IEnumerator Start26() 
@@ -644,17 +710,21 @@ public class Section2_7 : SectionBase
 
     public override void RepositionSection ()
     {
-        if(!isZoom) 
+        if(isZoom == 0) 
         {
             player.transform.DOLocalMove(zoomPlayerPos1, 3f).SetEase(Ease.OutCubic);
             player.transform.DOLocalRotate(zoomPlayerRo1, 3f).SetEase(Ease.OutCubic);
             camera.transform.DOLocalRotate(zoomCameraRo1, 3f).SetEase(Ease.OutCubic);
         } 
-        else 
+        else if(isZoom == 1)
         {
             player.transform.DOLocalMove(zoomPlayerPos2, 3f).SetEase(Ease.OutCubic);
             player.transform.DOLocalRotate(zoomPlayerRo2, 3f).SetEase(Ease.OutCubic);
             camera.transform.DOLocalRotate(zoomCameraRo2, 3f).SetEase(Ease.OutCubic);
+        } else {
+            player.transform.DOLocalMove(zoomPlayerPos3, 3f).SetEase(Ease.OutCubic);
+            player.transform.DOLocalRotate(zoomPlayerRo3, 3f).SetEase(Ease.OutCubic);
+            camera.transform.DOLocalRotate(zoomCameraRo3, 3f).SetEase(Ease.OutCubic);
         }
     }
 
