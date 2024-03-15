@@ -335,10 +335,6 @@ public class Section2_7 : SectionBase
             isZoom = 2;
             player.GetComponent<Player>().isActive = false;
             Main.Instance.repositionBtn.SetActive(false);
-        })
-        .OnComplete(() => {
-            player.GetComponent<Player>().isActive = true;
-            Main.Instance.repositionBtn.SetActive(true);
         });
 
         animator.Play("HexagonDriver_move");
@@ -348,19 +344,8 @@ public class Section2_7 : SectionBase
 
     private IEnumerator Start11() 
     {
-        yield return new WaitForSeconds( 3f );
-        Main.Instance.PlayAudio(audioClips[11], () => {
-            coTimer = Start12();
-            StartCoroutine(coTimer);
-        });
-    }
-
-    private IEnumerator Start12() 
-    {
-        yield return new WaitForSeconds( 1f );
-
-        player.GetComponent<Player>().isActive = false;
-        Main.Instance.repositionBtn.SetActive(false);
+        yield return new WaitForSeconds( 5f );
+        
         player.transform.DOLocalMove(zoomPlayerPos2, 1f).SetEase(Ease.OutCubic);
         player.transform.DOLocalRotate(zoomPlayerRo2, 1f).SetEase(Ease.OutCubic);
         camera.transform
@@ -371,6 +356,16 @@ public class Section2_7 : SectionBase
             player.GetComponent<Player>().isActive = true;
             Main.Instance.repositionBtn.SetActive(true);
         });
+
+        Main.Instance.PlayAudio(audioClips[11], () => {
+            coTimer = Start12();
+            StartCoroutine(coTimer);
+        });
+    }
+
+    private IEnumerator Start12() 
+    {
+        yield return new WaitForSeconds( 1f );
 
         Main.Instance.PlayAudio(audioClips[12], () => {
             animator.Play("handle_outline_on2");
@@ -572,6 +567,18 @@ public class Section2_7 : SectionBase
 
     private void ClickDriver2 ( GameObject target, Vector3 mousePos ) 
     {
+        player.transform.DOLocalMove(zoomPlayerPos3, 1f).SetEase(Ease.OutCubic).SetDelay(1f);
+        player.transform.DOLocalRotate(zoomPlayerRo3, 1f).SetEase(Ease.OutCubic).SetDelay(1f);
+        camera.transform
+        .DOLocalRotate(zoomCameraRo3, 1f)
+        .SetEase(Ease.OutCubic)
+        .SetDelay(1f)
+        .OnStart(() => {
+            isZoom = 2;
+            player.GetComponent<Player>().isActive = false;
+            Main.Instance.repositionBtn.SetActive(false);
+        });
+        
         driver.GetComponent<BoxCollider>().enabled = false;
         driver.GetComponent<Clickable>().onMouseClick -= ClickDriver2;
         animator.Play("HexagonDriver_move2");
@@ -582,6 +589,19 @@ public class Section2_7 : SectionBase
     private IEnumerator Start23() 
     {
         yield return new WaitForSeconds( 4f );
+        
+        player.transform.DOLocalMove(zoomPlayerPos2, 1f).SetEase(Ease.OutCubic);
+        player.transform.DOLocalRotate(zoomPlayerRo2, 1f).SetEase(Ease.OutCubic);
+        camera.transform
+        .DOLocalRotate(zoomCameraRo2, 1f)
+        .SetEase(Ease.OutCubic)
+        .OnComplete(() => {
+            isZoom = 1;
+            player.GetComponent<Player>().isActive = true;
+            Main.Instance.repositionBtn.SetActive(true);
+        });
+
+        yield return new WaitForSeconds( 3f );
         Main.Instance.PlayAudio(audioClips[22], () => {
             coTimer = Start24();
             StartCoroutine(coTimer);
@@ -666,8 +686,10 @@ public class Section2_7 : SectionBase
         touch4.SetActive(false);
         touch4.GetComponent<Clickable>().onMouseClick -= ClickTouch4;
         StopCoroutine(coGlowAni);
-        coTimer = Ended();
-        StartCoroutine(coTimer);
+        Main.Instance.PlayAudio(audioClips[26], () => {
+            coTimer = Ended();
+            StartCoroutine(coTimer);
+        });
     }
 
 

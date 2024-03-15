@@ -26,6 +26,9 @@ public class Section2_6 : SectionBase
     [SerializeField]
     public Animator animator;
 
+    [SerializeField]
+    public AudioClip beefAudio;
+
 
     private IEnumerator coTimer = null;
 
@@ -155,6 +158,7 @@ public class Section2_6 : SectionBase
             .DOLocalRotate(zoomCameraRo1, 1f)
             .SetEase(Ease.OutCubic)
             .OnComplete(() => {
+                Main.Instance.PlayAudio(beefAudio);
                 player.GetComponent<Player>().isActive = true;
                 Main.Instance.repositionBtn.SetActive(true);
                 animator.Play("handle_outline_on2");

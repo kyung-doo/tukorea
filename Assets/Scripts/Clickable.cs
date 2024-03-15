@@ -32,48 +32,40 @@ public class Clickable : MonoBehaviour
     {
         clicked = Input.GetMouseButtonDown(0);
 		mousePos = Input.mousePosition;
-
-		RaycastHit hit;
 		Ray ray = camera.GetComponent<Camera>().ScreenPointToRay(mousePos);
 
-        if(Physics.Raycast(ray, out hit)) 
+        if(this.GetComponent<Collider>().bounds.IntersectRay(ray)) 
         {
-            if(hit.collider.name == this.name) 
+            if(!hovered) 
             {
-                if(!hovered) 
-                {
-                    if(onMouseClick == null) return;
-                    Main.Instance.SetCursor(true);
-                    if(onMouseOver != null)  onMouseOver(this.gameObject, mousePos);
-                    hovered = true;
-                } 
+                if(onMouseClick == null) return;
+                Main.Instance.SetCursor(true);
+                if(onMouseOver != null)  onMouseOver(this.gameObject, mousePos);
+                hovered = true;
             } 
-            else 
+        }
+        else
+        {
+            if(hovered) 
             {
-                if(hovered) 
-                {
-                    Main.Instance.SetCursor(false);
-                    if(onMouseOut != null) onMouseOut(this.gameObject, mousePos);
-                    hovered = false;
-                }
+                Main.Instance.SetCursor(false);
+                if(onMouseOut != null) onMouseOut(this.gameObject, mousePos);
+                hovered = false;
             }
         }
 
-        if (Physics.Raycast(ray, out hit) && clicked)
+        if (this.GetComponent<Collider>().bounds.IntersectRay(ray) && clicked)
 		{
-            if(hit.collider.name == this.name) 
+            if(hovered) 
             {
-                if(hovered) 
+                Main.Instance.SetCursor(false);
+                
+                if(onMouseClick != null)
                 {
-                    Main.Instance.SetCursor(false);
-                    
-                    if(onMouseClick != null)
-                    {
-                        Main.Instance.PlayClickAudio();
-                        onMouseClick(this.gameObject, mousePos);
-                    }
-                    hovered = false;
+                    Main.Instance.PlayClickAudio();
+                    onMouseClick(this.gameObject, mousePos);
                 }
+                hovered = false;
             }
 		}
     }
