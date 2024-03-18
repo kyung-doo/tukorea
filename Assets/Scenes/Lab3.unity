@@ -27986,6 +27986,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e336d0d622590984c94cf62d68f71732, type: 3}
   - {fileID: 8300000, guid: b3c07b6d8004df34a998b3426568ec6d, type: 3}
   touch1: {fileID: 973219770}
+  touch2: {fileID: 1650909382}
+  screen2: {fileID: 369469216}
 --- !u!1 &1171637987
 GameObject:
   m_ObjectHideFlags: 0
