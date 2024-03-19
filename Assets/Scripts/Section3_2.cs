@@ -143,8 +143,8 @@ public class Section3_2 : SectionBase
     private IEnumerator Start3() 
     {
         yield return new WaitForSeconds( 1f );
+        screen3.SetActive(true);
         Main.Instance.PlayAudio(audioClips[2], () => {
-            screen3.SetActive(true);
             touch3.SetActive(true);
             touch3.GetComponent<Animator>().Play("touch");
             touch3.GetComponent<Clickable>().onMouseClick += ClickTouch3;
@@ -183,8 +183,8 @@ public class Section3_2 : SectionBase
     private IEnumerator Start5() 
     {
         yield return new WaitForSeconds( 1f );
-       Main.Instance.PlayAudio(audioClips[3], () => {
-            screen5.SetActive(true);
+        screen5.SetActive(true);
+        Main.Instance.PlayAudio(audioClips[3], () => {
             touch5.SetActive(true);
             touch5.GetComponent<Animator>().Play("touch");
             touch5.GetComponent<Clickable>().onMouseClick += ClickTouch5;
@@ -255,21 +255,47 @@ public class Section3_2 : SectionBase
             isZoom = true;
             player.GetComponent<Player>().isActive = false;
             Main.Instance.repositionBtn.SetActive(false);
-            player.transform.DOLocalMove(zoomPlayerPos, 1f).SetEase(Ease.OutCubic);
-            player.transform.DOLocalRotate(zoomPlayerRo, 1f).SetEase(Ease.OutCubic);
+            player.transform.DOLocalMove(zoomPlayerPos, 1f).SetEase(Ease.OutCubic).SetDelay(1f);
+            player.transform.DOLocalRotate(zoomPlayerRo, 1f).SetEase(Ease.OutCubic).SetDelay(1f);
             camera.transform
             .DOLocalRotate(zoomCameraRo, 1f)
             .SetEase(Ease.OutCubic)
+            .SetDelay(1f)
             .OnComplete(() => {
                 player.GetComponent<Player>().isActive = true;
                 Main.Instance.repositionBtn.SetActive(true);
                 screen7.SetActive(true);
                 Main.Instance.PlayAudio(audioClips[6], () => {
-                    
+                    toolTouch1.SetActive(true);
+                    toolTouch1.GetComponent<Animator>().Play("touch");
+                    toolTouch1.GetComponent<Clickable>().onMouseClick += ClickTool1;
                 });
             });
         }
         
+    }
+
+    private void ClickTool1 ( GameObject target, Vector3 mousePos ) 
+    {
+        toolTouch1.SetActive(false);
+        toolTouch1.GetComponent<Clickable>().onMouseClick -= ClickTool1;
+        toolTouch1.GetComponent<Animator>().Rebind();
+        toolLine1.SetActive(true);
+        toolBtnOver1.SetActive(true);
+        coTimer = Start7();
+        StartCoroutine(coTimer);
+    }
+
+
+    private IEnumerator Start7() 
+    {
+        yield return new WaitForSeconds( 1f );
+        Main.Instance.PlayAudio(audioClips[7], () => {
+            // screen5.SetActive(true);
+            // touch5.SetActive(true);
+            // touch5.GetComponent<Animator>().Play("touch");
+            // touch5.GetComponent<Clickable>().onMouseClick += ClickTouch5;
+        });
     }
 
 
@@ -306,6 +332,7 @@ public class Section3_2 : SectionBase
         toolTouch1.GetComponent<Clickable>().onMouseClick -= ClickTool;
         toolTouch2.GetComponent<Clickable>().onMouseClick -= ClickTool;
         toolTouch3.GetComponent<Clickable>().onMouseClick -= ClickTool;
+        toolTouch1.GetComponent<Clickable>().onMouseClick -= ClickTool1;
         
         screen2.SetActive(false);
         screen3.SetActive(false);
