@@ -89,12 +89,14 @@ public class TabMenu : MonoBehaviour
     {
         RectTransform rect = this.GetComponent<RectTransform>() as RectTransform;
         rect.DOLocalMoveX(openPosX, 0.6f).SetEase(Ease.OutCubic);
+        isOpen = true;
     }
 
     public void CloseMenu () 
     {
         RectTransform rect = this.GetComponent<RectTransform>() as RectTransform;
         rect.DOLocalMoveX(closePosX, 0.6f).SetEase(Ease.OutCubic);
+        isOpen = false;
     }
 
 

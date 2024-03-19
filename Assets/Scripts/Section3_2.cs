@@ -13,6 +13,9 @@ public class Section3_2 : SectionBase
     // public Animator animator;
 
     [SerializeField]
+    public TabMenu tabMenu;
+
+    [SerializeField]
     public GameObject touch1;
 
     [SerializeField]
@@ -26,6 +29,11 @@ public class Section3_2 : SectionBase
 
     [SerializeField]
     public GameObject touch5;
+
+    [SerializeField]
+    public GameObject touch6;
+    [SerializeField]
+    public GameObject touch7;
 
     [SerializeField]
     public GameObject toolTouch1;
@@ -68,6 +76,19 @@ public class Section3_2 : SectionBase
     [SerializeField]
     public GameObject screen7;
 
+    [SerializeField]
+    public GameObject alignDot1;
+    [SerializeField]
+    public GameObject alignDot2;
+    [SerializeField]
+    public GameObject alignDot3;
+
+    [SerializeField]
+    public GameObject selectbox;
+
+    [SerializeField]
+    public GameObject selecttext;
+
 
     private Vector3 zoomPlayerPos = new Vector3(-2.064669f, 0.2282887f, 4.781382f);
     private Vector3 zoomPlayerRo = new Vector3(0f, -89.8f, 0f);
@@ -90,6 +111,9 @@ public class Section3_2 : SectionBase
         touch3.SetActive(false);
         touch4.SetActive(false);
         touch5.SetActive(false);
+        touch6.SetActive(false);
+        touch7.SetActive(false);
+
         toolTouch1.SetActive(false);
         toolTouch2.SetActive(false);
         toolTouch2.SetActive(false);
@@ -265,12 +289,17 @@ public class Section3_2 : SectionBase
                 player.GetComponent<Player>().isActive = true;
                 Main.Instance.repositionBtn.SetActive(true);
                 screen7.SetActive(true);
+                screen7.GetComponent<CanvasGroup>().alpha = 0;
+                DOTween.To(
+                    () => screen7.GetComponent<CanvasGroup>().alpha, 
+                    x => screen7.GetComponent<CanvasGroup>().alpha = x, 1, 0.4f);
                 Main.Instance.PlayAudio(audioClips[6], () => {
                     toolTouch1.SetActive(true);
                     toolTouch1.GetComponent<Animator>().Play("touch");
                     toolTouch1.GetComponent<Clickable>().onMouseClick += ClickTool1;
                 });
             });
+            tabMenu.CloseMenu();
         }
         
     }
@@ -282,6 +311,8 @@ public class Section3_2 : SectionBase
         toolTouch1.GetComponent<Animator>().Rebind();
         toolLine1.SetActive(true);
         toolBtnOver1.SetActive(true);
+        alignDot1.SetActive(true);
+        alignDot1.GetComponent<Animator>().Play("touch2");
         coTimer = Start7();
         StartCoroutine(coTimer);
     }
@@ -291,11 +322,246 @@ public class Section3_2 : SectionBase
     {
         yield return new WaitForSeconds( 1f );
         Main.Instance.PlayAudio(audioClips[7], () => {
-            // screen5.SetActive(true);
-            // touch5.SetActive(true);
-            // touch5.GetComponent<Animator>().Play("touch");
-            // touch5.GetComponent<Clickable>().onMouseClick += ClickTouch5;
+            toolTouch1.SetActive(true);
+            toolTouch1.GetComponent<Animator>().Play("touch");
+            toolTouch1.GetComponent<Clickable>().onMouseClick += ClickTool1_2;
         });
+    }
+
+    private void ClickTool1_2 ( GameObject target, Vector3 mousePos ) 
+    {
+        toolTouch1.SetActive(false);
+        toolTouch1.GetComponent<Clickable>().onMouseClick -= ClickTool1_2;
+        toolTouch1.GetComponent<Animator>().Rebind();
+        toolLine1.SetActive(false);
+        toolBtnOver1.SetActive(false);
+        alignDot1.SetActive(false);
+        alignDot1.GetComponent<Animator>().Rebind();
+        coTimer = Start8();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start8() 
+    {
+        yield return new WaitForSeconds( 3f );
+        Main.Instance.PlayAudio(audioClips[8], () => {
+            toolTouch2.SetActive(true);
+            toolTouch2.GetComponent<Animator>().Play("touch");
+            toolTouch2.GetComponent<Clickable>().onMouseClick += ClickTool2;
+        });
+    }
+
+    private void ClickTool2 ( GameObject target, Vector3 mousePos ) 
+    {
+        toolTouch2.SetActive(false);
+        toolTouch2.GetComponent<Clickable>().onMouseClick -= ClickTool2;
+        toolTouch2.GetComponent<Animator>().Rebind();
+        toolLine2.SetActive(true);
+        toolBtnOver2.SetActive(true);
+        alignDot2.SetActive(true);
+        alignDot2.GetComponent<Animator>().Play("touch2");
+        coTimer = Start9();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start9() 
+    {
+        yield return new WaitForSeconds( 1f );
+        Main.Instance.PlayAudio(audioClips[9], () => {
+            toolTouch2.SetActive(true);
+            toolTouch2.GetComponent<Animator>().Play("touch");
+            toolTouch2.GetComponent<Clickable>().onMouseClick += ClickTool2_2;
+        });
+    }
+
+    private void ClickTool2_2 ( GameObject target, Vector3 mousePos ) 
+    {
+        toolTouch2.SetActive(false);
+        toolTouch2.GetComponent<Clickable>().onMouseClick -= ClickTool2_2;
+        toolTouch2.GetComponent<Animator>().Rebind();
+        toolLine2.SetActive(false);
+        toolBtnOver2.SetActive(false);
+        alignDot2.SetActive(false);
+        alignDot2.GetComponent<Animator>().Rebind();
+        coTimer = Start10();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start10() 
+    {
+        yield return new WaitForSeconds( 3f );
+        Main.Instance.PlayAudio(audioClips[10], () => {
+            toolTouch3.SetActive(true);
+            toolTouch3.GetComponent<Animator>().Play("touch");
+            toolTouch3.GetComponent<Clickable>().onMouseClick += ClickTool3;
+        });
+    }
+
+    private void ClickTool3 ( GameObject target, Vector3 mousePos ) 
+    {
+        toolTouch3.SetActive(false);
+        toolTouch3.GetComponent<Clickable>().onMouseClick -= ClickTool3;
+        toolTouch3.GetComponent<Animator>().Rebind();
+        toolLine3.SetActive(true);
+        toolBtnOver3.SetActive(true);
+        alignDot3.SetActive(true);
+        alignDot3.GetComponent<Animator>().Play("touch");
+        coTimer = Start11();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start11() 
+    {
+        yield return new WaitForSeconds( 1f );
+        Main.Instance.PlayAudio(audioClips[11], () => {
+            toolTouch3.SetActive(true);
+            toolTouch3.GetComponent<Animator>().Play("touch");
+            toolTouch3.GetComponent<Clickable>().onMouseClick += ClickTool3_2;
+        });
+    }
+
+    private void ClickTool3_2 ( GameObject target, Vector3 mousePos ) 
+    {
+        toolTouch3.SetActive(false);
+        toolTouch3.GetComponent<Clickable>().onMouseClick -= ClickTool3_2;
+        toolTouch3.GetComponent<Animator>().Rebind();
+        toolLine3.SetActive(false);
+        toolBtnOver3.SetActive(false);
+        alignDot3.SetActive(false);
+        alignDot3.GetComponent<Animator>().Rebind();
+        coTimer = Start12();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start12() 
+    {
+        yield return new WaitForSeconds( 3f );
+        toolClickCount = 0;
+        Main.Instance.PlayAudio(audioClips[12], () => {
+            toolTouch1.SetActive(true);
+            toolTouch1.GetComponent<Animator>().Play("touch");
+            toolTouch1.GetComponent<Clickable>().onMouseClick += ClickTool4;
+
+            toolTouch2.SetActive(true);
+            toolTouch2.GetComponent<Animator>().Play("touch");
+            toolTouch2.GetComponent<Clickable>().onMouseClick += ClickTool4;
+
+            toolTouch3.SetActive(true);
+            toolTouch3.GetComponent<Animator>().Play("touch");
+            toolTouch3.GetComponent<Clickable>().onMouseClick += ClickTool4;
+        });
+    }
+
+    private void ClickTool4 ( GameObject target, Vector3 mousePos ) 
+    {
+        target.SetActive(false);
+        target.GetComponent<Clickable>().onMouseClick -= ClickTool4;
+        target.GetComponent<Animator>().Rebind();
+        if(target.name == "touch01") 
+        {
+            toolLine1.SetActive(true);
+            toolBtnOver1.SetActive(true);
+            alignDot1.SetActive(true);
+        } 
+        else if(target.name == "touch02") 
+        {
+            toolLine2.SetActive(true);
+            toolBtnOver2.SetActive(true);
+            alignDot2.SetActive(true);
+            
+        } 
+        else 
+        {
+            toolLine3.SetActive(true);
+            toolBtnOver3.SetActive(true);
+            alignDot3.SetActive(true);
+        }
+
+        toolClickCount++;
+
+        if(toolClickCount == 3) {
+            coTimer = Start13();
+            StartCoroutine(coTimer);
+        }
+        
+    }
+
+    private IEnumerator Start13() 
+    {
+        yield return new WaitForSeconds( 3f );
+
+        screen7.SetActive(false);
+        alignDot1.SetActive(false);
+        alignDot2.SetActive(false);
+        alignDot3.SetActive(false);
+
+        player.GetComponent<Player>().isActive = false;
+        Main.Instance.repositionBtn.SetActive(false);
+        player.transform.DOLocalMove(startPlayerPos, 1f).SetEase(Ease.OutCubic);
+        player.transform.DOLocalRotate(startPlayerRo, 1f).SetEase(Ease.OutCubic);
+        camera.transform
+        .DOLocalRotate(startCameraRo, 1f)
+        .SetEase(Ease.OutCubic)
+        .OnComplete(() => {
+            player.GetComponent<Player>().isActive = true;
+            Main.Instance.repositionBtn.SetActive(true);
+            isZoom = false;
+            Main.Instance.PlayAudio(audioClips[13], () => {
+                toolTouch2.SetActive(true);
+                toolTouch2.GetComponent<Animator>().Play("touch");
+                toolTouch2.GetComponent<Clickable>().onMouseClick += ClickTool2_3;
+            });
+        });
+    }
+
+    private void ClickTool2_3 ( GameObject target, Vector3 mousePos ) 
+    {
+        toolTouch2.SetActive(false);
+        toolTouch2.GetComponent<Clickable>().onMouseClick -= ClickTool2_3;
+        toolTouch2.GetComponent<Animator>().Rebind();
+        toolLine1.SetActive(false);
+        toolBtnOver1.SetActive(false);
+        toolLine3.SetActive(false);
+        toolBtnOver3.SetActive(false);
+        coTimer = Start14();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start14() 
+    {
+        yield return new WaitForSeconds( 1f );
+        touch6.SetActive(true);
+        touch6.GetComponent<Animator>().Play("touch");
+        touch6.GetComponent<Clickable>().onMouseClick += ClickTouch6;
+    }
+
+    private void ClickTouch6 ( GameObject target, Vector3 mousePos ) 
+    {
+        touch6.SetActive(false);
+        touch6.GetComponent<Clickable>().onMouseClick -= ClickTouch6;
+        touch6.GetComponent<Animator>().Rebind();
+        selectbox.SetActive(true);
+        coTimer = Start15();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start15() 
+    {
+        yield return new WaitForSeconds( 1f );
+        touch7.SetActive(true);
+        touch7.GetComponent<Animator>().Play("touch");
+        touch7.GetComponent<Clickable>().onMouseClick += ClickTouch7;
+    }
+
+    private void ClickTouch7 ( GameObject target, Vector3 mousePos ) 
+    {
+        touch7.SetActive(false);
+        touch7.GetComponent<Clickable>().onMouseClick -= ClickTouch7;
+        touch7.GetComponent<Animator>().Rebind();
+        selectbox.SetActive(false);
+        selecttext.SetActive(true);
+        // coTimer = Start15();
+        // StartCoroutine(coTimer);
     }
 
 
@@ -329,10 +595,22 @@ public class Section3_2 : SectionBase
         touch3.GetComponent<Clickable>().onMouseClick -= ClickTouch3;
         touch4.GetComponent<Clickable>().onMouseClick -= ClickTouch4;
         touch5.GetComponent<Clickable>().onMouseClick -= ClickTouch5;
+        touch6.GetComponent<Clickable>().onMouseClick -= ClickTouch6;
+        touch7.GetComponent<Clickable>().onMouseClick -= ClickTouch7;
+
         toolTouch1.GetComponent<Clickable>().onMouseClick -= ClickTool;
         toolTouch2.GetComponent<Clickable>().onMouseClick -= ClickTool;
         toolTouch3.GetComponent<Clickable>().onMouseClick -= ClickTool;
         toolTouch1.GetComponent<Clickable>().onMouseClick -= ClickTool1;
+        toolTouch1.GetComponent<Clickable>().onMouseClick -= ClickTool1_2;
+        toolTouch2.GetComponent<Clickable>().onMouseClick -= ClickTool2;
+        toolTouch2.GetComponent<Clickable>().onMouseClick -= ClickTool2_2;
+        toolTouch2.GetComponent<Clickable>().onMouseClick -= ClickTool2_3;
+        toolTouch3.GetComponent<Clickable>().onMouseClick -= ClickTool3;
+        toolTouch3.GetComponent<Clickable>().onMouseClick -= ClickTool3_2;
+        toolTouch1.GetComponent<Clickable>().onMouseClick -= ClickTool4;
+        toolTouch2.GetComponent<Clickable>().onMouseClick -= ClickTool4;
+        toolTouch3.GetComponent<Clickable>().onMouseClick -= ClickTool4;
         
         screen2.SetActive(false);
         screen3.SetActive(false);
@@ -347,6 +625,13 @@ public class Section3_2 : SectionBase
         toolBtnOver1.SetActive(false);
         toolBtnOver2.SetActive(false);
         toolBtnOver3.SetActive(false);
+
+        alignDot1.SetActive(false);
+        alignDot1.SetActive(false);
+        alignDot1.SetActive(false);
+
+        selectbox.SetActive(false);
+        selecttext.SetActive(false);
         
        
         if(coTimer != null) StopCoroutine(coTimer);
