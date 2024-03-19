@@ -34,6 +34,8 @@ public class Section3_2 : SectionBase
     public GameObject touch6;
     [SerializeField]
     public GameObject touch7;
+    [SerializeField]
+    public GameObject touch8;
 
     [SerializeField]
     public GameObject toolTouch1;
@@ -75,6 +77,8 @@ public class Section3_2 : SectionBase
     public GameObject screen6;
     [SerializeField]
     public GameObject screen7;
+    [SerializeField]
+    public GameObject screen8;
 
     [SerializeField]
     public GameObject alignDot1;
@@ -113,6 +117,7 @@ public class Section3_2 : SectionBase
         touch5.SetActive(false);
         touch6.SetActive(false);
         touch7.SetActive(false);
+        touch8.SetActive(false);
 
         toolTouch1.SetActive(false);
         toolTouch2.SetActive(false);
@@ -560,7 +565,26 @@ public class Section3_2 : SectionBase
         touch7.GetComponent<Animator>().Rebind();
         selectbox.SetActive(false);
         selecttext.SetActive(true);
-        // coTimer = Start15();
+        coTimer = Start16();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start16() 
+    {
+        yield return new WaitForSeconds( 1f );
+        touch8.SetActive(true);
+        touch8.GetComponent<Animator>().Play("touch");
+        touch8.GetComponent<Clickable>().onMouseClick += ClickTouch8;
+    }
+
+    private void ClickTouch8 ( GameObject target, Vector3 mousePos ) 
+    {
+        touch8.SetActive(false);
+        touch8.GetComponent<Clickable>().onMouseClick -= ClickTouch8;
+        touch8.GetComponent<Animator>().Rebind();
+        screen8.SetActive(true);
+        
+        // coTimer = Start16();
         // StartCoroutine(coTimer);
     }
 
@@ -618,6 +642,7 @@ public class Section3_2 : SectionBase
         screen5.SetActive(false);
         screen6.SetActive(false);
         screen7.SetActive(false);
+        screen8.SetActive(false);
 
         toolLine1.SetActive(false);
         toolLine2.SetActive(false);
