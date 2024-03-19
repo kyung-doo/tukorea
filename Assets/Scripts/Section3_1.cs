@@ -24,6 +24,9 @@ public class Section3_1 : SectionBase
     [SerializeField]
     public GameObject touch1;
 
+    [SerializeField]
+    public GameObject suctionOver;
+
 
     private Vector3 zoomPlayerPos = new Vector3(-2.06505466f, 0.2282888f, 4.67137241f);
     private Vector3 zoomPlayerRo = new Vector3(0f, -89.8f, 0f);
@@ -41,7 +44,6 @@ public class Section3_1 : SectionBase
         Debug.Log("startSection2");
         door.GetComponent<BoxCollider>().enabled = false;
         panel.GetComponent<BoxCollider>().enabled = false;
-        touch1.SetActive(false);
         coTimer = Start1();
         StartCoroutine(coTimer);
         
@@ -144,6 +146,7 @@ public class Section3_1 : SectionBase
         touch1.SetActive(false);
         touch1.GetComponent<Clickable>().onMouseClick -= ClickTouch1;
         touch1.GetComponent<Animator>().Rebind();
+        suctionOver.SetActive(true);
         coTimer = Start6();
         StartCoroutine(coTimer);
     }
@@ -183,10 +186,15 @@ public class Section3_1 : SectionBase
         Main.Instance.StopAudio();
         animator.Rebind();
         animator.Update(0f);
+
         door.GetComponent<Clickable>().onMouseClick -= ClickDoor;
         door.GetComponent<Clickable>().onMouseClick -= ClickDoor2;
         panel.GetComponent<Clickable>().onMouseClick -= ClickPanel;
+
         touch1.GetComponent<Clickable>().onMouseClick -= ClickTouch1;
+        touch1.SetActive(false);
+
+        suctionOver.SetActive(false);
         
        
         if(coTimer != null) StopCoroutine(coTimer);

@@ -35,6 +35,8 @@ public class Section3_2 : SectionBase
     public GameObject touch8;
     [SerializeField]
     public GameObject touch9;
+    [SerializeField]
+    public GameObject touch10;
 
     [SerializeField]
     public GameObject toolTouch1;
@@ -102,6 +104,9 @@ public class Section3_2 : SectionBase
     [SerializeField]
     public GameObject zeroText;
 
+    [SerializeField]
+    public GameObject suctionOver;
+
 
 
     private Vector3 zoomPlayerPos = new Vector3(-2.064669f, 0.2282887f, 4.781382f);
@@ -119,22 +124,8 @@ public class Section3_2 : SectionBase
 
     public override void StartSection ( bool isFirst = false ) 
     {
-        Debug.Log("startSection2");
-        touch1.SetActive(false);
-        touch2.SetActive(false);
-        touch3.SetActive(false);
-        touch4.SetActive(false);
-        touch5.SetActive(false);
-        touch6.SetActive(false);
-        touch7.SetActive(false);
-        touch8.SetActive(false);
-        touch9.SetActive(false);
-        mouse.SetActive(false);
-
-        toolTouch1.SetActive(false);
-        toolTouch2.SetActive(false);
-        toolTouch2.SetActive(false);
         
+        suctionOver.SetActive(true);
         coTimer = Start1();
         StartCoroutine(coTimer);
         
@@ -316,8 +307,9 @@ public class Section3_2 : SectionBase
                     toolTouch1.GetComponent<Animator>().Play("touch");
                     toolTouch1.GetComponent<Clickable>().onMouseClick += ClickTool1;
                 });
+                tabMenu.CloseMenu();
             });
-            tabMenu.CloseMenu();
+            
         }
         
     }
@@ -603,10 +595,21 @@ public class Section3_2 : SectionBase
     {
         yield return new WaitForSeconds( 1f );
         Main.Instance.PlayAudio(audioClips[14], () => {
-            Main.Instance.PlayAudio(audioClips[15], () => {
-                mouse.SetActive(true);
-                mouse.GetComponent<Clickable>().onMouseClick += ClickMouse;
-            });
+            touch10.SetActive(true);
+            touch10.GetComponent<Animator>().Play("touch");
+            coTimer = Start18();
+            StartCoroutine(coTimer);
+        });
+    }
+
+    private IEnumerator Start18() 
+    {
+        yield return new WaitForSeconds( 3f );
+        touch10.SetActive(false);
+        touch10.GetComponent<Animator>().Rebind();
+        Main.Instance.PlayAudio(audioClips[15], () => {
+            mouse.SetActive(true);
+            mouse.GetComponent<Clickable>().onMouseClick += ClickMouse;
         });
     }
 
@@ -614,13 +617,11 @@ public class Section3_2 : SectionBase
     {
         mouse.SetActive(false);
         mouse.GetComponent<Clickable>().onMouseClick -= ClickMouse;
-        coTimer = Start18();
+        coTimer = Start19();
         StartCoroutine(coTimer);
-        screen8.SetActive(false);
-        screen9.SetActive(true);
     }
 
-    private IEnumerator Start18() 
+    private IEnumerator Start19() 
     {
         screen10.SetActive(true);
         yield return new WaitForSeconds( 2f );
@@ -636,12 +637,14 @@ public class Section3_2 : SectionBase
         touch9.SetActive(false);
         touch9.GetComponent<Clickable>().onMouseClick -= ClickTouch9;
         touch9.GetComponent<Animator>().Rebind();
+        screen8.SetActive(false);
+        screen9.SetActive(true);
         screen10.SetActive(false);
-        coTimer = Start19();
+        coTimer = Start20();
         StartCoroutine(coTimer);
     }
 
-    private IEnumerator Start19() 
+    private IEnumerator Start20() 
     {
         yield return new WaitForSeconds( 1f );
         Main.Instance.PlayAudio(audioClips[17], () => {
@@ -684,6 +687,18 @@ public class Section3_2 : SectionBase
         touch7.GetComponent<Clickable>().onMouseClick -= ClickTouch7;
         touch9.GetComponent<Clickable>().onMouseClick -= ClickTouch9;
         mouse.GetComponent<Clickable>().onMouseClick -= ClickMouse;
+        touch10.SetActive(false);
+
+        touch1.SetActive(false);
+        touch2.SetActive(false);
+        touch3.SetActive(false);
+        touch4.SetActive(false);
+        touch5.SetActive(false);
+        touch6.SetActive(false);
+        touch7.SetActive(false);
+        touch8.SetActive(false);
+        touch9.SetActive(false);
+        touch10.SetActive(false);
 
         toolTouch1.GetComponent<Clickable>().onMouseClick -= ClickTool;
         toolTouch2.GetComponent<Clickable>().onMouseClick -= ClickTool;
@@ -698,6 +713,10 @@ public class Section3_2 : SectionBase
         toolTouch1.GetComponent<Clickable>().onMouseClick -= ClickTool4;
         toolTouch2.GetComponent<Clickable>().onMouseClick -= ClickTool4;
         toolTouch3.GetComponent<Clickable>().onMouseClick -= ClickTool4;
+
+        toolTouch1.SetActive(false);
+        toolTouch2.SetActive(false);
+        toolTouch3.SetActive(false);
         
         screen2.SetActive(false);
         screen3.SetActive(false);
@@ -715,6 +734,7 @@ public class Section3_2 : SectionBase
         toolBtnOver1.SetActive(false);
         toolBtnOver2.SetActive(false);
         toolBtnOver3.SetActive(false);
+        
 
         alignDot1.SetActive(false);
         alignDot1.SetActive(false);
@@ -724,6 +744,7 @@ public class Section3_2 : SectionBase
         selecttext.SetActive(false);
 
         zeroText.SetActive(false);
+        suctionOver.SetActive(false);
         
        
         if(coTimer != null) StopCoroutine(coTimer);
