@@ -80,6 +80,8 @@ public class Section3_2 : SectionBase
     public GameObject screen8;
     [SerializeField]
     public GameObject screen9;
+    [SerializeField]
+    public GameObject screen10;
 
     [SerializeField]
     public GameObject alignDot1;
@@ -614,11 +616,13 @@ public class Section3_2 : SectionBase
         mouse.GetComponent<Clickable>().onMouseClick -= ClickMouse;
         coTimer = Start18();
         StartCoroutine(coTimer);
+        screen8.SetActive(false);
+        screen9.SetActive(true);
     }
 
     private IEnumerator Start18() 
     {
-        screen9.SetActive(true);
+        screen10.SetActive(true);
         yield return new WaitForSeconds( 2f );
         Main.Instance.PlayAudio(audioClips[16], () => {
             touch9.SetActive(true);
@@ -632,7 +636,7 @@ public class Section3_2 : SectionBase
         touch9.SetActive(false);
         touch9.GetComponent<Clickable>().onMouseClick -= ClickTouch9;
         touch9.GetComponent<Animator>().Rebind();
-        screen9.SetActive(false);
+        screen10.SetActive(false);
         coTimer = Start19();
         StartCoroutine(coTimer);
     }
@@ -703,6 +707,7 @@ public class Section3_2 : SectionBase
         screen7.SetActive(false);
         screen8.SetActive(false);
         screen9.SetActive(false);
+        screen10.SetActive(false);
 
         toolLine1.SetActive(false);
         toolLine2.SetActive(false);
