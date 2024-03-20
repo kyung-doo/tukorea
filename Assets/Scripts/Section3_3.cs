@@ -67,6 +67,11 @@ public class Section3_3 : SectionBase
     [SerializeField]
     public GameObject jumpOver;
 
+    [SerializeField]
+    public GameObject hicamOver;
+    [SerializeField]
+    public GameObject lowcamOver;
+
     
 
 
@@ -202,7 +207,7 @@ public class Section3_3 : SectionBase
         touch5.SetActive(false);
         touch5.GetComponent<Clickable>().onMouseClick -= ClickTouch4;
         touch5.GetComponent<Animator>().Rebind();
-        screen4.GetComponent<Animator>().Play("camera_1");
+        screen4.GetComponent<Animator>().Play("PLUS");
         screen5.SetActive(true);
         coTimer = Start7();
         StartCoroutine(coTimer);
@@ -226,6 +231,8 @@ public class Section3_3 : SectionBase
         touch6.GetComponent<Animator>().Rebind();
         text6.SetActive(false);
         screen4.GetComponent<Animator>().Play("lowcam_ani");
+        hicamOver.SetActive(false);
+        lowcamOver.SetActive(true);
         
         // coTimer = Start7();
         // StartCoroutine(coTimer);
@@ -277,6 +284,9 @@ public class Section3_3 : SectionBase
 
         scanOver.SetActive(true);
         jumpOver.SetActive(false);
+
+        hicamOver.SetActive(true);
+        lowcamOver.SetActive(false);
 
         if(coTimer != null) StopCoroutine(coTimer);
     }

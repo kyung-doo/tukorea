@@ -34058,6 +34058,8 @@ MonoBehaviour:
   text7: {fileID: 2045049555}
   scanOver: {fileID: 1900278770}
   jumpOver: {fileID: 221250004}
+  hicamOver: {fileID: 1555362312}
+  lowcamOver: {fileID: 1572775385}
 --- !u!1 &1335859115
 GameObject:
   m_ObjectHideFlags: 0
@@ -51861,7 +51863,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2069698059
 RectTransform:
   m_ObjectHideFlags: 0
