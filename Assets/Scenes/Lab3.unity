@@ -1139,7 +1139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &40617099
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3093,7 +3093,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &152716190
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32282,7 +32282,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.8137, y: 1.43843}
+  m_AnchoredPosition: {x: -5.8137, y: 1.425}
   m_SizeDelta: {x: 132.9, y: 72.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1268818090
@@ -34042,6 +34042,9 @@ MonoBehaviour:
   touch4: {fileID: 1216043157}
   touch5: {fileID: 1351765502}
   touch6: {fileID: 885065108}
+  touch7: {fileID: 1268818088}
+  touch8: {fileID: 1901630951}
+  touch9: {fileID: 1733297180}
   screen0: {fileID: 369469216}
   screen1: {fileID: 941922579}
   screen2: {fileID: 1545496805}
@@ -34060,6 +34063,7 @@ MonoBehaviour:
   jumpOver: {fileID: 221250004}
   hicamOver: {fileID: 1555362312}
   lowcamOver: {fileID: 1572775385}
+  plusBox: {fileID: 1631774953}
 --- !u!1 &1335859115
 GameObject:
   m_ObjectHideFlags: 0
@@ -35636,7 +35640,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1408610744
 RectTransform:
   m_ObjectHideFlags: 0

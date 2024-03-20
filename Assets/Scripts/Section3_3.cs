@@ -25,6 +25,12 @@ public class Section3_3 : SectionBase
     public GameObject touch5;
     [SerializeField]
     public GameObject touch6;
+    [SerializeField]
+    public GameObject touch7;
+    [SerializeField]
+    public GameObject touch8;
+    [SerializeField]
+    public GameObject touch9;
     
 
     
@@ -71,6 +77,9 @@ public class Section3_3 : SectionBase
     public GameObject hicamOver;
     [SerializeField]
     public GameObject lowcamOver;
+
+    [SerializeField]
+    public GameObject plusBox;
 
     
 
@@ -233,8 +242,81 @@ public class Section3_3 : SectionBase
         screen4.GetComponent<Animator>().Play("lowcam_ani");
         hicamOver.SetActive(false);
         lowcamOver.SetActive(true);
-        
-        // coTimer = Start7();
+        coTimer = Start8();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start8() 
+    {
+        yield return new WaitForSeconds( 2f );
+        text7.SetActive(true);
+        Main.Instance.PlayAudio(audioClips[6], () => {
+            plusBox.SetActive(true);
+            coTimer = Start9();
+            StartCoroutine(coTimer);
+        });
+    }
+
+    private IEnumerator Start9() 
+    {
+        yield return new WaitForSeconds( 3f );
+        plusBox.SetActive(false);
+        Main.Instance.PlayAudio(audioClips[7], () => {
+            touch7.SetActive(true);
+            touch7.GetComponent<Animator>().Play("touch");
+            touch7.GetComponent<Clickable>().onMouseClick += ClickTouch7;
+        });
+    }
+
+    private void ClickTouch7 ( GameObject target, Vector3 mousePos ) 
+    {
+        touch7.SetActive(false);
+        touch7.GetComponent<Clickable>().onMouseClick -= ClickTouch7;
+        touch7.GetComponent<Animator>().Rebind();
+        screen4.GetComponent<Animator>().Play("ILUM1");
+        coTimer = Start10();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start10() 
+    {
+        yield return new WaitForSeconds( 1f );
+        touch8.SetActive(true);
+        touch8.GetComponent<Animator>().Play("touch");
+        touch8.GetComponent<Clickable>().onMouseClick += ClickTouch8;
+    }
+
+    private void ClickTouch8 ( GameObject target, Vector3 mousePos ) 
+    {
+        touch8.SetActive(false);
+        touch8.GetComponent<Clickable>().onMouseClick -= ClickTouch8;
+        touch8.GetComponent<Animator>().Rebind();
+        screen4.GetComponent<Animator>().Play("ZAXIS1");
+        text7.SetActive(false);
+        coTimer = Start11();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start11() 
+    {
+        yield return new WaitForSeconds( 3f );
+        Main.Instance.PlayAudio(audioClips[8], () => {
+            touch9.SetActive(true);
+            touch9.GetComponent<Animator>().Play("touch");
+            touch9.GetComponent<Clickable>().onMouseClick += ClickTouch9;
+        });
+    }
+
+    private void ClickTouch9 ( GameObject target, Vector3 mousePos ) 
+    {
+        touch9.SetActive(false);
+        touch9.GetComponent<Clickable>().onMouseClick -= ClickTouch9;
+        touch9.GetComponent<Animator>().Rebind();
+        lowcamOver.SetActive(false);
+        hicamOver.SetActive(true);
+        screen4.GetComponent<Animator>().Play("ZAXIS2");
+        screen4.GetComponent<Animator>().speed = 0f;
+        // coTimer = Start11();
         // StartCoroutine(coTimer);
     }
 
@@ -263,6 +345,12 @@ public class Section3_3 : SectionBase
         touch5.SetActive(false);
         touch6.GetComponent<Clickable>().onMouseClick -= ClickTouch6;
         touch6.SetActive(false);
+        touch7.GetComponent<Clickable>().onMouseClick -= ClickTouch7;
+        touch7.SetActive(false);
+        touch8.GetComponent<Clickable>().onMouseClick -= ClickTouch8;
+        touch8.SetActive(false);
+        touch9.GetComponent<Clickable>().onMouseClick -= ClickTouch9;
+        touch9.SetActive(false);
 
         screen0.SetActive(false);
         screen1.SetActive(false);
@@ -287,6 +375,8 @@ public class Section3_3 : SectionBase
 
         hicamOver.SetActive(true);
         lowcamOver.SetActive(false);
+
+        plusBox.SetActive(false);
 
         if(coTimer != null) StopCoroutine(coTimer);
     }
