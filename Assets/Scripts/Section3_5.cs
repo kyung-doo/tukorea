@@ -35,6 +35,10 @@ public class Section3_5 : SectionBase
     public GameObject touch10;
     [SerializeField]
     public GameObject touch11;
+    [SerializeField]
+    public GameObject touch12;
+    [SerializeField]
+    public GameObject touch13;
 
 
     
@@ -68,11 +72,19 @@ public class Section3_5 : SectionBase
     public GameObject text2;
     [SerializeField]
     public GameObject text3;
+    [SerializeField]
+    public GameObject text4;
+    [SerializeField]
+    public GameObject text5;
 
     [SerializeField]
     public GameObject jumpOver;
     [SerializeField]
     public GameObject scanOver;
+    [SerializeField]
+    public GameObject lowCamOver;
+    [SerializeField]
+    public GameObject hiCamOver;
 
 
     private IEnumerator coTimer = null;
@@ -319,11 +331,58 @@ public class Section3_5 : SectionBase
         touch11.SetActive(false);
         touch11.GetComponent<Clickable>().onMouseClick -= ClickTouch11;
         touch11.GetComponent<Animator>().Rebind();
-        screen10.GetComponent<Animator>().speed = 0;
-        screen9.GetComponent<Animator>().Play("picture1");
+        screen10.GetComponent<Animator>().speed = 1;
+        screen9.GetComponent<Animator>().Play("picture2");
+        text3.SetActive(false);
+        coTimer = Start12();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start12() 
+    {
+        yield return new WaitForSeconds( 2f );
+        text4.SetActive(true);
+        Main.Instance.PlayAudio(audioClips[8], () => {
+            touch12.SetActive(true);
+            touch12.GetComponent<Animator>().Play("touch");
+            touch12.GetComponent<Clickable>().onMouseClick += ClickTouch12;
+        });
         
-        // coTimer = Start11();
-        // StartCoroutine(coTimer);
+    }
+
+    private void ClickTouch12 ( GameObject target, Vector3 mousePos ) 
+    {
+        touch12.SetActive(false);
+        touch12.GetComponent<Clickable>().onMouseClick -= ClickTouch12;
+        touch12.GetComponent<Animator>().Rebind();
+        screen9.GetComponent<Animator>().Play("picture3");
+        text4.SetActive(false);
+        hiCamOver.SetActive(false);
+        lowCamOver.SetActive(true);
+        coTimer = Start13();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start13() 
+    {
+        yield return new WaitForSeconds( 2f );
+        text5.SetActive(true);
+        Main.Instance.PlayAudio(audioClips[9], () => {
+            touch13.SetActive(true);
+            touch13.GetComponent<Animator>().Play("touch");
+            coTimer = Start14();
+            StartCoroutine(coTimer);
+        });
+    }
+
+    private IEnumerator Start14() 
+    {
+        yield return new WaitForSeconds( 3f );
+        touch13.SetActive(false);
+        touch13.GetComponent<Animator>().Rebind();
+        Main.Instance.PlayAudio(audioClips[10], () => {
+            text5.SetActive(false);
+        });
     }
 
     
@@ -375,6 +434,9 @@ public class Section3_5 : SectionBase
         touch10.SetActive(false);
         touch11.GetComponent<Clickable>().onMouseClick -= ClickTouch11;
         touch11.SetActive(false);
+        touch12.GetComponent<Clickable>().onMouseClick -= ClickTouch12;
+        touch12.SetActive(false);
+        touch13.SetActive(false);
         
         
         
@@ -398,9 +460,13 @@ public class Section3_5 : SectionBase
         text1.SetActive(false);
         text2.SetActive(false);
         text3.SetActive(false);
+        text4.SetActive(false);
+        text5.SetActive(false);
 
         scanOver.SetActive(true);
         jumpOver.SetActive(false);
+        hiCamOver.SetActive(true);
+        lowCamOver.SetActive(false);
         
         if(coTimer != null) StopCoroutine(coTimer);
     }
