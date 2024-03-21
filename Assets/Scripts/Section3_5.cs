@@ -39,6 +39,12 @@ public class Section3_5 : SectionBase
     public GameObject touch12;
     [SerializeField]
     public GameObject touch13;
+    [SerializeField]
+    public GameObject touch14;
+    [SerializeField]
+    public GameObject touch15;
+    [SerializeField]
+    public GameObject touch16;
 
 
     
@@ -76,6 +82,12 @@ public class Section3_5 : SectionBase
     public GameObject text4;
     [SerializeField]
     public GameObject text5;
+    [SerializeField]
+    public GameObject text6;
+    [SerializeField]
+    public GameObject text7;
+    [SerializeField]
+    public GameObject text8;
 
     [SerializeField]
     public GameObject jumpOver;
@@ -382,7 +394,77 @@ public class Section3_5 : SectionBase
         touch13.GetComponent<Animator>().Rebind();
         Main.Instance.PlayAudio(audioClips[10], () => {
             text5.SetActive(false);
+            coTimer = Start15();
+            StartCoroutine(coTimer);
         });
+    }
+
+    private IEnumerator Start15() 
+    {
+        yield return new WaitForSeconds( 2f );
+        text6.SetActive(true);
+        Main.Instance.PlayAudio(audioClips[11], () => {
+            touch14.SetActive(true);
+            touch14.GetComponent<Animator>().Play("touch");
+            touch14.GetComponent<Clickable>().onMouseClick += ClickTouch14;
+        });
+    }
+
+    private void ClickTouch14 ( GameObject target, Vector3 mousePos ) 
+    {
+        touch14.SetActive(false);
+        touch14.GetComponent<Clickable>().onMouseClick -= ClickTouch14;
+        touch14.GetComponent<Animator>().Rebind();
+        scanOver.SetActive(true);
+        jumpOver.SetActive(false);
+        coTimer = Start16();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start16() 
+    {
+        yield return new WaitForSeconds( 2f );
+        touch15.SetActive(true);
+        touch15.GetComponent<Animator>().Play("touch");
+        touch15.GetComponent<Clickable>().onMouseClick += ClickTouch15;
+    }
+
+    private void ClickTouch15 ( GameObject target, Vector3 mousePos ) 
+    {
+        touch15.SetActive(false);
+        touch15.GetComponent<Clickable>().onMouseClick -= ClickTouch15;
+        touch15.GetComponent<Animator>().Rebind();
+        text6.SetActive(false);
+        text7.SetActive(true);
+        Main.Instance.PlayAudio(audioClips[12], () => {
+            screen9.GetComponent<Animator>().Play("picture4");
+            coTimer = Start17();
+            StartCoroutine(coTimer);
+        });
+        
+    }
+
+    private IEnumerator Start17() 
+    {
+        text7.SetActive(false);
+        yield return new WaitForSeconds( 2f );
+        text8.SetActive(true);
+        Main.Instance.PlayAudio(audioClips[13], () => {
+            touch16.SetActive(true);
+            touch16.GetComponent<Animator>().Play("touch");
+            touch16.GetComponent<Clickable>().onMouseClick += ClickTouch16;
+        });
+    }
+
+    private void ClickTouch16 ( GameObject target, Vector3 mousePos ) 
+    {
+        touch16.SetActive(false);
+        touch16.GetComponent<Clickable>().onMouseClick -= ClickTouch16;
+        touch16.GetComponent<Animator>().Rebind();
+        text8.SetActive(false);
+        hiCamOver.SetActive(true);
+        lowCamOver.SetActive(false);
+        screen9.GetComponent<Animator>().Play("picture5");
     }
 
     
@@ -437,6 +519,12 @@ public class Section3_5 : SectionBase
         touch12.GetComponent<Clickable>().onMouseClick -= ClickTouch12;
         touch12.SetActive(false);
         touch13.SetActive(false);
+        touch14.GetComponent<Clickable>().onMouseClick -= ClickTouch14;
+        touch14.SetActive(false);
+        touch15.GetComponent<Clickable>().onMouseClick -= ClickTouch15;
+        touch15.SetActive(false);
+        touch16.GetComponent<Clickable>().onMouseClick -= ClickTouch16;
+        touch16.SetActive(false);
         
         
         
@@ -462,6 +550,9 @@ public class Section3_5 : SectionBase
         text3.SetActive(false);
         text4.SetActive(false);
         text5.SetActive(false);
+        text6.SetActive(false);
+        text7.SetActive(false);
+        text8.SetActive(false);
 
         scanOver.SetActive(true);
         jumpOver.SetActive(false);

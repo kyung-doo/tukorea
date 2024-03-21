@@ -26184,6 +26184,11 @@ MonoBehaviour:
   touch9: {fileID: 1902738087}
   touch10: {fileID: 970433156}
   touch11: {fileID: 476560010}
+  touch12: {fileID: 632597557}
+  touch13: {fileID: 678541546}
+  touch14: {fileID: 359221448}
+  touch15: {fileID: 82074760}
+  touch16: {fileID: 1919508577}
   screen1: {fileID: 369469216}
   screen2: {fileID: 545124883}
   screen3: {fileID: 1081539651}
@@ -26198,8 +26203,15 @@ MonoBehaviour:
   text1: {fileID: 1279305307}
   text2: {fileID: 1761699256}
   text3: {fileID: 1964269693}
+  text4: {fileID: 1017038889}
+  text5: {fileID: 488766956}
+  text6: {fileID: 449437810}
+  text7: {fileID: 1645768921}
+  text8: {fileID: 554975998}
   jumpOver: {fileID: 1529347859}
   scanOver: {fileID: 1880086300}
+  lowCamOver: {fileID: 913648865}
+  hiCamOver: {fileID: 194983528}
 --- !u!4 &1041472033
 Transform:
   m_ObjectHideFlags: 0
@@ -35341,7 +35353,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1389369936
 RectTransform:
   m_ObjectHideFlags: 0
@@ -37079,7 +37091,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1464632063}
   - component: {fileID: 1464632066}
-  - component: {fileID: 1464632065}
   - component: {fileID: 1464632064}
   m_Layer: 5
   m_Name: Camera (1)
@@ -37142,14 +37153,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!81 &1464632065
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1464632062}
-  m_Enabled: 1
 --- !u!20 &1464632066
 Camera:
   m_ObjectHideFlags: 0
@@ -44177,7 +44180,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1715719502}
   - component: {fileID: 1715719505}
-  - component: {fileID: 1715719504}
   - component: {fileID: 1715719503}
   m_Layer: 5
   m_Name: Camera
@@ -44240,14 +44242,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!81 &1715719504
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1715719501}
-  m_Enabled: 1
 --- !u!20 &1715719505
 Camera:
   m_ObjectHideFlags: 0
