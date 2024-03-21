@@ -70,6 +70,8 @@ public class Section3_5 : SectionBase
     public GameObject screen9;
     [SerializeField]
     public GameObject screen10;
+    [SerializeField]
+    public GameObject screen11;
 
     [SerializeField]
     public GameObject toggle;
@@ -92,6 +94,9 @@ public class Section3_5 : SectionBase
     public GameObject text8;
     [SerializeField]
     public GameObject text9;
+    [SerializeField]
+    public GameObject text10;
+    
 
     [SerializeField]
     public GameObject jumpOver;
@@ -143,6 +148,7 @@ public class Section3_5 : SectionBase
         touch1.GetComponent<Animator>().Rebind();
         screen6.SetActive(true);
         coTimer = Start2();
+        
         StartCoroutine(coTimer);
     }
 
@@ -479,8 +485,8 @@ public class Section3_5 : SectionBase
         text9.SetActive(true);
         Main.Instance.PlayAudio(audioClips[14], () => {
             touch17.SetActive(true);
-            touch17.GetComponent<Animator>().Play("touch");
             touch17.GetComponent<Clickable>().onMouseClick += ClickTouch17;
+            text10.GetComponent<Animator>().Play("touch_image");
         });
     }
 
@@ -488,11 +494,21 @@ public class Section3_5 : SectionBase
     {
         touch17.SetActive(false);
         touch17.GetComponent<Clickable>().onMouseClick -= ClickTouch17;
-        touch17.GetComponent<Animator>().Rebind();
-        text9.SetActive(false);
         screen9.GetComponent<Animator>().Play("g");
-        // coTimer = Start18();
-        // StartCoroutine(coTimer);
+        text10.GetComponent<Animator>().Rebind();
+        coTimer = Start18();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start19() 
+    {
+        yield return new WaitForSeconds( 2f );
+        text9.SetActive(false);
+        Main.Instance.PlayAudio(audioClips[15], () => {
+            // touch17.SetActive(true);
+            // touch17.GetComponent<Clickable>().onMouseClick += ClickTouch17;
+            // text10.GetComponent<Animator>().Play("touch_image");
+        });
     }
 
     
@@ -572,6 +588,7 @@ public class Section3_5 : SectionBase
         screen10.GetComponent<Animator>().Rebind();
         screen10.GetComponent<Animator>().speed = 1;
         
+        
 
         toggle.SetActive(false);
 
@@ -584,6 +601,8 @@ public class Section3_5 : SectionBase
         text7.SetActive(false);
         text8.SetActive(false);
         text9.SetActive(false);
+        text10.GetComponent<Animator>().SetBool("touch_image", false);
+        
 
         scanOver.SetActive(true);
         jumpOver.SetActive(false);

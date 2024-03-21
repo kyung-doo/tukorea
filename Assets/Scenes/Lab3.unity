@@ -2328,7 +2328,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 221.3, y: 93, z: 1}
+  m_Size: {x: 543.3, y: 348.8, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!225 &82272243
 CanvasGroup:
@@ -10372,7 +10372,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 221.3, y: 93, z: 1}
+  m_Size: {x: 347.9, y: 360.8, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!225 &395001381
 CanvasGroup:
@@ -23418,7 +23418,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 221.3, y: 93, z: 1}
+  m_Size: {x: 352, y: 352.5, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!225 &915058418
 CanvasGroup:
@@ -23845,7 +23845,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 221.3, y: 93, z: 1}
+  m_Size: {x: 540, y: 344.8, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!225 &937112146
 CanvasGroup:
@@ -25571,7 +25571,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 221.3, y: 93, z: 1}
+  m_Size: {x: 339.1, y: 359, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!225 &998469236
 CanvasGroup:
@@ -27003,7 +27003,7 @@ MonoBehaviour:
   touch14: {fileID: 359221448}
   touch15: {fileID: 82074760}
   touch16: {fileID: 1919508577}
-  touch17: {fileID: 0}
+  touch17: {fileID: 1488117115}
   screen1: {fileID: 369469216}
   screen2: {fileID: 545124883}
   screen3: {fileID: 1081539651}
@@ -27014,6 +27014,7 @@ MonoBehaviour:
   screen8: {fileID: 1055815246}
   screen9: {fileID: 1389369935}
   screen10: {fileID: 1096035085}
+  screen11: {fileID: 1519781239}
   toggle: {fileID: 1612615572}
   text1: {fileID: 1279305307}
   text2: {fileID: 1761699256}
@@ -27024,6 +27025,7 @@ MonoBehaviour:
   text7: {fileID: 1645768921}
   text8: {fileID: 554975998}
   text9: {fileID: 1112547710}
+  text10: {fileID: 720231753}
   jumpOver: {fileID: 1529347859}
   scanOver: {fileID: 1880086300}
   lowCamOver: {fileID: 913648865}
@@ -38951,7 +38953,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 221.3, y: 93, z: 1}
+  m_Size: {x: 351.63, y: 345.7, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!225 &1488117119
 CanvasGroup:
@@ -43818,7 +43820,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 221.3, y: 93, z: 1}
+  m_Size: {x: 352, y: 357.3, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!225 &1663702210
 CanvasGroup:
@@ -51078,7 +51080,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 221.3, y: 93, z: 1}
+  m_Size: {x: 332.8, y: 355.3, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!225 &1947534231
 CanvasGroup:
