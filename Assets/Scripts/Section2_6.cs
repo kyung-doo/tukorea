@@ -242,7 +242,6 @@ public class Section2_6 : SectionBase
     {
         Main.Instance.StopAudio();
         animator.Rebind();
-        animator.Update(0f);
         target.SetActive(false);
         outTarget.SetActive(true);
         handle.GetComponent<Clickable>().onMouseClick -= ClickHandle;

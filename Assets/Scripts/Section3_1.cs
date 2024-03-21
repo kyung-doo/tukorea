@@ -185,7 +185,6 @@ public class Section3_1 : SectionBase
     {
         Main.Instance.StopAudio();
         animator.Rebind();
-        animator.Update(0f);
 
         door.GetComponent<Clickable>().onMouseClick -= ClickDoor;
         door.GetComponent<Clickable>().onMouseClick -= ClickDoor2;

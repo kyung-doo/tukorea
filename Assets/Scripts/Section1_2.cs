@@ -101,7 +101,6 @@ public class Section1_2 : SectionBase
     {
         Main.Instance.StopAudio();
         animator.Rebind();
-        animator.Update(0f);
         target.SetActive(false);
         measureUi.SetActive(false);
         tongs.GetComponent<Clickable>().onMouseClick -= ClickTongs;

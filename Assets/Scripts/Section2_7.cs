@@ -754,7 +754,6 @@ public class Section2_7 : SectionBase
     {
         Main.Instance.StopAudio();
         animator.Rebind();
-        animator.Update(0f);
         target.SetActive(false);
         touch1.GetComponent<Clickable>().onMouseClick -= ClickTouch1;
         touch1.GetComponent<Clickable>().onMouseClick -= ClickTouch1_2;

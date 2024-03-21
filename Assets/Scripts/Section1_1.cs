@@ -213,9 +213,7 @@ public class Section1_1 : SectionBase
         gloveUi.SetActive(false);
         goodBadUi.SetActive(false);
         animator1.Rebind();
-        animator1.Update(0f);
         animator2.Rebind();
-        animator2.Update(0f);
         target1.SetActive(false);
         target2.SetActive(false);
         glove.GetComponent<Clickable>().onMouseClick -= ClickGlove;

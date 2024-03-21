@@ -341,10 +341,8 @@ public class Section3_5 : SectionBase
         screen8.SetActive(false);
         screen9.SetActive(false);
         screen9.GetComponent<Animator>().Rebind();
-        screen9.GetComponent<Animator>().Update(0f);
         screen9.GetComponent<Animator>().speed = 1;
         screen10.GetComponent<Animator>().Rebind();
-        screen10.GetComponent<Animator>().Update(0f);
         screen10.GetComponent<Animator>().speed = 1;
         
 

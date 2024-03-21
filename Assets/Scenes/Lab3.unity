@@ -26172,7 +26172,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c4bce85fa8adc9241b8482219150b01b, type: 3}
   - {fileID: 8300000, guid: 8b5f677aa8550454682d9ba69da64f23, type: 3}
   - {fileID: 8300000, guid: 39920fe9f04ecbc49b61877b9665cfab, type: 3}
-  tabMenu: {fileID: 0}
+  tabMenu: {fileID: 389551452}
   touch1: {fileID: 1561704799}
   touch2: {fileID: 153914205}
   touch3: {fileID: 723033429}
@@ -26180,8 +26180,8 @@ MonoBehaviour:
   touch5: {fileID: 374306253}
   touch6: {fileID: 793215250}
   touch7: {fileID: 1212535130}
-  touch8: {fileID: 0}
-  touch9: {fileID: 0}
+  touch8: {fileID: 1763113303}
+  touch9: {fileID: 1902738087}
   screen1: {fileID: 369469216}
   screen2: {fileID: 545124883}
   screen3: {fileID: 1081539651}
@@ -26190,12 +26190,12 @@ MonoBehaviour:
   screen6: {fileID: 1151906663}
   screen7: {fileID: 546046391}
   screen8: {fileID: 1055815246}
-  screen9: {fileID: 0}
-  screen10: {fileID: 0}
+  screen9: {fileID: 1389369935}
+  screen10: {fileID: 1096035085}
   toggle: {fileID: 1612615572}
-  text1: {fileID: 0}
-  text2: {fileID: 0}
-  text3: {fileID: 0}
+  text1: {fileID: 1279305307}
+  text2: {fileID: 1761699256}
+  text3: {fileID: 1964269693}
 --- !u!4 &1041472033
 Transform:
   m_ObjectHideFlags: 0

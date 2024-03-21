@@ -530,7 +530,6 @@ public class Section3_3 : SectionBase
         screen3.SetActive(false);
         screen4.SetActive(false);
         screen4.GetComponent<Animator>().Rebind();
-        screen4.GetComponent<Animator>().Update(0f);
         alert1.SetActive(false);
         screen5.SetActive(false);
         screen6.SetActive(false);

@@ -164,7 +164,6 @@ public class Section2_5 : SectionBase
     {
         Main.Instance.StopAudio();
         animator.Rebind();
-        animator.Update(0f);
         target.SetActive(false);
         holder.GetComponent<Clickable>().onMouseClick -= ClickHolder;
         nickelCarbonTape.GetComponent<Clickable>().onMouseClick -= ClickNickelCarbonTape;
