@@ -27025,6 +27025,7 @@ MonoBehaviour:
   touch14: {fileID: 359221448}
   touch15: {fileID: 82074760}
   touch16: {fileID: 1919508577}
+  touch17: {fileID: 0}
   screen1: {fileID: 369469216}
   screen2: {fileID: 545124883}
   screen3: {fileID: 1081539651}
@@ -27044,6 +27045,7 @@ MonoBehaviour:
   text6: {fileID: 449437810}
   text7: {fileID: 1645768921}
   text8: {fileID: 554975998}
+  text9: {fileID: 1112547710}
   jumpOver: {fileID: 1529347859}
   scanOver: {fileID: 1880086300}
   lowCamOver: {fileID: 913648865}
