@@ -45,6 +45,8 @@ public class Section3_5 : SectionBase
     public GameObject touch15;
     [SerializeField]
     public GameObject touch16;
+    [SerializeField]
+    public GameObject touch17;
 
 
     
@@ -88,6 +90,8 @@ public class Section3_5 : SectionBase
     public GameObject text7;
     [SerializeField]
     public GameObject text8;
+    [SerializeField]
+    public GameObject text9;
 
     [SerializeField]
     public GameObject jumpOver;
@@ -465,6 +469,30 @@ public class Section3_5 : SectionBase
         hiCamOver.SetActive(true);
         lowCamOver.SetActive(false);
         screen9.GetComponent<Animator>().Play("picture5");
+        coTimer = Start18();
+        StartCoroutine(coTimer);
+    }
+
+    private IEnumerator Start18() 
+    {
+        yield return new WaitForSeconds( 2f );
+        text9.SetActive(true);
+        Main.Instance.PlayAudio(audioClips[14], () => {
+            touch17.SetActive(true);
+            touch17.GetComponent<Animator>().Play("touch");
+            touch17.GetComponent<Clickable>().onMouseClick += ClickTouch17;
+        });
+    }
+
+    private void ClickTouch17 ( GameObject target, Vector3 mousePos ) 
+    {
+        touch17.SetActive(false);
+        touch17.GetComponent<Clickable>().onMouseClick -= ClickTouch17;
+        touch17.GetComponent<Animator>().Rebind();
+        text9.SetActive(false);
+        screen9.GetComponent<Animator>().Play("g");
+        // coTimer = Start18();
+        // StartCoroutine(coTimer);
     }
 
     
@@ -525,6 +553,8 @@ public class Section3_5 : SectionBase
         touch15.SetActive(false);
         touch16.GetComponent<Clickable>().onMouseClick -= ClickTouch16;
         touch16.SetActive(false);
+        touch17.GetComponent<Clickable>().onMouseClick -= ClickTouch17;
+        touch17.SetActive(false);
         
         
         
@@ -553,6 +583,7 @@ public class Section3_5 : SectionBase
         text6.SetActive(false);
         text7.SetActive(false);
         text8.SetActive(false);
+        text9.SetActive(false);
 
         scanOver.SetActive(true);
         jumpOver.SetActive(false);
