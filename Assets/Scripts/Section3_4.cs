@@ -97,6 +97,7 @@ public class Section3_4 : SectionBase
     {
         screen1.SetActive(true);
         screen2.SetActive(true);
+        tool1.SetActive(true);
         coTimer = Start1();
         StartCoroutine(coTimer);
         base.StartSection(isFirst);
@@ -415,9 +416,9 @@ public class Section3_4 : SectionBase
         tool4.SetActive(false);
         tool5.SetActive(false);
 
-        toolTouch2.GetComponent<Clickable>().onMouseClick += ClickTool;
+        toolTouch2.GetComponent<Clickable>().onMouseClick -= ClickTool;
         toolTouch2.SetActive(false);
-        toolTouch3.GetComponent<Clickable>().onMouseClick += ClickTool;
+        toolTouch3.GetComponent<Clickable>().onMouseClick -= ClickTool;
         toolTouch3.SetActive(false);
         toolLine1.SetActive(false);
         toolLine2.SetActive(false);

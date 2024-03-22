@@ -13,6 +13,9 @@ public class Section3_3 : SectionBase
     public TabMenu tabMenu;
 
     [SerializeField]
+    public GameObject infoBox;
+
+    [SerializeField]
     public GameObject touch1;
     [SerializeField]
     public GameObject touch2;
@@ -46,6 +49,24 @@ public class Section3_3 : SectionBase
     
     [SerializeField]
     public GameObject screen0;
+    [SerializeField]
+    public GameObject screen0_1;
+    [SerializeField]
+    public GameObject screen0_2;
+    [SerializeField]
+    public GameObject toolOver1;
+    [SerializeField]
+    public GameObject toolOver2;
+    [SerializeField]
+    public GameObject toolOver3;
+    [SerializeField]
+    public GameObject toolLine1;
+    [SerializeField]
+    public GameObject toolLine2;
+    [SerializeField]
+    public GameObject toolLine3;
+    [SerializeField]
+    public GameObject tool2;
 
     [SerializeField]
     public GameObject screen1;
@@ -121,6 +142,18 @@ public class Section3_3 : SectionBase
 
     public override void StartSection ( bool isFirst = false ) 
     {
+        screen0_1.SetActive(true);
+        screen0_2.SetActive(true);
+        toolLine1.SetActive(true);
+        toolLine2.SetActive(true);
+        toolLine3.SetActive(true);
+        toolOver1.SetActive(true);
+        toolOver2.SetActive(true);
+        toolOver3.SetActive(true);
+        tool2.SetActive(true);
+        screen0.SetActive(true);
+        screen2.SetActive(true);
+        text1.SetActive(true);
         coTimer = Start1();
         StartCoroutine(coTimer);
         base.StartSection(isFirst);
@@ -128,17 +161,18 @@ public class Section3_3 : SectionBase
 
     private IEnumerator Start1() 
     {
-        screen0.SetActive(true);
-        screen2.SetActive(true);
-        text1.SetActive(true);
         yield return new WaitForSeconds( 3.5f );
+        infoBox.SetActive(true);
         tabMenu.CloseMenu();
+        Main.Instance.repositionBtn.SetActive(false);
+        yield return new WaitForSeconds( 5f );
+        infoBox.SetActive(false);
         Main.Instance.PlayAudio(audioClips[0], () => {
             touch1.SetActive(true);
             touch1.GetComponent<Animator>().Play("touch");
             touch1.GetComponent<Clickable>().onMouseClick += ClickTouch1;
         });
-        Main.Instance.repositionBtn.SetActive(false);
+        
         
     }
 
@@ -525,6 +559,15 @@ public class Section3_3 : SectionBase
         touch14.SetActive(false);
 
         screen0.SetActive(false);
+        screen0_1.SetActive(false);
+        screen0_2.SetActive(false);
+        toolLine1.SetActive(false);
+        toolLine2.SetActive(false);
+        toolLine3.SetActive(false);
+        toolOver1.SetActive(false);
+        toolOver2.SetActive(false);
+        toolOver3.SetActive(false);
+        tool2.SetActive(false);
         screen1.SetActive(false);
         screen2.SetActive(false);
         screen3.SetActive(false);

@@ -517,29 +517,16 @@ public class Section3_2 : SectionBase
             Main.Instance.repositionBtn.SetActive(true);
             isZoom = false;
             Main.Instance.PlayAudio(audioClips[13], () => {
-                toolTouch2.SetActive(true);
-                toolTouch2.GetComponent<Animator>().Play("touch");
-                toolTouch2.GetComponent<Clickable>().onMouseClick += ClickTool2_3;
+                coTimer = Start14();
+                StartCoroutine(coTimer);
             });
         });
     }
 
-    private void ClickTool2_3 ( GameObject target, Vector3 mousePos ) 
-    {
-        toolTouch2.SetActive(false);
-        toolTouch2.GetComponent<Clickable>().onMouseClick -= ClickTool2_3;
-        toolTouch2.GetComponent<Animator>().Rebind();
-        toolLine1.SetActive(false);
-        toolBtnOver1.SetActive(false);
-        toolLine3.SetActive(false);
-        toolBtnOver3.SetActive(false);
-        coTimer = Start14();
-        StartCoroutine(coTimer);
-    }
 
     private IEnumerator Start14() 
     {
-        yield return new WaitForSeconds( 1f );
+        yield return new WaitForSeconds( 0.1f );
         touch6.SetActive(true);
         touch6.GetComponent<Animator>().Play("touch");
         touch6.GetComponent<Clickable>().onMouseClick += ClickTouch6;
@@ -707,7 +694,6 @@ public class Section3_2 : SectionBase
         toolTouch1.GetComponent<Clickable>().onMouseClick -= ClickTool1_2;
         toolTouch2.GetComponent<Clickable>().onMouseClick -= ClickTool2;
         toolTouch2.GetComponent<Clickable>().onMouseClick -= ClickTool2_2;
-        toolTouch2.GetComponent<Clickable>().onMouseClick -= ClickTool2_3;
         toolTouch3.GetComponent<Clickable>().onMouseClick -= ClickTool3;
         toolTouch3.GetComponent<Clickable>().onMouseClick -= ClickTool3_2;
         toolTouch1.GetComponent<Clickable>().onMouseClick -= ClickTool4;
