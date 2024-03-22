@@ -61,7 +61,6 @@ public class TabMenu : MonoBehaviour
         openBtn.onClick.AddListener(() => {
             if(isOpen)  CloseMenu();
             else        OpenMenu();
-            isOpen = !isOpen;
         });
     }
 
