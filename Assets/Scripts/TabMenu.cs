@@ -66,8 +66,11 @@ public class TabMenu : MonoBehaviour
 
     private void clickTab ( int idx ) 
     {
-        currentIndex = idx;
-        if(onTabChange != null) onTabChange(currentIndex);
+        if(currentIndex != idx)
+        {
+            currentIndex = idx;
+            if(onTabChange != null) onTabChange(currentIndex);
+        }
     }
 
     private void setBtns () 
