@@ -165,6 +165,7 @@ public class Section3_3 : SectionBase
         infoBox.SetActive(true);
         tabMenu.CloseMenu();
         Main.Instance.repositionBtn.SetActive(false);
+        player.GetComponent<Player>().isActive = false;
         yield return new WaitForSeconds( 5f );
         infoBox.SetActive(false);
         Main.Instance.PlayAudio(audioClips[0], () => {
