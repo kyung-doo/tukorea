@@ -215,7 +215,8 @@ public class Main : SingletonBase<Main>
 
     private void OnChangeTabmenu( int idx )
     {
-        foreach(SectionBase section in sections) {
+        foreach(SectionBase section in sections) 
+        {
             section.ResetSection();
         }
         sectionIndex = idx;
@@ -233,15 +234,19 @@ public class Main : SingletonBase<Main>
     private void SectionEnd () 
     {
         player.GetComponent<Player>().isActive = false;
-        foreach(SectionBase section in sections) {
+        foreach(SectionBase section in sections) 
+        {
             section.ResetSection();
         }
 
         sectionIndex++;
-        if(sectionIndex < sections.Length) {
+        if(sectionIndex < sections.Length) 
+        {
             tabIndex.GetComponent<TabMenu>().currentIndex = sectionIndex;
             sections[sectionIndex].StartSection();
-        } else {
+        } 
+        else 
+        {
             Debug.Log("flow finish");
             finishScreen.SetActive(true);
             CanvasGroup finishScreenCG = finishScreen.GetComponent<CanvasGroup>();
@@ -259,7 +264,8 @@ public class Main : SingletonBase<Main>
     {
         finishScreen.SetActive(false);
         reStartBtn.onClick.RemoveListener(ClickReStart);
-        foreach(SectionBase section in sections) {
+        foreach(SectionBase section in sections) 
+        {
             section.ResetSection();
         }
         sectionIndex = 0;
