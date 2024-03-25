@@ -46,6 +46,8 @@ public class Section3_4 : SectionBase
     public GameObject screen6;
     [SerializeField]
     public GameObject screen7;
+    [SerializeField]
+    public GameObject screen8;
 
 
     [SerializeField]
@@ -347,6 +349,7 @@ public class Section3_4 : SectionBase
         touch7.GetComponent<Clickable>().onMouseClick -= ClickTouch7;
         touch7.GetComponent<Animator>().Rebind();
         screen6.SetActive(true);
+        screen8.SetActive(true);
         coTimer = Start12();
         StartCoroutine(coTimer);
     }
@@ -409,6 +412,7 @@ public class Section3_4 : SectionBase
         screen5.SetActive(false);
         screen6.SetActive(false);
         screen7.SetActive(false);
+        screen8.SetActive(false);
 
         tool1.SetActive(true);
         tool2.SetActive(false);
