@@ -2,9 +2,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 
-public class MessageDialog : SingletonBase<MessageDialog>
+public class MessageDialog : MonoBehaviour
 {
-    
+    private enum ButtonMode {
+        BUTTON_ONE = 0,
+        BUTTON_TWO = 1,
+    }
 
     [SerializeField]
     public Text messageText;
@@ -17,6 +20,9 @@ public class MessageDialog : SingletonBase<MessageDialog>
 
     [SerializeField]
     public RectTransform container;
+
+    [SerializeField]
+    private ButtonMode buttonMode;
 
 
     public delegate void ConfirmCallback();
@@ -46,22 +52,13 @@ public class MessageDialog : SingletonBase<MessageDialog>
     private void Awake()
     {
         confirmBtn.onClick.AddListener(OnClickConfirm);
-        cancelBtn.onClick.AddListener(OnClickCancel);
+        if(buttonMode == ButtonMode.BUTTON_TWO)
+        {
+            cancelBtn.onClick.AddListener(OnClickCancel);
+        }
     }
 
-
-    public static void Show ( string message, ConfirmCallback confirmCallback = null, CancelCallback cancelCallback = null, bool noCloseAni = false )
-    {
-        Instance.ShowMessage(message, confirmCallback, cancelCallback, noCloseAni);
-    }
-
-    public static void Hide()
-    {
-        Instance.HideMessage();
-    }
-
-
-    private void ShowMessage ( string message, ConfirmCallback confirmCallback = null, CancelCallback cancelCallback = null, bool noCloseAni = false)
+    public void ShowMessage ( string message, ConfirmCallback confirmCallback = null, CancelCallback cancelCallback = null, bool noCloseAni = false)
     {
         messageText.text = message;
         confirmCall = confirmCallback;
@@ -71,7 +68,7 @@ public class MessageDialog : SingletonBase<MessageDialog>
     }
 
 
-    private void ShowAnimation() 
+    public void ShowAnimation() 
     {
         CanvasGroup cg = this.GetComponent<CanvasGroup>() as CanvasGroup;
 

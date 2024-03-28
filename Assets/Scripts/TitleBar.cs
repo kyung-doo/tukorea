@@ -14,7 +14,8 @@ public class TitleBar : MonoBehaviour
     [SerializeField]
     private Button quitBtn;
 
-
+    [SerializeField]
+    private MessageDialog dialog;
     
 
 
@@ -44,7 +45,7 @@ public class TitleBar : MonoBehaviour
 
     private void ClickQuit () 
     {
-        MessageDialog.Show( "실습을 종료하시겠습니까?", () => Application.Quit());
+        dialog.ShowMessage( "실습을 종료하시겠습니까?", () => Application.Quit());
     }
 
     

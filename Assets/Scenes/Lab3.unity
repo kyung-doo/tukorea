@@ -40811,6 +40811,7 @@ MonoBehaviour:
   confirmBtn: {fileID: 942302045}
   cancelBtn: {fileID: 1097129211}
   container: {fileID: 801806547}
+  buttonMode: 1
 --- !u!225 &1535958131
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -47697,6 +47698,7 @@ MonoBehaviour:
   helpBtn: {fileID: 58462421}
   confiBtn: {fileID: 1854774564}
   quitBtn: {fileID: 349700504}
+  dialog: {fileID: 1535958130}
 --- !u!1 &1800219608
 GameObject:
   m_ObjectHideFlags: 0
