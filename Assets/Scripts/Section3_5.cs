@@ -169,6 +169,17 @@ public class Section3_5 : SectionBase
     [SerializeField]
     public GameObject crosshairText2;
 
+    [SerializeField]
+    public GameObject tool1;
+    [SerializeField]
+    public GameObject tool2;
+    [SerializeField]
+    public GameObject tool3;
+    [SerializeField]
+    public GameObject tool4;
+    [SerializeField]
+    public GameObject tool5;
+
 
     private IEnumerator coTimer = null;
 
@@ -187,6 +198,11 @@ public class Section3_5 : SectionBase
         screen3.SetActive(false);
         screen4.SetActive(true);
         screen5.SetActive(true);
+        tool1.SetActive(false);
+        tool2.SetActive(false);
+        tool3.SetActive(false);
+        tool4.SetActive(false);
+        tool5.SetActive(true);
         coTimer = Start1();
         StartCoroutine(coTimer);
         base.StartSection(isFirst);
@@ -956,6 +972,12 @@ public class Section3_5 : SectionBase
         text21.GetComponent<Animator>().Rebind();
         text22.GetComponent<Animator>().Rebind();
         text23.GetComponent<Animator>().Rebind();
+
+        tool1.SetActive(true);
+        tool2.SetActive(false);
+        tool3.SetActive(false);
+        tool4.SetActive(false);
+        tool5.SetActive(false);
         
         
         

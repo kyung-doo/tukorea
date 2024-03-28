@@ -86,6 +86,10 @@ public class Section3_4 : SectionBase
 
     [SerializeField]
     public GameObject toolBtnOver3;
+
+    public GameObject ticknessText1;
+    [SerializeField]
+    public GameObject ticknessText2;
     
     
     private int toolClickCount = 0;
@@ -100,6 +104,8 @@ public class Section3_4 : SectionBase
         screen1.SetActive(true);
         screen2.SetActive(true);
         tool1.SetActive(true);
+        ticknessText1.SetActive(false);
+        ticknessText2.SetActive(true);
         coTimer = Start1();
         StartCoroutine(coTimer);
         base.StartSection(isFirst);
@@ -430,6 +436,9 @@ public class Section3_4 : SectionBase
         toolBtnOver1.SetActive(false);
         toolBtnOver2.SetActive(false);
         toolBtnOver3.SetActive(false);
+
+        ticknessText1.SetActive(true);
+        ticknessText2.SetActive(false);
         
         if(coTimer != null) StopCoroutine(coTimer);
     }

@@ -27023,7 +27023,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 93784120bd6548c4d875c9932de40a6c, type: 3}
   - {fileID: 8300000, guid: bdff2d864501a274e932ed552c48ca1d, type: 3}
   - {fileID: 8300000, guid: c2356d8017e8f2d4a884ae7046f702bd, type: 3}
-  - {fileID: 8300000, guid: b7c236ed5416cb84584021fe42abebfe, type: 3}
+  - {fileID: 8300000, guid: d7916891bcc90c4458bb5666e92015ba, type: 3}
   - {fileID: 8300000, guid: a8ecb84d5cee4474baa314e429dbc88a, type: 3}
   - {fileID: 8300000, guid: bc93b4b3715a46943abdfc10f8af9469, type: 3}
   - {fileID: 8300000, guid: 6d31e471149b5874c817c50900ad4ecd, type: 3}
@@ -27108,6 +27108,11 @@ MonoBehaviour:
   jogNum3: {fileID: 1535201200}
   crosshairText1: {fileID: 1716164807}
   crosshairText2: {fileID: 1599050811}
+  tool1: {fileID: 1081539651}
+  tool2: {fileID: 1012984464}
+  tool3: {fileID: 262957616}
+  tool4: {fileID: 746304626}
+  tool5: {fileID: 460012950}
 --- !u!4 &1041472033
 Transform:
   m_ObjectHideFlags: 0
@@ -35240,6 +35245,8 @@ MonoBehaviour:
   plusBox: {fileID: 1631774953}
   ticknessText1: {fileID: 1284673252}
   ticknessText2: {fileID: 709982151}
+  ticknessText3: {fileID: 1051597353}
+  ticknessText4: {fileID: 11925117}
 --- !u!1 &1335859115
 GameObject:
   m_ObjectHideFlags: 0
@@ -37912,6 +37919,8 @@ MonoBehaviour:
   toolBtnOver1: {fileID: 360342161}
   toolBtnOver2: {fileID: 554193519}
   toolBtnOver3: {fileID: 541071314}
+  ticknessText1: {fileID: 1284673252}
+  ticknessText2: {fileID: 709982151}
 --- !u!1 &1443620036
 GameObject:
   m_ObjectHideFlags: 0
