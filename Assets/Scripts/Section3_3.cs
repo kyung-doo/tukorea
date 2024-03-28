@@ -494,6 +494,8 @@ public class Section3_3 : SectionBase
         touch13.GetComponent<Animator>().Rebind();
         screen7.SetActive(false);
         screen8.SetActive(true);
+        ticknessText3.SetActive(false);
+        ticknessText4.SetActive(true);
         coTimer = Start17();
         StartCoroutine(coTimer);
     }
@@ -517,8 +519,8 @@ public class Section3_3 : SectionBase
         text12.SetActive(false);
         ticknessText1.SetActive(false);
         ticknessText2.SetActive(true);
-        ticknessText3.SetActive(false);
-        ticknessText4.SetActive(true);
+        screen3.SetActive(false);
+        screen8.SetActive(false);
         coTimer = Ended();
         StartCoroutine(coTimer);
     }
@@ -608,7 +610,6 @@ public class Section3_3 : SectionBase
 
         ticknessText1.SetActive(true);
         ticknessText2.SetActive(false);
-
         ticknessText3.SetActive(true);
         ticknessText4.SetActive(false);
 
