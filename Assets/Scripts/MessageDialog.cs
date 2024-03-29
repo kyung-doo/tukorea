@@ -78,7 +78,15 @@ public class MessageDialog : MonoBehaviour
         DOTween.Kill(container);
         DOTween.Kill(cg);
 
-        DOTween.To(() => container.localScale, x => container.localScale = x, new Vector3(0.2f, 0.2f, 0.2f), 0.5f).SetDelay(0.2f).SetEase(Ease.OutBack);
+        if(buttonMode == ButtonMode.BUTTON_ONE) 
+        {
+            DOTween.To(() => container.localScale, x => container.localScale = x, new Vector3(0.1f, 0.1f, 0.1f), 0.5f).SetDelay(0.2f).SetEase(Ease.OutBack);
+        } 
+        else
+        {
+            DOTween.To(() => container.localScale, x => container.localScale = x, new Vector3(0.2f, 0.2f, 0.2f), 0.5f).SetDelay(0.2f).SetEase(Ease.OutBack);
+        }   
+        
         DOTween.To(() => cg.alpha, x => cg.alpha = x, 1f, 0.6f).SetDelay(0.2f);
 
         visible = true;
