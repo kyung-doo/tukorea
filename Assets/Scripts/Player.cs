@@ -37,7 +37,8 @@ public class Player : MonoBehaviour
     
     private void FixedUpdate()
     {
-        if(isActive && !optionView.GetComponent<CanvasGroup>().interactable) {
+        if(isActive && !optionView.GetComponent<CanvasGroup>().interactable) 
+        {
         
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
