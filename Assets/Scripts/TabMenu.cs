@@ -62,10 +62,17 @@ public class TabMenu : MonoBehaviour
             if(isOpen)  CloseMenu();
             else        OpenMenu();
         });
+
+        Debug.Log(Main.Instance.LabName + ", "+Main.Instance.loginData);
     }
 
     private void clickTab ( int idx ) 
     {
+        Debug.Log("initIndex : " + Main.Instance.initIndex);
+        if(idx > Main.Instance.initIndex) {
+            Main.Instance.alert.ShowMessage("현재 학습을 완료해야 진행가능합니다.");
+            return;
+        }
         if(currentIndex != idx)
         {
             currentIndex = idx;

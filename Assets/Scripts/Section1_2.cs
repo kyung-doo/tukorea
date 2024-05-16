@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Networking;
 
 public class Section1_2 : SectionBase
 {
@@ -37,7 +38,12 @@ public class Section1_2 : SectionBase
         coTimer = Start1();
         StartCoroutine(coTimer);
         base.StartSection(isFirst);
+        if(Main.Instance.initIndex == 1 && Main.Instance.loginData.data.b2 == "0")
+        {
+            StartCoroutine(SaveContent("1"));
+        }
     }
+    
 
     private IEnumerator Start1() 
     {
@@ -110,7 +116,21 @@ public class Section1_2 : SectionBase
 
     public override void EndSection () 
     {
+        if(Main.Instance.initIndex == 1 && Main.Instance.loginData.data.b2 == "1")
+        {
+            Main.Instance.initIndex = 2;
+            StartCoroutine(SaveContent("2"));
+        }
         base.EndSection();
+    }
+
+    private IEnumerator SaveContent( string status ) {
+        UnityWebRequest request;
+        Debug.Log("http://117.52.84.30/api/learnUpdate?memberSeq="+Main.Instance.loginData.data.memberSeq+"&b2=" + status);
+        using (request = UnityWebRequest.Get("http://117.52.84.30/api/learnUpdate?memberSeq="+Main.Instance.loginData.data.memberSeq+"&b2=" + status))
+        {
+            yield return request.SendWebRequest();
+        }
     }
 
 }

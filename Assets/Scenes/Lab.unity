@@ -24652,6 +24652,32 @@ MonoBehaviour:
   introAudio: {fileID: 8300000, guid: af00b4dfce6f21849bed70527a3fe024, type: 3}
   infoAudio: {fileID: 8300000, guid: e19f8ebb271ce6c468d20b64dad773dc, type: 3}
   repositionBtn: {fileID: 1156826026}
+  alert: {fileID: 170949842}
+  loginData:
+    result: 
+    data:
+      memberSeq: 
+      aday: 
+      bday: 
+      cday: 
+      a1: 
+      a2: 
+      a3: 
+      a4: 
+      a5: 
+      a6: 
+      a7: 
+      b1: 
+      b2: 
+      b3: 
+      c1: 
+      c2: 
+      c3: 
+      c4: 
+      c5: 
+      c6: 
+  LabName: 
+  initIndex: 0
 --- !u!4 &1716591702
 Transform:
   m_ObjectHideFlags: 0
@@ -32645,6 +32671,7 @@ GameObject:
   - component: {fileID: 1105013367528381332}
   - component: {fileID: 3765108852737872970}
   - component: {fileID: 8209103612259675830}
+  - component: {fileID: 8209103612259675831}
   m_Layer: 0
   m_Name: glass
   m_TagString: Untagged
@@ -32664,6 +32691,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c26dc3f644d7f3847a15da43bee07672, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8209103612259675831
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8209103612259675829}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.010905, y: 15.045981, z: 2.3169487}
+  m_Center: {x: -0.035116784, y: 0.000000103461105, z: 1.1584728}
 --- !u!4 &8243721019842088998
 Transform:
   m_ObjectHideFlags: 0

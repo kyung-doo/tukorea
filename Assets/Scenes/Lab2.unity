@@ -10328,6 +10328,30 @@ MonoBehaviour:
   introAudio: {fileID: 8300000, guid: bfb129e1e31c33e4091874edab81128e, type: 3}
   infoAudio: {fileID: 8300000, guid: d011262e3504bde4089abafd3bee9152, type: 3}
   repositionBtn: {fileID: 905557907}
+  alert: {fileID: 2011246980}
+  loginData:
+    result: 
+    data:
+      memberSeq: 
+      aday: 
+      bday: 
+      cday: 
+      a1: 
+      a2: 
+      a3: 
+      a4: 
+      a5: 
+      a6: 
+      b1: 
+      b2: 
+      b3: 
+      c1: 
+      c2: 
+      c3: 
+      c4: 
+      c5: 
+      c6: 
+  LabName: 
 --- !u!4 &386830530
 Transform:
   m_ObjectHideFlags: 0
