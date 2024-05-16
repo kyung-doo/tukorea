@@ -46,6 +46,7 @@ public class Section1_3 : SectionBase
         StartCoroutine(coTimer);
         base.StartSection(isFirst);
         isZoom = false;
+        Debug.Log("initIndex : " + Main.Instance.initIndex + ", ??????????????"+Main.Instance.loginData.data.b3);
         if(Main.Instance.initIndex == 2 && Main.Instance.loginData.data.b3 == "0")
         {
             StartCoroutine(SaveContent("1"));
@@ -270,9 +271,10 @@ public class Section1_3 : SectionBase
     private IEnumerator SaveContent( string status ) {
         UnityWebRequest request;
         Debug.Log("http://117.52.84.30/api/learnUpdate?memberSeq="+Main.Instance.loginData.data.memberSeq+"&b3=" + status);
-        using (request = UnityWebRequest.Get("http://117.52.84.30/api/learnUpdate?memberSeq="+Main.Instance.loginData.data.memberSeq+"&b2=" + status))
+        using (request = UnityWebRequest.Get("http://117.52.84.30/api/learnUpdate?memberSeq="+Main.Instance.loginData.data.memberSeq+"&b3=" + status))
         {
             yield return request.SendWebRequest();
+            Main.Instance.loginData.data.b3 = status;
         }
     }
 

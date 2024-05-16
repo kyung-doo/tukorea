@@ -8,13 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lab_login.unity
     guid: 3b150632e1407664cb6dce4c306909ea
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Lab.unity
     guid: d56160ce1cfa16f44b3e3283f6b59f25
   - enabled: 1
     path: Assets/Scenes/Lab2.unity
     guid: 45407f2dc09999340b33971139867d8b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Lab3.unity
     guid: 857aa6ea56ec6734faaa9c7cc97b5504
   m_configObjects: {}

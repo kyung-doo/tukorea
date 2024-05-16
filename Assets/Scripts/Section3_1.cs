@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using DG.Tweening;
 using EPOOutline;
+using UnityEngine.Networking;
 
 public class Section3_1 : SectionBase
 {
@@ -48,6 +49,10 @@ public class Section3_1 : SectionBase
         StartCoroutine(coTimer);
         
         base.StartSection(isFirst);
+        if(Main.Instance.initIndex == 0 && Main.Instance.loginData.data.c1 == "0")
+        {
+            StartCoroutine(SaveContent("1"));
+        }
     }
 
     private IEnumerator Start1() 
@@ -201,7 +206,22 @@ public class Section3_1 : SectionBase
 
     public override void EndSection () 
     {
+        if(Main.Instance.initIndex == 0 && Main.Instance.loginData.data.c1 == "1")
+        {
+            Main.Instance.initIndex = 1;
+            StartCoroutine(SaveContent("2"));
+        }
         base.EndSection();
+    }
+
+    private IEnumerator SaveContent( string status ) {
+        UnityWebRequest request;
+        Debug.Log("http://117.52.84.30/api/learnUpdate?memberSeq="+Main.Instance.loginData.data.memberSeq+"&c1=" + status);
+        using (request = UnityWebRequest.Get("http://117.52.84.30/api/learnUpdate?memberSeq="+Main.Instance.loginData.data.memberSeq+"&c1=" + status))
+        {
+            yield return request.SendWebRequest();
+            Main.Instance.loginData.data.c1 = status;
+        }
     }
 
 }

@@ -116,30 +116,29 @@ public class Main : SingletonBase<Main>
         if(LabName == "Lab2") 
         {
             if(loginData.data.a1 == "2")        initIndex = 1;
-            else if(loginData.data.a2 == "2")   initIndex = 2;
-            else if(loginData.data.a3 == "2")   initIndex = 3;
-            else if(loginData.data.a4 == "2")   initIndex = 4;
-            else if(loginData.data.a5 == "2")   initIndex = 5;
-            else if(loginData.data.a6 == "2")   initIndex = 6;
-            else if(loginData.data.a7 == "2")   initIndex = 7;
+            if(loginData.data.a2 == "2")        initIndex = 2;
+            if(loginData.data.a3 == "2")        initIndex = 3;
+            if(loginData.data.a4 == "2")        initIndex = 4;
+            if(loginData.data.a5 == "2")        initIndex = 5;
+            if(loginData.data.a6 == "2")        initIndex = 6;
+            if(loginData.data.a7 == "2")        initIndex = 7;
         }
         else if(LabName == "Lab")
         {
             if(loginData.data.b1 == "2")        initIndex = 1;
-            else if(loginData.data.b2 == "2")   initIndex = 2;
-            else if(loginData.data.b3 == "2")   initIndex = 3;
+            if(loginData.data.b2 == "2")        initIndex = 2;
+            if(loginData.data.b3 == "2")        initIndex = 3;
         }
         else if(LabName == "Lab3")
         {
             if(loginData.data.c1 == "2")        initIndex = 1;
-            else if(loginData.data.c2 == "2")   initIndex = 2;
-            else if(loginData.data.c3 == "2")   initIndex = 3;
-            else if(loginData.data.c4 == "2")   initIndex = 4;
-            else if(loginData.data.c5 == "2")   initIndex = 5;
-            else if(loginData.data.c6 == "2")   initIndex = 6;
+            if(loginData.data.c2 == "2")        initIndex = 2;
+            if(loginData.data.c3 == "2")        initIndex = 3;
+            if(loginData.data.c4 == "2")        initIndex = 4;
+            if(loginData.data.c5 == "2")        initIndex = 5;
+            if(loginData.data.c6 == "2")        initIndex = 6;
         }
         
-        Debug.Log(QualitySettings.names);
         SetCursor(false);
 
         Screen.SetResolution(Screen.currentResolution.width, Screen.currentResolution.height, true);
@@ -247,7 +246,7 @@ public class Main : SingletonBase<Main>
         player.GetComponent<Player>().isActive = false;
         titleBar.SetActive(true);
         tabIndex.SetActive(true);
-        sectionIndex = initIndex == sections.Length-1 ? 0 : initIndex;
+        sectionIndex = initIndex == sections.Length ? 0 : initIndex;
         tabIndex.GetComponent<TabMenu>().currentIndex = sectionIndex;
         tabIndex.GetComponent<TabMenu>().onTabChange += OnChangeTabmenu;
         sections[sectionIndex].StartSection(true);

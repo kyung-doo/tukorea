@@ -249,6 +249,7 @@ public class Section1_1 : SectionBase
         using (request = UnityWebRequest.Get("http://117.52.84.30/api/learnUpdate?memberSeq="+Main.Instance.loginData.data.memberSeq+"&b1=" + status))
         {
             yield return request.SendWebRequest();
+            Main.Instance.loginData.data.b1 = status;
         }
     }
 
