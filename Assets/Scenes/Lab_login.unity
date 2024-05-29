@@ -940,7 +940,7 @@ MonoBehaviour:
   passInput: {fileID: 270512898}
   enterBtn: {fileID: 711290655}
   alert: {fileID: 1565510217}
-  loadScene: Lab2
+  loadScene: Lab3
 --- !u!1 &1322746226
 GameObject:
   m_ObjectHideFlags: 0

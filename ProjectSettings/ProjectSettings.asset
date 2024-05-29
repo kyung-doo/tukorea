@@ -13,11 +13,11 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: "\uD55C\uAD6D\uACF5\uD559\uB300\uD559"
-  productName: "\uC8FC\uC0AC\uC2DD \uD604\uBBF8\uACBD"
+  productName: "\uB9C8\uC774\uD06C\uB85C\uBE44\uC544\uB808\uC774\uC800\uB4DC\uB9B4"
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
-  m_ShowUnitySplashScreen: 1
+  m_ShowUnitySplashScreen: 0
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
   m_SplashScreenAnimation: 1
@@ -285,7 +285,7 @@ PlayerSettings:
       m_Height: 512
       m_Kind: 0
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: bd5a1f1948f9ab64abac06b8e7e2d6a6, type: 3}
+      m_Icon: {fileID: 2800000, guid: 01499b2439872b342879cd60e8e87575, type: 3}
       m_Width: 256
       m_Height: 256
       m_Kind: 0
