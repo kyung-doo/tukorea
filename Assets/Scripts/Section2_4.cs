@@ -59,7 +59,7 @@ public class Section2_4 : SectionBase
         base.StartSection(isFirst);
         if(Main.Instance.initIndex == 3 && Main.Instance.loginData.data.a4 == "0")
         {
-            StartCoroutine(SaveContent("1"));
+            StartCoroutine(base.SaveContent("a4", "1", () => Main.Instance.loginData.data.a4 = "1"));
         }
     }
 
@@ -275,19 +275,9 @@ public class Section2_4 : SectionBase
         if(Main.Instance.initIndex == 3 && Main.Instance.loginData.data.a4 == "1")
         {
             Main.Instance.initIndex = 4;
-            StartCoroutine(SaveContent("2"));
+            StartCoroutine(base.SaveContent("a4", "2", () => Main.Instance.loginData.data.a4 = "2"));
         }
         base.EndSection();
-    }
-
-    private IEnumerator SaveContent( string status ) {
-        UnityWebRequest request;
-        Debug.Log("http://117.52.84.30/api/learnUpdate?memberSeq="+Main.Instance.loginData.data.memberSeq+"&a4=" + status);
-        using (request = UnityWebRequest.Get("http://117.52.84.30/api/learnUpdate?memberSeq="+Main.Instance.loginData.data.memberSeq+"&a4=" + status))
-        {
-            yield return request.SendWebRequest();
-            Main.Instance.loginData.data.a4 = status;
-        }
     }
 
 }

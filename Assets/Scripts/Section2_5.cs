@@ -46,7 +46,7 @@ public class Section2_5 : SectionBase
         base.StartSection(isFirst);
         if(Main.Instance.initIndex == 4 && Main.Instance.loginData.data.a5 == "0")
         {
-            StartCoroutine(SaveContent("1"));
+            StartCoroutine(base.SaveContent("a5", "1", () => Main.Instance.loginData.data.a5 = "1"));
         }
     }
 
@@ -183,7 +183,7 @@ public class Section2_5 : SectionBase
         if(Main.Instance.initIndex == 4 && Main.Instance.loginData.data.a5 == "1")
         {
             Main.Instance.initIndex = 5;
-            StartCoroutine(SaveContent("2"));
+            StartCoroutine(base.SaveContent("a5", "2", () => Main.Instance.loginData.data.a5 = "2"));
         }
         base.EndSection();
     }

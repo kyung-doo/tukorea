@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.Networking;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using System;
 
 public class Login : MonoBehaviour
 {
@@ -55,7 +56,8 @@ public class Login : MonoBehaviour
     private IEnumerator StartLogin()
     {
         UnityWebRequest request;
-        using (request = UnityWebRequest.Get("http://117.52.84.30/api/login?memberId="+idInput.text+"&memberPw="+passInput.text))
+        
+        using (request = UnityWebRequest.Get(String.Format(StringVars.LGOIN_API, idInput.text, passInput.text)))
         {
             yield return request.SendWebRequest();
             if (request.isNetworkError)
@@ -68,7 +70,6 @@ public class Login : MonoBehaviour
                 PlayerPrefs.SetString("loginData", request.downloadHandler.text);
                 PlayerPrefs.SetString("LabName", loadScene);
                 Debug.Log(JsonUtility.ToJson(loginData));
-                
 
                 if(loginData.result == "1") 
                 {

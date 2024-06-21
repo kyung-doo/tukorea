@@ -1,5 +1,8 @@
 using UnityEngine;
 using DG.Tweening;
+using System.Collections;
+using UnityEngine.Networking;
+using System;
 
 public abstract class SectionBase : MonoBehaviour
 {
@@ -28,6 +31,10 @@ public abstract class SectionBase : MonoBehaviour
     public delegate void OnSectionStart();
 
     public event OnSectionEnd onSectionStart;
+
+    public delegate void SaveCallback();
+
+    private SaveCallback saveCallback = null;
 
     
 
@@ -72,5 +79,17 @@ public abstract class SectionBase : MonoBehaviour
     public virtual void EndSection () 
     {
         if(onSectionEnd != null) onSectionEnd();
+    }
+
+    public virtual IEnumerator SaveContent( string type, string status, SaveCallback callback ) {
+        saveCallback = callback;
+        UnityWebRequest request;
+        Debug.Log(String.Format(StringVars.STATUS_API, Main.Instance.loginData.data.memberSeq, type, status));
+        using (request = UnityWebRequest.Get(String.Format(StringVars.STATUS_API, Main.Instance.loginData.data.memberSeq, type, status)))
+        {            
+            yield return request.SendWebRequest();
+            saveCallback();
+            saveCallback = null;
+        }
     }
 }

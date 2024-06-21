@@ -111,7 +111,7 @@ public class Main : SingletonBase<Main>
         String data = PlayerPrefs.GetString("loginData");
         loginData = JsonUtility.FromJson<LoginData>(data);
         LabName = PlayerPrefs.GetString("LabName");
-        Debug.Log(JsonUtility.ToJson(loginData));
+        Debug.Log("??????"+JsonUtility.ToJson(loginData));
 
         if(LabName == "Lab2") 
         {
